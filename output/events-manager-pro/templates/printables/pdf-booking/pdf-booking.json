@@ -1,0 +1,161 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n * @var EM_Booking $EM_Booking\n */"
+    ],
+    "length": 1037,
+    "preview": "<?php\n/**\n * @var EM_Booking $EM_Booking\n */\n$EM_Event = $EM_Booking->get_event();\n?>\n<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\" />\n\t<titleEvents Manager Booking</title>\n\n\t<style>\n\t\t<?php\n\t\temp_locate_template('printables/pdf-printable.css'",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-booking/pdf-booking.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Booking $EM_Booking */"
+    ],
+    "length": 592,
+    "preview": "<?php\n/* @var EM_Booking $EM_Booking */\n?>\n<table class=\"event-info\" cellpadding=\"0\" cellspacing=\"0\">\n\t<tr class=\"heading\">\n\t\t<td colspan=\"3\"><?php esc_html_e('Event Details', 'events-manager') ?></td>\n\t</tr>\n\t<tr>\n\t\t<td colspan=\"2\">\n\t\t\t<?php\n\t\t\t$EM_",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-booking/part-event.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 3396,
+    "preview": "<div class=\"tickets\">\n\t<?php foreach( $EM_Booking->get_tickets_bookings() as $EM_Ticket_Bookings ): ?>\n\t\t<?php foreach( $EM_Ticket_Bookings as $EM_Ticket_Booking ): ?>\n\t\t\t<div class=\"page-break\"></div>\n\t\t\t<table class=\"ticket\" cellpadding=\"0\" cellspa",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-booking/part-tickets.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Booking $EM_Booking */"
+    ],
+    "length": 522,
+    "preview": "<?php\n/* @var EM_Booking $EM_Booking */\n?>\n<div class=\"header\">\n\t<table class=\"top\" cellpadding=\"0\" cellspacing=\"0\">\n\t\t<tr>\n\t\t\t<?php\n\t\t\t\tinclude( emp_locate_template('printables/pdf-part-logo.php') );\n\t\t\t?>\n\t\t\t\n\t\t\t<td>\n\t\t\t\t<p class=\"title\"><?php esc_",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-booking/part-header.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Ticket_Booking EM_Ticket_Booking */"
+    ],
+    "length": 643,
+    "preview": "<table class=\"items\" cellpadding=\"0\" cellspacing=\"0\">\n\t<tr class=\"heading\">\n\t\t<td><?php esc_html_e_emp('Item'); ?></td>\n\t\t<td class=\"mid\"><?php esc_html_e_emp('Spaces'); ?></td>\n\t</tr>\n\t\n\t<?php\n\t$i = count($EM_Booking->get_tickets_bookings());\n\t?>\n\t<",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-booking/part-tickets-summary.php"
+  },
+  {
+    "type": "css",
+    "selectors": [
+      "table.ticket",
+      "table.ticket tr td",
+      "table.ticket tr td p",
+      "table.ticket .event-image",
+      "table.ticket .ticket-info",
+      "table.ticket .ticket-info .dates-header",
+      "table.ticket .ticket-info .dates-header td",
+      "table.ticket .ticket-info .dates-header td.weekday",
+      "table.ticket .ticket-info .dates-header td.date",
+      "table.ticket .ticket-info .dates-header td.year",
+      "table.ticket .ticket-info .event-name",
+      "table.ticket .ticket-info .location td",
+      "table.ticket .ticket-info .location .location-address",
+      "table.ticket .ticket-info .location-separator",
+      "table.ticket .ticket-info .location-separator td",
+      "table.ticket .ticket-info .location-separator hr",
+      "table.ticket .ticket-info .location-separator .at",
+      "table.ticket .qr",
+      "table.ticket .qr .ticket-name",
+      "table.ticket .qr .mini-info",
+      ".ticket-cutter"
+    ],
+    "rules": [
+      "margin-top: 50px;\n  border: 1px solid #dedede;",
+      "text-align: left;\n  padding: 0;",
+      "margin: 0 0 5px;",
+      "width: 250px;\n  overflow: hidden;\n  line-height: 0;\n  padding: 0;\n  margin: 0;",
+      "padding: 10px 15px;\n  text-align: center;",
+      "border-top: 1px solid #555;\n  border-bottom: 1px solid #555;\n  padding: 5px 0;\n  margin-bottom: 10px;\n  width: 100%;\n  font-size: 14px;\n  font-weight: 400;",
+      "padding: 0;",
+      "text-align: left;\n  padding-left: 5px;\n  width: 20%;",
+      "text-align: center;\n  font-size: 18px;\n  font-weight: bold;\n  color: #d83565;",
+      "text-align: right;\n  padding-right: 5px;\n  width: 20%;",
+      "color: #4a437e;\n  font-weight: 400;\n  font-size: 18px;",
+      "padding: 0;",
+      "font-size: 12px;\n  text-align: right;",
+      "margin: 5px 0;",
+      "padding: 0;",
+      "color: #999;\n  width: 100%;",
+      "padding: 0 10px;\n  width: 30px;\n  font-size: 18px;\n  font-weight: 100;\n  line-height: 18px;\n  text-align: center;",
+      "border-left: 3px dotted #ddd;\n  text-align: center;\n  padding: 10px;",
+      "border-top: 1px solid #555;\n  border-bottom: 1px solid #555;\n  padding: 5px 0;\n  margin-bottom: 10px;\n  width: 100%;\n  font-size: 14px;\n  font-weight: 400;",
+      "font-size: 11px;\n  line-height: 11px;\n  margin-bottom: 15px;",
+      "width: 100%;\n  height: 1px;\n  margin: 50px 0;\n  border-bottom: 2px dashed #dedede;"
+    ],
+    "length": 2152,
+    "preview": "/** Tickets **/\ntable.ticket {\n  margin-top: 50px;\n  border: 1px solid #dedede;\n}\ntable.ticket tr td {\n  text-align: left;\n  padding: 0;\n}\ntable.ticket tr td p {\n  margin: 0 0 5px;\n}\ntable.ticket .event-image {\n  width: 250px;\n  overflow: hidden;\n  l",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-booking/pdf-booking.css"
+  },
+  {
+    "type": "css",
+    "selectors": [
+      "table.ticket",
+      "table.ticket tr td",
+      "table.ticket tr td p",
+      "table.ticket .event-image",
+      "table.ticket .ticket-info",
+      "table.ticket .ticket-info .dates-header",
+      "table.ticket .ticket-info .location-separator td",
+      "table.ticket .ticket-info .dates-header td.weekday",
+      "table.ticket .ticket-info .dates-header td.date",
+      "table.ticket .ticket-info .dates-header td.year",
+      "table.ticket .ticket-info .event-name",
+      "table.ticket .ticket-info .location .location-address",
+      "table.ticket .ticket-info .location-separator",
+      "table.ticket .ticket-info .location-separator hr",
+      "table.ticket .ticket-info .location-separator .at",
+      "table.ticket .qr",
+      "table.ticket .qr .ticket-name",
+      "table.ticket .qr .mini-info",
+      ".ticket-cutter"
+    ],
+    "rules": [
+      "margin-top:50px;border:1px solid #dedede",
+      "text-align:left;padding:0",
+      "margin:0 0 5px",
+      "width:250px;overflow:hidden;line-height:0;padding:0;margin:0",
+      "padding:10px 15px;text-align:center",
+      "border-top:1px solid #555;border-bottom:1px solid #555;padding:5px 0;margin-bottom:10px;width:100%;font-size:14px;font-weight:400",
+      "padding:0",
+      "text-align:left;padding-left:5px;width:20%",
+      "text-align:center;font-size:18px;font-weight:700;color:#d83565",
+      "text-align:right;padding-right:5px;width:20%",
+      "color:#4a437e;font-weight:400;font-size:18px",
+      "font-size:12px;text-align:right",
+      "margin:5px 0",
+      "color:#999;width:100%",
+      "padding:0 10px;width:30px;font-size:18px;font-weight:100;line-height:18px;text-align:center",
+      "border-left:3px dotted #ddd;padding:10px",
+      "border-top:1px solid #555;border-bottom:1px solid #555;padding:5px 0;margin-bottom:10px;width:100%;font-size:14px;font-weight:400",
+      "font-size:11px;line-height:11px;margin-bottom:15px",
+      "width:100%;height:1px;margin:50px 0;border-bottom:2px dashed #dedede"
+    ],
+    "length": 1732,
+    "preview": "table.ticket{margin-top:50px;border:1px solid #dedede}table.ticket tr td{text-align:left;padding:0}table.ticket tr td p{margin:0 0 5px}table.ticket .event-image{width:250px;overflow:hidden;line-height:0;padding:0;margin:0}table.ticket .qr,table.ticke",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-booking/pdf-booking.min.css"
+  },
+  {
+    "type": "scss",
+    "length": 1738,
+    "preview": "/** Tickets **/\ntable.ticket {\n\tmargin-top: 50px;\n\tborder: 1px solid #dedede;\n\n\ttr td {\n\t\ttext-align",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-booking/pdf-booking.scss"
+  }
+]

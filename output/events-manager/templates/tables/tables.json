@@ -1,0 +1,57 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var array $args */",
+      "/* @var array $locations */",
+      "/* @var int $locations_count */",
+      "/* @var int $locations_mine_count */",
+      "/* @var int $locations_all_count */",
+      "/* @var bool $show_add_new */",
+      "/* @var int $limit */",
+      "/* @var int $page */",
+      "/* @var int $offset */",
+      "//add new button will only appear if called from em_location_admin template tag, or if the $show_add_new var is set",
+      "/* @todo this and the first condition of this if statement will need to change when other bulk actions are added */"
+    ],
+    "length": 5219,
+    "preview": "<?php\n\tglobal $wpdb, $EM_Notices;\n\t/* @var array $args */\n\t/* @var array $locations */\n\t/* @var int $locations_count */\n\t/* @var int $locations_mine_count */\n\t/* @var int $locations_all_count */\n\t/* @var bool $show_add_new */\n\t/* @var int $limit */\n\t",
+    "file": "src/code/events-manager/templates/tables/locations.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//TODO Simplify panel for events, use form flags to detect certain actions (e.g. submitted, etc)",
+      "/* @var array $args */",
+      "/* @var array $EM_Events */",
+      "/* @var int $events_count */",
+      "/* @var int $future_count */",
+      "/* @var int $past_count */",
+      "/* @var int $draft_count */",
+      "/* @var int $pending_count */",
+      "/* @var bool $show_add_new */",
+      "/* @var int $limit */",
+      "/* @var int $page */",
+      "//template for cleaning the link for each view below",
+      "//add new button will only appear if called from em_event_admin template tag, or if the $show_add_new var is set",
+      "//template for cleaning the link for each view below ?>",
+      "/* \n\t\t\t\t\t\t<th class='manage-column column-cb check-column' scope='col'>\n\t\t\t\t\t\t\t<input class='select-all' type=\"checkbox\" value='1' />\n\t\t\t\t\t\t</th>\n\t\t\t\t",
+      "/* @var EM_Event $EM_Event */",
+      "//Check pending approval events",
+      "/*\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<input type='checkbox' class='row-selector' value='<?php echo $EM_Event->event_id; ?>' name='events[]' />\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t*"
+    ],
+    "length": 9028,
+    "preview": "<?php\n\t//TODO Simplify panel for events, use form flags to detect certain actions (e.g. submitted, etc)\n\tglobal $wpdb, $bp, $EM_Notices;\n\t/* @var array $args */\n\t/* @var array $EM_Events */\n\t/* @var int $events_count */\n\t/* @var int $future_count */\n",
+    "file": "src/code/events-manager/templates/tables/events.php"
+  },
+  {
+    "type": "txt",
+    "length": 723,
+    "preview": "This folder has files containing table output layouts, such as event and location admin tables for t",
+    "file": "src/code/events-manager/templates/tables/readme.txt"
+  }
+]

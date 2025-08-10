@@ -1,0 +1,52 @@
+[
+  {
+    "type": "js",
+    "functions": [
+      "Sifter",
+      "scoreValue",
+      "MicroEvent",
+      "isset",
+      "hash_key",
+      "escape_html",
+      "debounce_events",
+      "getSelection",
+      "measureString",
+      "autoGrow",
+      "update",
+      "init_select",
+      "addOption",
+      "equalizeSizes"
+    ],
+    "classes": [],
+    "comments": [],
+    "length": 64104,
+    "preview": "!function(root,factory){\"function\"==typeof define&&define.amd?define(\"sifter\",factory):\"object\"==typeof exports?module.exports=factory():root.Sifter=factory()}(this,function(){function Sifter(items,settings){this.items=items,this.settings=settings||{",
+    "file": "src/code/events-manager/includes/external/selectize/js/standalone/selectize.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [
+      "Sifter",
+      "scoreValue",
+      "MicroEvent",
+      "isset",
+      "hash_key",
+      "escape_html",
+      "debounce_events",
+      "getSelection",
+      "measureString",
+      "autoGrow",
+      "update",
+      "init_select",
+      "addOption",
+      "equalizeSizes"
+    ],
+    "classes": [],
+    "comments": [
+      "/*! selectize.js - v0.13.5 | https://github.com/selectize/selectize.js | Apache License (v2) */"
+    ],
+    "length": 64200,
+    "preview": "/*! selectize.js - v0.13.5 | https://github.com/selectize/selectize.js | Apache License (v2) */\n!function(root,factory){\"function\"==typeof define&&define.amd?define(\"sifter\",factory):\"object\"==typeof exports?module.exports=factory():root.Sifter=facto",
+    "file": "src/code/events-manager/includes/external/selectize/js/standalone/selectize.js"
+  }
+]

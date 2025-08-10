@@ -1,0 +1,26 @@
+[
+  {
+    "type": "scss",
+    "length": 55,
+    "preview": "@import \"when\";\n@import \"bookings\";\n@import \"settings\";",
+    "file": "src/code/events-manager/includes/css/partials/admin/_index.scss"
+  },
+  {
+    "type": "scss",
+    "length": 1240,
+    "preview": ".wp-admin {\n\t.em-postbox-notice {\n\t\t&.em-postbox-notice-info {\n\t\t\tborder-left: 4px solid #72aee6;\n\t\t",
+    "file": "src/code/events-manager/includes/css/partials/admin/_settings.scss"
+  },
+  {
+    "type": "scss",
+    "length": 1034,
+    "preview": ".event-form-when {\n\t> * {\n\t\tmargin-bottom: 15px !important;\n\t}\n\t> p {\n\t\tmargin-bottom: 20px !importa",
+    "file": "src/code/events-manager/includes/css/partials/admin/_when.scss"
+  },
+  {
+    "type": "scss",
+    "length": 1290,
+    "preview": "/* Attendee Info i.e. Ticket Bookings */\n.em-ticket-bookings {\n\t&.hidden {\n\t\tdisplay: none !importan",
+    "file": "src/code/events-manager/includes/css/partials/admin/_bookings.scss"
+  }
+]

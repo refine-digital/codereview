@@ -1,0 +1,103 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "settings_tabs",
+      "settings_api_notifications",
+      "settings_options",
+      "update"
+    ],
+    "classes": [
+      "Gateway_Admin"
+    ],
+    "comments": [
+      "//wp-events-plugin.com/documentation/event-bookings-with-authorize-net-aim/';",
+      "//sandbox.authorize.net/UI/themes/sandbox/Settings/Webhooks.aspx',",
+      "//authorize.net/UI/themes/sandbox/Settings/Webhooks.aspx',",
+      "/**\n\t * Add extra info about silent posts to default notificaiton info\n\t * @return void\n\t */",
+      "/* \n\t * Run when saving settings, saves the settings available in EM_Gateway_Authorize_AIM::mysettings()\n\t */",
+      "//pass options to parent which handles saving"
+    ],
+    "length": 3871,
+    "preview": "<?php\nnamespace EM\\Payments\\Authorize_AIM;\n\nuse EM_Booking, EM_Event, EM_Pro, EM;\nuse WP_REST_Response, WP_REST_Request, WP_Error;\n\nclass Gateway_Admin extends EM\\Payments\\Gateway_Admin {\n\t\n\tpublic static $webhook_events = array(\n\t\t'net.authorize.pay",
+    "file": "src/code/events-manager-pro/add-ons/gateways/authorize-aim/gateway.authorize.aim-admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "em_wp_localize_script",
+      "force_ssl",
+      "booking_add",
+      "em_booking_save",
+      "booking_form_feedback",
+      "handle_payment_return",
+      "handle_api_notify",
+      "process_payment_notification",
+      "payment_form",
+      "get_api",
+      "authorize_and_capture",
+      "void"
+    ],
+    "classes": [
+      "Gateway"
+    ],
+    "comments": [
+      "//change these properties below if creating a new gateway, not advised to change this for Authorize_AIM",
+      "//we can's use a button here",
+      "//account.authorize.net/ui/themes/anet/Transaction/TransactionReceipt.aspx?transid=%s',",
+      "//sandbox.authorize.net/ui/themes/sandbox/Transaction/TransactionReceipt.aspx?transid=%s',",
+      "/**\n\t * Sets up gateaway and adds relevant actions/filters \n\t */",
+      "/* \n\t * --------------------------------------------------\n\t * Booking Interception - functions that modify booking object behaviour\n\t * -------------",
+      "/**\n\t * This function intercepts the previous booking form url from the javascript localized array of EM variables and forces it to be an HTTPS url. \n",
+      "/**\n\t * Turns any url into an HTTPS url.\n\t * @param string $url\n\t * @return string\n\t */",
+      "//','https://', $url);",
+      "/**\n\t * Triggered by the em_booking_add_yourgateway action, modifies the booking status if the event isn't free and also adds a filter to modify user ",
+      "/**\n\t * Added to filters once a booking is added. Once booking is saved, we capture payment, and approve the booking (saving a second time). If paymen",
+      "//make sure booking save was successful before we try anything",
+      "//Set booking status, but no emails sent",
+      "//Set back to normal \"pending\"",
+      "//not good.... error inserted into booking in capture function. Delete this booking from db",
+      "//delete the user we just created, only if created after em_booking_add filter is called (which is when a new user for this booking would be created)",
+      "//remove email confirmation",
+      "/**\n\t * Intercepts return data after a booking has been made and adds authorize_aim vars, modifies feedback message.\n\t * @param array $return\n\t * @par",
+      "//Double check $EM_Booking is an EM_Booking object and that we have a booking awaiting payment.",
+      "//returning a free message",
+      "//void this last authroization",
+      "/**\n\t * Handles the silent post URL\n\t */",
+      "// check if we're in test or live mode before we verify anything since we need to check keys",
+      "//Make sure this is Authorize.net and process silent post",
+      "//Authorize.net uses SHA512 hashes now, so we prefer this method if site admin has set it up.",
+      "//fields to make hash according to https://support.authorize.net/s/article/MD5-Hash-End-of-Life-Signature-Key-Replacement",
+      "/* @var WP_Error $result */",
+      "/**\n\t * Return a WP REST result for handling a payment return\n\t *\n\t * @param WP_REST_Request $request Full data about the request.\n\t * @return WP_Erro",
+      "//we know it's from authorize.net now, so we can proceed with logging this hook notification",
+      "//get more information about the transaction type",
+      "//api.authorize.net/xml/v1/request.api', $post_args);",
+      "//apitest.authorize.net/xml/v1/request.api', $post_args);",
+      "//proceed with processing transaction info and applying changes to booking if located",
+      "/* @var WP_Error $transaction_request */",
+      "// cannot locate the transaction that we were notified about",
+      "// received the right response, now we verify if there's an error",
+      "//if a transaction was never found, but it never will be so we just log the error and prevent a.net retrying for no reason",
+      "//Since credit has another txn id we can find a booking by invoice number / booking id and cancel the booking, record new txn.",
+      "//Find the transaction and booking, void the transaction, cancel the booking.",
+      "/* \n\t * --------------------------------------------------\n\t * Booking UI - modifications to booking pages and tables containing authorize_aim booking",
+      "/**\n\t * Outputs custom content and credit card information.\n\t */",
+      "/*\n\t * --------------------------------------------------\n\t * Authorize.net AIM Functions - functions specific to authorize_aim payments\n\t * ---------",
+      "/**\n\t * Get the AuthorizeNetAIM object and set up basic parameters\n\t * @return AuthorizeNetAIM\n\t */",
+      "/**\n\t * Retreive the authorize_aim vars needed to send to the gateway to proceed with payment\n\t * @param EM_Booking $EM_Booking\n\t */",
+      "//Get transaction ID for authorization/capture",
+      "//address slightly special address field",
+      "//cut off at 60 characters",
+      "//Add discounts to itemized billing, one line each for post and pre taxes",
+      "//Add surcharges to itemized billing, one line each for post and pre taxes",
+      "/* DEPRECATED - Remenant of a typoe, will one day get deleted, use filter below */",
+      "//Return transaction_id or false"
+    ],
+    "length": 24630,
+    "preview": "<?php\nnamespace EM\\Payments\\Authorize_AIM;\n\nuse AuthorizeNetAIM, EM\\Payments\\Gateways;\nuse EM_Booking, EM_Event, EM_Pro, EM;\nuse WP_REST_Response, WP_REST_Request, WP_Error;\n\nclass Gateway extends EM\\Payments\\Gateway {\n\t//change these properties belo",
+    "file": "src/code/events-manager-pro/add-ons/gateways/authorize-aim/gateway.authorize.aim.php"
+  }
+]

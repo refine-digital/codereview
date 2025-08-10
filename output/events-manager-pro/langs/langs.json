@@ -1,0 +1,116 @@
+[
+  {
+    "type": "po",
+    "length": 96620,
+    "preview": "# Translation of Events Manager Pro in Czech\n# This file is distributed under the same license as th",
+    "file": "src/code/events-manager-pro/langs/em-pro-cs_CZ.po"
+  },
+  {
+    "type": "po",
+    "length": 104735,
+    "preview": "# Translation of Events Manager Pro in Dutch\n# This file is distributed under the same license as th",
+    "file": "src/code/events-manager-pro/langs/em-pro-nl_NL.po"
+  },
+  {
+    "type": "po",
+    "length": 100423,
+    "preview": "# Translation of Events Manager Pro in Norwegian\n# This file is distributed under the same license a",
+    "file": "src/code/events-manager-pro/langs/em-pro-nb_NO.po"
+  },
+  {
+    "type": "po",
+    "length": 95389,
+    "preview": "# Translation of Events Manager Pro in English (Australia)\n# This file is distributed under the same",
+    "file": "src/code/events-manager-pro/langs/em-pro-en_AU.po"
+  },
+  {
+    "type": "po",
+    "length": 106215,
+    "preview": "# Translation of Events Manager Pro in French (France)\n# This file is distributed under the same lic",
+    "file": "src/code/events-manager-pro/langs/em-pro-fr_FR.po"
+  },
+  {
+    "type": "po",
+    "length": 75356,
+    "preview": "# Translation of Events Manager Pro in Chinese (China)\n# This file is distributed under the same lic",
+    "file": "src/code/events-manager-pro/langs/em-pro-zh_CN.po"
+  },
+  {
+    "type": "po",
+    "length": 73687,
+    "preview": "# Translation of Events Manager Pro in Portuguese (Brazil)\n# This file is distributed under the same",
+    "file": "src/code/events-manager-pro/langs/em-pro-pt_BR.po"
+  },
+  {
+    "type": "po",
+    "length": 86395,
+    "preview": "# Translation of Events Manager Pro in Finnish\n# This file is distributed under the same license as ",
+    "file": "src/code/events-manager-pro/langs/em-pro-fi.po"
+  },
+  {
+    "type": "po",
+    "length": 78692,
+    "preview": "# Translation of Events Manager Pro in Croatian\n# This file is distributed under the same license as",
+    "file": "src/code/events-manager-pro/langs/em-pro-hr.po"
+  },
+  {
+    "type": "po",
+    "length": 95382,
+    "preview": "# Translation of Events Manager Pro in English (UK)\n# This file is distributed under the same licens",
+    "file": "src/code/events-manager-pro/langs/em-pro-en_GB.po"
+  },
+  {
+    "type": "po",
+    "length": 86906,
+    "preview": "# Translation of Events Manager Pro in Japanese\n# This file is distributed under the same license as",
+    "file": "src/code/events-manager-pro/langs/em-pro-ja.po"
+  },
+  {
+    "type": "po",
+    "length": 95391,
+    "preview": "# Translation of Events Manager Pro in English (New Zealand)\n# This file is distributed under the sa",
+    "file": "src/code/events-manager-pro/langs/em-pro-en_NZ.po"
+  },
+  {
+    "type": "po",
+    "length": 97892,
+    "preview": "# Translation of Events Manager Pro in Polish\n# This file is distributed under the same license as t",
+    "file": "src/code/events-manager-pro/langs/em-pro-pl_PL.po"
+  },
+  {
+    "type": "po",
+    "length": 86482,
+    "preview": "# Translation of Events Manager Pro in Russian\n# This file is distributed under the same license as ",
+    "file": "src/code/events-manager-pro/langs/em-pro-ru_RU.po"
+  },
+  {
+    "type": "po",
+    "length": 241571,
+    "preview": "# Translation of Events Manager Pro in Italian\n# This file is distributed under the same license as ",
+    "file": "src/code/events-manager-pro/langs/em-pro-it_IT.po"
+  },
+  {
+    "type": "po",
+    "length": 101063,
+    "preview": "# Translation of Events Manager Pro in German\n# This file is distributed under the same license as t",
+    "file": "src/code/events-manager-pro/langs/em-pro-de_DE.po"
+  },
+  {
+    "type": "po",
+    "length": 98682,
+    "preview": "# Translation of Events Manager Pro in Swedish\n# This file is distributed under the same license as ",
+    "file": "src/code/events-manager-pro/langs/em-pro-sv_SE.po"
+  },
+  {
+    "type": "po",
+    "length": 71718,
+    "preview": "# Translation of Events Manager Pro in Spanish (Spain)\n# This file is distributed under the same lic",
+    "file": "src/code/events-manager-pro/langs/em-pro-es_ES.po"
+  },
+  {
+    "type": "pot",
+    "length": 155302,
+    "preview": "# Copyright (C) 2023 Pixelite\n# This file is distributed under the same license as the Events Manage",
+    "file": "src/code/events-manager-pro/langs/events-manager-pro.pot"
+  }
+]

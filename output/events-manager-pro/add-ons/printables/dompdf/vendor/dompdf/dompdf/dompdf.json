@@ -1,0 +1,14 @@
+[
+  {
+    "type": "json",
+    "length": 1466,
+    "preview": "{\n    \"name\": \"dompdf/dompdf\",\n    \"type\": \"library\",\n    \"description\": \"DOMPDF is a CSS 2.1 compli",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/composer.json"
+  },
+  {
+    "type": "md",
+    "length": 7590,
+    "preview": "Dompdf\n======\n\n[![Build Status](https://github.com/dompdf/dompdf/actions/workflows/test.yml/badge.sv",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/README.md"
+  }
+]

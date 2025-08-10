@@ -1,0 +1,50 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * PHP QR Code encoder\n *\n * Config file, tuned-up for merged verion\n */",
+      "// use cache - more disk reads but less CPU power, masks and format templates are stored there",
+      "// used when QR_CACHEABLE === true",
+      "// default error logs dir",
+      "// if true, estimates best mask (spec. default, but extremally slow; set to false to significant performance boost but (propably) worst quality code",
+      "// if false, checks all masks available, otherwise value tells count of masks need to be checked, mask id are got randomly",
+      "// when QR_FIND_BEST_MASK === false",
+      "// maximum allowed png image width (in pixels), tune to make sure GD and PHP can handle such big images"
+    ],
+    "length": 1268,
+    "preview": "<?php\n/*\n * PHP QR Code encoder\n *\n * Config file, tuned-up for merged verion\n */\n     \n    define('QR_CACHEABLE', false);       // use cache - more disk reads but less CPU power, masks and format templates are stored there\n    define('QR_CACHE_DIR',",
+    "file": "src/code/events-manager-pro/add-ons/bookings-manager/phpqrcode/tools/merged_config.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * PHP QR Code encoder\n *\n * Tool for merging all library files into one, simpler to incorporate.\n * \n * MAKE SURE THAT RESULTING PHPQRCode.php (an",
+      "//---- '.basename($fileName).' -----------------------------'.\"\\n\\n\";",
+      "/*\\n * Version: \".trim($versionDataEx[0]).\"\\n * Build: \".trim($versionDataEx[1]).\"\\n */"
+    ],
+    "length": 2535,
+    "preview": "<?php\n\n/*\n * PHP QR Code encoder\n *\n * Tool for merging all library files into one, simpler to incorporate.\n * \n * MAKE SURE THAT RESULTING PHPQRCode.php (and its dir) ARE WRITABLE!\n *\n * PHP QR Code is distributed under LGPL 3\n * Copyright (C) 2010 ",
+    "file": "src/code/events-manager-pro/add-ons/bookings-manager/phpqrcode/tools/merge.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * PHP QR Code encoder\n *\n * This file contains MERGED version of PHP QR Code library.\n * It was auto-generated from full version for your convenie"
+    ],
+    "length": 1366,
+    "preview": "<?php\n\n/*\n * PHP QR Code encoder\n *\n * This file contains MERGED version of PHP QR Code library.\n * It was auto-generated from full version for your convenience.\n *\n * This merged version was configured to not requre any external files,\n * with disab",
+    "file": "src/code/events-manager-pro/add-ons/bookings-manager/phpqrcode/tools/merged_header.php"
+  },
+  {
+    "type": "sh",
+    "length": 25,
+    "preview": "#!/bin/sh\nphp ./merge.php",
+    "file": "src/code/events-manager-pro/add-ons/bookings-manager/phpqrcode/tools/merge.sh"
+  }
+]

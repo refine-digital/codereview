@@ -1,0 +1,146 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1749,
+    "preview": "<?php\nglobal $EM_Event, $post;\n?>\n<div id='rsvp-data'>\n\t<?php\n\t\t$available_spaces = $EM_Event->get_bookings()->get_available_spaces();\n\t\t$booked_spaces = $EM_Event->get_bookings()->get_booked_spaces();\n\t\t\t\n\t\tif ( count($EM_Event->get_bookings()->book",
+    "file": "src/code/events-manager/templates/forms/event/booking-stats.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//in case user isn't a group mod, but can edit other users' events"
+    ],
+    "length": 1871,
+    "preview": "<?php\nglobal $EM_Event;\nif( !function_exists('bp_is_active') || !bp_is_active('groups') ) return false;\n$user_groups = array();\n$group_data = groups_get_user_groups(get_current_user_id());\nif( !em_wp_is_super_admin() ){\n\tforeach( $group_data['groups'",
+    "file": "src/code/events-manager/templates/forms/event/group.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2171,
+    "preview": "<?php\nglobal $EM_Event;\n$attributes = em_get_attributes();\n$has_deprecated = false;\n?>\n<div id=\"event-attributes\">\n\t<?php if( !empty($attributes['names']) && count( $attributes['names'] ) > 0 ) : ?>\n\t\t<table class=\"form-table\">\n\t\t\t<thead>\n\t\t\t\t<tr val",
+    "file": "src/code/events-manager/templates/forms/event/attributes.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* This file is called by templates/forms/location-editor.php to display fields for uploading images on your event form on your website. This does n",
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 1117,
+    "preview": "<?php\n/*\n* This file is called by templates/forms/location-editor.php to display fields for uploading images on your event form on your website. This does not affect the admin featured image section.\n* You can override this file by copying it to /wp-",
+    "file": "src/code/events-manager/templates/forms/event/featured-image-public.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This file is called by templates/forms/event-editor.php to display attribute fields on your event form on your website.\n* You can override this ",
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 1471,
+    "preview": "<?php\n/*\n * This file is called by templates/forms/event-editor.php to display attribute fields on your event form on your website.\n* You can override this file by copying it to /wp-content/themes/yourtheme/plugins/events-manager/forms/event/ and edi",
+    "file": "src/code/events-manager/templates/forms/event/attributes-public.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* Used by the admin area to display recurring event time-related information - edit with caution */"
+    ],
+    "length": 2941,
+    "preview": "<?php\n/* Used by the admin area to display recurring event time-related information - edit with caution */\nglobal $EM_Event;\n$days_names = em_get_days_names();\n$hours_format = em_get_hour_format();\n$classes = array();\n$id = rand();\n?>\n<div id=\"em-for",
+    "file": "src/code/events-manager/templates/forms/event/recurring-when.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//in future, we could enable this and then offer a detach option alongside, which resets the recurrence id and removes the attachment to the recurrenc"
+    ],
+    "length": 1122,
+    "preview": "<?php\nglobal $EM_Event, $post;\n$required = apply_filters('em_required_html','<i>*</i>');\n$id = rand();\n?>\n<div class=\"em event-form-when input\" id=\"em-form-when\">\n\t<?php if( get_option('dbem_dates_range_double_inputs', false) ): ?>\n\t\t<?php include( e",
+    "file": "src/code/events-manager/templates/forms/event/when.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//get tickets here and if there are none, create a blank ticket",
+      "//If this event is a recurring template, we need to warn the user that editing tickets will delete previous bookings",
+      "//output ticket options",
+      "//in future we'll be accessing forms/event/bookings-ticket-form.php directly",
+      "//prepend template ticket for JS",
+      "/* @var $EM_Ticket EM_Ticket */",
+      "//If this event is a recurring template, we need to warn the user that editing tickets will delete previous bookings ?>"
+    ],
+    "length": 12916,
+    "preview": "<?php\nglobal $EM_Event, $post, $allowedposttags, $EM_Ticket, $col_count;\n$reschedule_warnings = !empty($EM_Event->event_id) && $EM_Event->is_recurring() && $EM_Event->event_rsvp;\n?>\n<div id=\"event-rsvp-box\">\n\t<input id=\"event-rsvp\" name='event_rsvp' ",
+    "file": "src/code/events-manager/templates/forms/event/bookings.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//determine location types (if neexed)",
+      "/* @var EM_Event_Locations\\Event_Location $EM_Event_Location_Class */",
+      "// we don't consider optional locations as a type for ddm",
+      "/* @var EM_Event_Locations\\Event_Location $EM_Event_Location_Class */"
+    ],
+    "length": 9939,
+    "preview": "<?php\nglobal $EM_Event;\n$required = apply_filters('em_required_html','<i>*</i>');\n\n//determine location types (if neexed)\n$location_types = array();\nif( !get_option('dbem_require_location') ){\n\t$location_types[0] = array(\n\t\t'selected' =>  $EM_Event->",
+    "file": "src/code/events-manager/templates/forms/event/location.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* \n * Used for both multiple and single tickets. $col_count will always be 1 in single ticket mode, and be a unique number for each ticket starting f",
+      "/* @var EM_Ticket $EM_Ticket */",
+      "//now we know it's a number",
+      "/* @var $WP_Role WP_Role */",
+      "//do not delete, add your extra fields this way, remember to save them too! ?>"
+    ],
+    "length": 9905,
+    "preview": "<?php \n/* \n * Used for both multiple and single tickets. $col_count will always be 1 in single ticket mode, and be a unique number for each ticket starting from 1 \n * This form should have $EM_Ticket and $col_count available globally. \n */\nglobal $co",
+    "file": "src/code/events-manager/templates/forms/event/bookings-ticket-form.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* Used by the buddypress and front-end editors to display event time-related information */"
+    ],
+    "length": 1261,
+    "preview": "<?php\n/* Used by the buddypress and front-end editors to display event time-related information */\nglobal $EM_Event;\n$days_names = em_get_days_names();\n$hours_format = em_get_hour_format();\n$admin_recurring = is_admin() && $EM_Event->is_recurring();\n",
+    "file": "src/code/events-manager/templates/forms/event/when-with-recurring.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This file is called by templates/forms/location-editor.php to display fields for uploading images on your event form on your website. This does ",
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 1160,
+    "preview": "<?php\n/*\n * This file is called by templates/forms/location-editor.php to display fields for uploading images on your event form on your website. This does not affect the admin featured image section.\n* You can override this file by copying it to /wp",
+    "file": "src/code/events-manager/templates/forms/event/categories-public.php"
+  }
+]

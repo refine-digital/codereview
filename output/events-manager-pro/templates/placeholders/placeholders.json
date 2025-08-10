@@ -1,0 +1,73 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This files overrides the #_LOCATIONMAP placeholder template in events-manager/templates/placeholders/locationmap.php if google static maps are e",
+      "/* @var $EM_Location EM_Location */",
+      "//assign random number for element id reference",
+      "//get dimensions with px or % added in",
+      "//figure out the width and height based on default maps width, especially if we're dealing with a % height",
+      "//generate the map url",
+      "//since we need to sign the url, we need to go via the server once we know the size we're after",
+      "//www.google.com/maps/search/?api=1&map_action=map&basemap=roadmap&zoom={$args['zoom']}&query=\";",
+      "//output map if not relative, otherwise we pass on the right JS"
+    ],
+    "length": 4949,
+    "preview": "<?php\n/*\n * This files overrides the #_LOCATIONMAP placeholder template in events-manager/templates/placeholders/locationmap.php if google static maps are enabled\n */\n/* @var $EM_Location EM_Location */\nif ( get_option('dbem_gmap_is_active') && ( is_",
+    "file": "src/code/events-manager-pro/templates/placeholders/locationmap.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* This displays the content of the #_BOOKINGTICKETS placeholder when 'Multiple Bookings Mode' is in effect.\n* You can override the default display ",
+      "/* @var $EM_Ticket_Booking EM_Ticket_Booking */"
+    ],
+    "length": 952,
+    "preview": "<?php\n/*\n* This displays the content of the #_BOOKINGTICKETS placeholder when 'Multiple Bookings Mode' is in effect.\n* You can override the default display settings pages by copying this file to yourthemefolder/plugins/events-manager-pro/placeholders",
+    "file": "src/code/events-manager-pro/templates/placeholders/bookingtickets-multiple.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n* This displays the content of the #_BOOKINGATTENDEES placeholder.\n* You can override the default display settings pages by copying this file to y",
+      "//Display ticket info",
+      "//display a row for each space booked on this ticket",
+      "/* @var EM_Ticket_Booking $EM_Ticket_Booking */"
+    ],
+    "length": 1213,
+    "preview": "<?php\n/**\n* This displays the content of the #_BOOKINGATTENDEES placeholder.\n* You can override the default display settings pages by copying this file to yourthemefolder/plugins/events-manager-pro/placeholders/ and modifying it however you need.\n* F",
+    "file": "src/code/events-manager-pro/templates/placeholders/bookingattendees.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* This displays the content of the #_BOOKINGSUMMARY placeholder ONLY when Multiple Bookings Mode is being used.\n* You can override the default disp",
+      "/* @var $EM_Booking EM_Booking */",
+      "/* @var $EM_Ticket_Booking EM_Ticket_Booking */",
+      "//we should now have an array of information including base price, taxes and post/pre tax discounts"
+    ],
+    "length": 3351,
+    "preview": "<?php\n/*\n* This displays the content of the #_BOOKINGSUMMARY placeholder ONLY when Multiple Bookings Mode is being used.\n* You can override the default display settings pages by copying this file to yourthemefolder/plugins/events-manager-pro/placehol",
+    "file": "src/code/events-manager-pro/templates/placeholders/bookingsummary-multiple.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* This displays the content of the #_BOOKINGATTENDEES placeholder in Multiple Bookings mode.\n* You can override the default display settings pages ",
+      "/* @var $EM_Booking EM_Booking */"
+    ],
+    "length": 696,
+    "preview": "<?php\n/*\n* This displays the content of the #_BOOKINGATTENDEES placeholder in Multiple Bookings mode.\n* You can override the default display settings pages by copying this file to yourthemefolder/plugins/events-manager-pro/placeholders/ and modifying",
+    "file": "src/code/events-manager-pro/templates/placeholders/bookingattendees-multiple.php"
+  }
+]

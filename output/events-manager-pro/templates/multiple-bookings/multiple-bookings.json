@@ -1,0 +1,104 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* WARNING -This is a recently added template (2013-01-30), and is likly to change as we fine-tune things over the coming weeks/months, if at all po",
+      "/*\n\t\t\t * BOOKING CONFIRMATION/PAYMENT\n\t\t\t */"
+    ],
+    "length": 4915,
+    "preview": "<?php\n/*\n* WARNING -This is a recently added template (2013-01-30), and is likly to change as we fine-tune things over the coming weeks/months, if at all possible try to use our hooks or CSS/jQuery to acheive your customizations \n* This page displays",
+    "file": "src/code/events-manager-pro/templates/multiple-bookings/page-checkout.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* WARNING -This is a recently added template (2013-01-30), and is likly to change as we fine-tune things over the coming weeks/months, if at all po",
+      "//TODO make bookings editable"
+    ],
+    "length": 1389,
+    "preview": "<?php\n/*\n* WARNING -This is a recently added template (2013-01-30), and is likly to change as we fine-tune things over the coming weeks/months, if at all possible try to use our hooks or CSS/jQuery to acheive your customizations\n* This page displays ",
+    "file": "src/code/events-manager-pro/templates/multiple-bookings/page-cart.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n * WARNING - This file is likely to be modified in the future as more features are added and modifications are made revolving Multiple Bookings Mo",
+      "/* @var $EM_Multiple_Booking EM_Multiple_Booking */",
+      "//check that user can access this page",
+      "//do your own thing, e.g. pro ?>"
+    ],
+    "length": 11248,
+    "preview": "<?php\n/**\n * WARNING - This file is likely to be modified in the future as more features are added and modifications are made revolving Multiple Bookings Mode. \n * This template file can be overriden, but we strongly advise you consider other means t",
+    "file": "src/code/events-manager-pro/templates/multiple-bookings/admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */",
+      "/* @var $EM_Multiple_Booking EM_Booking */",
+      "//',get_option('dbem_bookings_submit_button')) ): //Settings have an image url (we assume). Use it here as the button.?>",
+      "//Display normal submit button ?>",
+      "// show free or paid button by default"
+    ],
+    "length": 1693,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n/* @var $EM_Multiple_Booking EM_Booking */\n\ndo_action('em_checkout_form_before_buttons', $EM_Multiple_Booking); //do not delete\n?>\n\t<div class=\"em-booking-section em-booking-form-buttons em-booking-buttons\">\n\t\t<?ph",
+    "file": "src/code/events-manager-pro/templates/multiple-bookings/page-checkout-button.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* WARNING -This is a recently added template (2013-01-30), and is likly to change as we fine-tune things over the coming weeks/months, if at all po",
+      "/* @var $EM_Booking EM_Booking */"
+    ],
+    "length": 1803,
+    "preview": "<?php\n/*\n* WARNING -This is a recently added template (2013-01-30), and is likly to change as we fine-tune things over the coming weeks/months, if at all possible try to use our hooks or CSS/jQuery to acheive your customizations\n* This page displays ",
+    "file": "src/code/events-manager-pro/templates/multiple-bookings/widget.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* WARNING -This is a recently added template (2013-01-30), and is likly to change as we fine-tune things over the coming weeks/months, if at all po",
+      "//TODO make bookings editable",
+      "//echo \"<pre>\"; print_r($EM_Multiple_Booking->booking_meta); echo \"</pre>\";",
+      "/* @var $EM_Booking EM_Booking */",
+      "//get booking form information (aside from attendee info",
+      "//BEGIN Attendee Info (if applicable) ?>",
+      "//END Attendee Info ?>",
+      "//we should now have an array of information including base price, taxes and post/pre tax discounts"
+    ],
+    "length": 8435,
+    "preview": "<?php\n/*\n* WARNING -This is a recently added template (2013-01-30), and is likly to change as we fine-tune things over the coming weeks/months, if at all possible try to use our hooks or CSS/jQuery to acheive your customizations\n* This displays the b",
+    "file": "src/code/events-manager-pro/templates/multiple-bookings/cart-table.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n* WARNING -This is a relatively new feature and is likly to change as we fine-tune things over the coming weeks/months, if at all possible try to u",
+      "/* @var $EM_Multiple_Booking EM_Multiple_Booking */",
+      "//TODO add delete booking from cart",
+      "//TODO make bookings editable",
+      "/* @var $EM_Booking EM_Booking */",
+      "//get booking form information (aside from attendee info",
+      "//BEGIN Attendee Info (if applicable) ?>",
+      "//END Attendee Info ?>",
+      "//we should now have an array of information including base price, taxes and post/pre tax discounts"
+    ],
+    "length": 7665,
+    "preview": "<?php\n/*\n* WARNING -This is a relatively new feature and is likly to change as we fine-tune things over the coming weeks/months, if at all possible try to use our hooks or CSS/jQuery to acheive your customizations\n* This displays the booking cart sho",
+    "file": "src/code/events-manager-pro/templates/multiple-bookings/admin-cart-table.php"
+  }
+]

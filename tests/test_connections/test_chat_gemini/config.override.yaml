@@ -1,0 +1,7 @@
+# File: tests/test_logic/test_end_to_end_gemini/config.override.yaml
+# Version: 1.0.0
+current_environment: "local_mac"
+system_capabilities:
+  local_mac:
+    agent_model_assignments:
+      project_lead: { provider: "gemini", model: "gemini-1.5-pro-latest" }

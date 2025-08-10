@@ -1,0 +1,252 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var array $args */",
+      "//show the advanced search toggle if advanced fields are collapsed ?>"
+    ],
+    "length": 1722,
+    "preview": "<?php\n/* @var array $args */\n$id =  esc_attr( $args['id'] );\n?>\n<?php if( !empty($args['views']) && count($args['views']) > 1 ): //show the advanced search toggle if advanced fields are collapsed ?>\n\t<div class=\"em-search-views\" aria-label=\"<?php esc",
+    "file": "src/code/events-manager/templates/templates/search/form-views.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * By copying and modifying this in your theme (parent or child) folder within plugins/events-manager/templates/search/advanced.php, or alternative",
+      "/* @var array $args */",
+      "// main three searches on top"
+    ],
+    "length": 2441,
+    "preview": "<?php\n/*\n * By copying and modifying this in your theme (parent or child) folder within plugins/events-manager/templates/search/advanced.php, or alternatively (recommended) in plugin-templates/events-manager/templates/search/advanced.php, you can cha",
+    "file": "src/code/events-manager/templates/templates/search/form-advanced.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */",
+      "//get specific country regions or all regions if no country fields exists"
+    ],
+    "length": 1314,
+    "preview": "<?php $args = !empty($args) ? $args:array(); /* @var $args array */ ?>\n<!-- START Region Search -->\n<div class=\"em-search-region em-search-field\">\n\t<label class=\"screen-reader-text\" for=\"em-search-region-<?php echo absint($args['id']); ?>\">\n\t\t<?php e",
+    "file": "src/code/events-manager/templates/templates/search/location-regions.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 574,
+    "preview": "<?php\n$label = !empty($args['advanced_hidden']) ? $args['search_text_show'] : $args['search_text_hide'];\n?>\n<div class=\"em-search-advanced-trigger\">\n\t<button type=\"button\" class=\"em-search-advanced-trigger em-clickable em-tooltip\" id=\"em-search-advan",
+    "file": "src/code/events-manager/templates/templates/search/form-advanced-trigger.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */",
+      "/* Example alternatives\n<div class=\"em-search-scope em-search-field em-datepicker em-datepicker-until\" data-separator=\"<?php echo esc_attr($args['scop"
+    ],
+    "length": 2851,
+    "preview": "<?php\n/* @var $args array */\n?>\n<!-- START Date Search -->\n<div class=\"em-search-scope em-search-field em-datepicker em-datepicker-range input\" data-separator=\"<?php echo esc_attr($args['scope_seperator']); ?>\"  data-format=\"<?php echo esc_attr($args",
+    "file": "src/code/events-manager/templates/templates/search/scope.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* This general search will find matches within event_name, event_notes, and the location_name, address, town, state and country. */",
+      "/* @var array $args */"
+    ],
+    "length": 678,
+    "preview": "<?php\n/* This general search will find matches within event_name, event_notes, and the location_name, address, town, state and country. */\n/* @var array $args */\n?>\n<!-- START General Search -->\n<div class=\"em-search-eventful em-search-field input\">\n",
+    "file": "src/code/events-manager/templates/templates/search/eventful-locations.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// This file will eventually become the mian 'Search'.php entry point, any templates overriding this file previously may have been overriding the file"
+    ],
+    "length": 318,
+    "preview": "<?php\n// This file will eventually become the mian 'Search'.php entry point, any templates overriding this file previously may have been overriding the file which is now search-text.php, and should rename it subsequently.\n$template = em_locate_templa",
+    "file": "src/code/events-manager/templates/templates/search/search.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * By copying and modifying this in your theme (parent or child) folder within plugins/events-manager/templates/search/advanced.php, or alternative",
+      "/* @var array $args */"
+    ],
+    "length": 1642,
+    "preview": "<?php\n/*\n * By copying and modifying this in your theme (parent or child) folder within plugins/events-manager/templates/search/advanced.php, or alternatively (recommended) in plugin-templates/events-manager/templates/search/advanced.php, you can cha",
+    "file": "src/code/events-manager/templates/templates/search/form-advanced-modal.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */",
+      "//get the counties from locations table",
+      "//filter out location countries so they're valid records (hence no sanitization)",
+      "//we're not using esc_ functions here because values are hard-coded within em_get_countries()"
+    ],
+    "length": 1498,
+    "preview": "<?php $args = !empty($args) ? $args:array(); /* @var $args array */ ?>\n<!-- START Country Search -->\n<div class=\"em-search-country em-search-field\">\n\t<label class=\"screen-reader-text\" for=\"em-search-country-<?php echo absint($args['id']); ?>\">\n\t\t<?ph",
+    "file": "src/code/events-manager/templates/templates/search/location-countries.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */"
+    ],
+    "length": 1490,
+    "preview": "<?php\n\t/* @var $args array */\n\t$include = !empty($args['tags_include']) ? $args['tags_include']:array();\n\t$exclude = !empty($args['tags_exclude']) ? $args['tags_exclude']:array();\n?>\n<!-- START Tag Search -->\n<div class=\"em-search-tag em-search-field",
+    "file": "src/code/events-manager/templates/templates/search/tags.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */",
+      "/* show location fields if no geo search is made */",
+      "//figure out if we have a default country or one submitted via search",
+      "/* show location meta if country field has value or not shown */"
+    ],
+    "length": 1222,
+    "preview": "<?php $args = !empty($args) ? $args:array(); /* @var $args array */ ?>\n<div class=\"em-search-location\" <?php if( !empty($args['search_geo']) && !empty($args['geo']) && !empty($args['near']) ): ?>style=\"display:none;\"<?php endif; /* show location fiel",
+    "file": "src/code/events-manager/templates/templates/search/location.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * By copying and modifying this in your theme (parent or child) folder within plugins/events-manager/templates/search/advanced.php, or alternative",
+      "/* @var array $args */",
+      "// DEPRECATED - use other hooks hook in here to add extra fields, text etc."
+    ],
+    "length": 1702,
+    "preview": "<?php\n/*\n * By copying and modifying this in your theme (parent or child) folder within plugins/events-manager/templates/search/advanced.php, or alternatively (recommended) in plugin-templates/events-manager/templates/search/advanced.php, you can cha",
+    "file": "src/code/events-manager/templates/templates/search/form-advanced-inline.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* This general search will find matches within event_name, event_notes, and the location_name, address, town, state and country. */",
+      "/* @var array $args */"
+    ],
+    "length": 618,
+    "preview": "<?php\n/* This general search will find matches within event_name, event_notes, and the location_name, address, town, state and country. */\n/* @var array $args */\n?>\n<!-- START General Search -->\n<div class=\"em-search-text em-search-field input\">\n\t<la",
+    "file": "src/code/events-manager/templates/templates/search/search-term.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */",
+      "//get specific towns, whether restricted by country/region/state or all towns if no country field is displayed"
+    ],
+    "length": 1513,
+    "preview": "<?php $args = !empty($args) ? $args:array(); /* @var $args array */ ?>\n<!-- START City Search -->\n<div class=\"em-search-town em-search-field\">\n\t<label class=\"screen-reader-text\" for=\"em-search-town-<?php echo absint($args['id']); ?>\">\n\t\t<?php echo es",
+    "file": "src/code/events-manager/templates/templates/search/location-towns.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var array $args */",
+      "//include separately, which allows you to just modify the html or completely override the JS"
+    ],
+    "length": 1209,
+    "preview": "<?php /* @var array $args */ ?>\n<!-- START GeoLocation Search -->\n<div class=\"em-search-geo em-search-field input\">\n\t<label for=\"em-search-geo-<?php echo absint($args['id']) ?>\" class=\"screen-reader-text\">\n\t\t<?php echo esc_html($args['geo_label']); ?",
+    "file": "src/code/events-manager/templates/templates/search/geo.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var array $args */",
+      "//hook in here to add extra fields, text etc. ?>",
+      "//search text - tweak ID so it is unique when repeated in advanced further down",
+      "//show the advanced search toggle if advanced fields are collapsed"
+    ],
+    "length": 1110,
+    "preview": "<?php /* @var array $args */ ?>\n<div class=\"em-search-main em-search-main-bar\">\n\t<?php do_action('em_template_events_search_form_header'); //hook in here to add extra fields, text etc. ?>\n\t<?php\n\t//search text - tweak ID so it is unique when repeated",
+    "file": "src/code/events-manager/templates/templates/search/form-main.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */",
+      "/* show location fields if no geo search is made */"
+    ],
+    "length": 1304,
+    "preview": "<?php $args = !empty($args) ? $args:array(); /* @var $args array */ ?>\n<!-- START Geo Units Search -->\n<div class=\"em-search-geo-units em-search-field\" <?php if( empty($args['geo']) || empty($args['near']) ): ?>style=\"display:none;\"<?php endif; /* sh",
+    "file": "src/code/events-manager/templates/templates/search/geo-units.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */"
+    ],
+    "length": 1626,
+    "preview": "<?php\n\t/* @var $args array */\n\t$include = !empty($args['categories_include']) ? $args['categories_include']:array();\n\t$exclude = !empty($args['categories_exclude']) ? $args['categories_exclude']:array();\n?>\n<!-- START Category Search -->\n<div class=\"",
+    "file": "src/code/events-manager/templates/templates/search/categories.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */",
+      "//get specific states, whether restricted by country/region or all states if no country field is displayed"
+    ],
+    "length": 1365,
+    "preview": "<?php $args = !empty($args) ? $args:array(); /* @var $args array */ ?>\n<!-- START State/County Search -->\n<div class=\"em-search-state em-search-field\">\n\t<label class=\"screen-reader-text\" for=\"em-search-state-<?php echo absint($args['id']); ?>\">\n\t\t<?p",
+    "file": "src/code/events-manager/templates/templates/search/location-states.php"
+  },
+  {
+    "type": "js",
+    "functions": [
+      "listentoresult",
+      "detailsresult"
+    ],
+    "classes": [],
+    "comments": [
+      "/** @type {HTMLInputElement} */",
+      "// old templates - soon to be deprecated",
+      "//do a nearest match suggestion as last resort",
+      "//we have a match, ask the user",
+      "//if enter is pressed once during 'near' input, don't do anything so Google can select location, otherwise let behavior (form submittal) proceed",
+      "// clear a valid search and start again",
+      "// clear a valid search and start again"
+    ],
+    "length": 6360,
+    "preview": "jQuery(document).on('em_maps_loaded', function() {\n\tjQuery('input.em-search-geo').each(function () {\n\t\tvar input = /** @type {HTMLInputElement} */ jQuery(this);\n\t\tvar wrapper = input.closest('div.em-search-geo');\n\t\tvar autocomplete = new google.maps.",
+    "file": "src/code/events-manager/templates/templates/search/geo.js"
+  }
+]

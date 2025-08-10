@@ -1,0 +1,217 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "load_admin",
+      "get_license_admin_url",
+      "load_em_admin_notices",
+      "get_request_args",
+      "license_activated",
+      "license_saved"
+    ],
+    "classes": [
+      "EM_License"
+    ],
+    "comments": [
+      "//eventsmanagerpro.com/api/%s/';",
+      "//eventsmanagerpro.com/account/licenses/activate/';",
+      "//eventsmanagerpro.com/account/licenses/deactivate/';",
+      "//eventsmanagerpro.com/gopro/';",
+      "//remove previous notices to be added again"
+    ],
+    "length": 3110,
+    "preview": "<?php\nnamespace EM_Pro;\nuse EM_Admin_Notice;\nuse EM_Admin_Notices;\nuse EM_Notices;\nrequire('pxl-license.php');\n\nclass EM_License extends PXL_License {\n\t\n\tstatic $updates_url = 'https://eventsmanagerpro.com/api/%s/';\n\tstatic $activation_url = 'https:/",
+    "file": "src/code/events-manager-pro/includes/em-license.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "switch_blog",
+      "restore_blog",
+      "load_admin",
+      "get_license_admin_url",
+      "license_saved",
+      "license_activated",
+      "is_active",
+      "is_valid",
+      "check_license_key",
+      "get_license_key",
+      "get_request_args",
+      "request",
+      "check_response",
+      "get_license",
+      "recheck",
+      "reset",
+      "check",
+      "info",
+      "__construct",
+      "get",
+      "save",
+      "load",
+      "delete"
+    ],
+    "classes": [
+      "PXL_License",
+      "PXL_License_Token"
+    ],
+    "comments": [
+      "//temporary filter holding",
+      "//temporary filter holding",
+      "//temporary filter holding",
+      "/**\n\t * @var PXL_License_Token\n\t */",
+      "// Hook into the plugin update check",
+      "// Hook into the plugin details screen",
+      "//dependent plugins don't need to load themselves into admin",
+      "//sort out filters that may interfere with home url",
+      "//restore home url interfering filters",
+      "//we also check if there's a definitive active response (no connection error), otherwise we assume it's active",
+      "//no license key, so it's not activated in any case",
+      "/* request types */",
+      "// load balancing servers sharing the same DB can define thes constants in wp-config.php so that license is still recognized and doesn't trip changing",
+      "//request the latest dev version",
+      "// Send a request to the alternative API, return an object",
+      "//URL can be hard-coded or contain a placeholder for the slug so sprintf can do its thing",
+      "// Read server response, which should be an object",
+      "// add site so we can double-check odd site changes",
+      "// Unexpected response",
+      "// Make sure the request was successful",
+      "//we got our object - whatever it is",
+      "/**\n\t * @param bool $force\n\t * @return PXL_License_Token\n\t */",
+      "//only one lookup needed per run",
+      "//get license if not an object, or we need a forced update",
+      "// POST data to send to your API",
+      "// Send request checking for an update",
+      "// Check if the transient contains the 'checked' information",
+      "// If no, just return its value without hacking it",
+      "// The transient contains the 'checked' information",
+      "// POST data to send to your API",
+      "// Send request checking for an update",
+      "// If response is false, don't alter the transient",
+      "//check dependencies",
+      "//check if our license has been updated in some way",
+      "//echo \"<pre>\"; print_r($response); echo \"</pre>\"; die();",
+      "// Check if this plugins API is about this plugin",
+      "// The transient contains the 'checked' information",
+      "// Send request for detailed information",
+      "// Convert sections into array, since we got back a JSON response which converted assoc arrays into objects",
+      "/* @var WP_Error $response */",
+      "// activate or deal with sudden url changes softly",
+      "// save previous site info here in event of an unexpected site change, and do not deactivate unless specifically told to",
+      "// previous site check/cancellation",
+      "//key and until don't need to get overwritten if $response is empty",
+      "//we're loading the key for the first time, or using legacy option data which was previously just a key",
+      "//old format padded for consistency"
+    ],
+    "length": 15934,
+    "preview": "<?php\nnamespace EM_Pro;\nuse \\WP_Error;\n\nclass PXL_License {\n\t\n\tstatic $updates_url = false;\n\tstatic $activation_url = false;\n\tstatic $deactivation_url = false;\n\tstatic $purchase_url = false;\n\tstatic $plugin = false; //set this on init\n\tstatic $versio",
+    "file": "src/code/events-manager-pro/includes/pxl-license.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "load_admin",
+      "request"
+    ],
+    "classes": [
+      "License"
+    ],
+    "comments": [
+      "//set this on init in case someone changed the folder name"
+    ],
+    "length": 1179,
+    "preview": "<?php\nnamespace EM_Pro;\nuse EM_Pro;\n\nrequire('em-license.php');\n\nclass License extends EM_License {\n\t\n\tstatic $plugin_name = 'Events Manager Pro';\n\tstatic $plugin = 'events-manager-pro/events-manager-pro.php'; //set this on init in case someone chang",
+    "file": "src/code/events-manager-pro/includes/emp-license.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "admin_notices"
+    ],
+    "classes": [
+      "License_Admin"
+    ],
+    "comments": [],
+    "length": 997,
+    "preview": "<?php\nnamespace EM_Pro;\nrequire('em-license-admin.php');\n\nclass License_Admin extends EM_License_Admin {\n\t\n\tpublic static $license_class = 'EM_Pro\\License';\n\t\n\tpublic static function init() {\n\t\tparent::init();\n\t\t$self = get_called_class();\n\t\tif( is_m",
+    "file": "src/code/events-manager-pro/includes/emp-license-admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "passes",
+      "deactivate",
+      "php_passes",
+      "__php_at_least",
+      "php_version_notice",
+      "wp_passes",
+      "__wp_at_least",
+      "wp_version_notice"
+    ],
+    "classes": [
+      "EMP_Requirements_Check"
+    ],
+    "comments": [
+      "/* Thanks Mark Jaquith - https://markjaquith.wordpress.com/2018/02/19/handling-old-wordpress-and-php-versions-in-your-plugin/ */"
+    ],
+    "length": 1964,
+    "preview": "<?php\n/* Thanks Mark Jaquith - https://markjaquith.wordpress.com/2018/02/19/handling-old-wordpress-and-php-versions-in-your-plugin/ */\nclass EMP_Requirements_Check {\n\tprivate $title;\n\tprivate $php;\n\tprivate $wp;\n\tprivate $file;\n\t\n\tpublic function __c",
+    "file": "src/code/events-manager-pro/includes/emp-requirements-check.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "admin_notice_activation",
+      "admin_notice_error",
+      "admin_notice_dev_license",
+      "admin_tab_label",
+      "admin_tab_content"
+    ],
+    "classes": [
+      "EM_License_Admin"
+    ],
+    "comments": [
+      "/**\n\t * @var PXL_License\n\t */",
+      "//Modify EM_Admin_Notice objects on the fly",
+      "//eventsmanagerpro.com/terms-conditions/\">'.esc_html__('usage policy',$license_class::$lang).'</a>') .'</p><p>'"
+    ],
+    "length": 4301,
+    "preview": "<?php\nnamespace EM_Pro;\ninclude('pxl-license-admin.php');\n\nclass EM_License_Admin extends PXL_License_Admin {\n\t\n\t/**\n\t * @var PXL_License\n\t */\n\tpublic static $license_class = 'EM_License';\n\t\n\tpublic static function init() {\n\t\tparent::init();\n\t\t$licen",
+    "file": "src/code/events-manager-pro/includes/em-license-admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "get_activation_url",
+      "get_deactivation_url",
+      "get_reset_url",
+      "get_recheck_url",
+      "plugin_message",
+      "admin_settings",
+      "error_info"
+    ],
+    "classes": [
+      "PXL_License_Admin"
+    ],
+    "comments": [
+      "/**\n\t * @var PXL_License\n\t */",
+      "/**\n\t * Add an extra update message to the update plugin notification.\n\t */",
+      "//update server-served notices",
+      "//eventsmanagerpro.com/account/licenses/\" target=\"_blank\">'.esc_attr__('license management page', $class::$lang).'</a>') ?>",
+      "//eventsmanagerpro.com/gopro/\" target=\"_blank\"><?php esc_html_e(\"I don't have a license key\",$class::$lang); ?></a></em>",
+      "//eventsmanagerpro.com/account/sites/' ); ?></em>",
+      "//eventsmanagerpro.com/support/add-a-new-question/\">'.esc_html__('Support Team', $class::$lang).'</a>');",
+      "// get own server IP",
+      "//www.abuseipdb.com/check/<?php echo $ip; ?>\">check if your server IP is blacklisted via this link</a> or any blacklist lookup service (your server IP"
+    ],
+    "length": 18126,
+    "preview": "<?php\nnamespace EM_Pro;\nclass PXL_License_Admin {\n\t\n\t/**\n\t * @var PXL_License\n\t */\n\tpublic static $license_class = 'PXL_License';\n\t\n\tpublic static function init(){\n\t\t$license_class = static::$license_class;\n\t\t$self = get_called_class();\n\t\tadd_action(",
+    "file": "src/code/events-manager-pro/includes/pxl-license-admin.php"
+  }
+]

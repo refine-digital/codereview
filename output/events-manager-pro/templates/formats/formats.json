@@ -1,0 +1,101 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 276,
+    "preview": "<?php esc_html_e('Hello #_BOOKINGNAME', 'em-pro'); ?>\n\n\n<?php esc_html_e('Your waitlist reservation of #_BOOKINGSPACES spaces for #_EVENTNAME on #_EVENTDATES at #_EVENTTIMES has been cancelled.', 'em-pro'); ?>\n\n\n<?php esc_html_e('Best Regards,', 'em-",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_emails_cancelled_message.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 551,
+    "preview": "<p>\n\t<?php esc_html_e('Your wait-listed reservation for #_EVENTNAME expired #_WAITLIST_BOOKING_EXPIRED ago. You will need to re-apply for the waiting lists if you wish to book again.', 'em-pro'); ?>\n\t\n</p>\n<p>\n\t<strong><?php esc_html_e('Waitlist Rese",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_text_expired.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 995,
+    "preview": "<p>\n\t<?php esc_html_e('You are currently on a waiting list and are now elegible to book the following event:', 'em-pro'); ?>\n\t\n</p>\n<p>\n\t<strong><?php esc_html_e('Waitlist Reservation Details:', 'em-pro'); ?></strong>\n\n</p>\n<p>\n\t<strong><?php esc_htm",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_text_booking_form.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 27,
+    "preview": "#_TICKETBOOKINGATTENDEEDATA",
+    "file": "src/code/events-manager-pro/templates/formats/ticket_booking_output.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 824,
+    "preview": "<p>\n\t<?php esc_html_e('This event is fully booked. You can join a waitlist and if an elegible ticket becomes available, you will be notified by email to make a booking.', 'em-pro'); ?>\n\t\n</p>\n{has_waitlist_limit}\n<p>\n\t<?php echo sprintf(esc_html__('T",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_text_form.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1082,
+    "preview": "<?php esc_html_e('Hello #_BOOKINGNAME', 'em-pro'); ?>\n\n\n<?php esc_html_e('You have successfully reserved #_BOOKINGSPACES spaces for #_EVENTNAME on #_EVENTDATES at #_EVENTTIMES.', 'em-pro'); ?>\n\n\n<?php esc_html_e('You are number #_WAITLIST_BOOKING_POS",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_emails_confirmed_message.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 470,
+    "preview": "<?php esc_html_e('Hello #_BOOKINGNAME', 'em-pro'); ?>\n\n\n<?php esc_html_e('Your wait-listed reservation for #_EVENTNAME has expired. You will need to re-apply for the waiting lists if you wish to book again.', 'em-pro'); ?>\n\n\n<?php esc_html_e('Please ",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_emails_expired_message.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 350,
+    "preview": "<p>\n\t<?php esc_html_e('This event is fully booked. You can join a waitlist and if an elegible ticket becomes available, you will be notified by email to make a booking.', 'em-pro'); ?>\n\n</p>\n<p>\n\t<?php esc_html_e('There are no more spaces left availa",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_text_full.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 844,
+    "preview": "<?php esc_html_e('Hello #_BOOKINGNAME', 'em-pro'); ?>\n\n\n<?php esc_html_e('Great news! You are now able to book up to #_BOOKINGSPACES spaces for #_EVENTNAME on #_EVENTDATES at #_EVENTTIMES.', 'em-pro'); ?>\n\n\n<?php esc_html_e('If you do not want to att",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_emails_approved_message.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 871,
+    "preview": "<p>\n\t<?php esc_html_e('#_EVENTNAME is fully booked. You have already joined the waiting list for this event.', 'em-pro') ?>\n\t\n</p>\n<p>\n\t<?php esc_html_e('You will be notified when a space becomes available for you to book.', 'em-pro'); ?>\n\t\n</p>\n<p>\n",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_text_already_waiting.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 611,
+    "preview": "<p>\n\t<?php esc_html_e('You have cancelled your waitlist reservation for this event.', 'em-pro'); ?>\n\t\n</p>\n<p>\n\t<?php esc_html_e('Thank you for cancelling your waitlist reservation, so that others can have an opportunity to attend the event!', 'em-pr",
+    "file": "src/code/events-manager-pro/templates/formats/waitlists_text_cancelled.php"
+  }
+]

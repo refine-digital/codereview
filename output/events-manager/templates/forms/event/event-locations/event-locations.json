@@ -1,0 +1,11 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 765,
+    "preview": "<?php\nglobal $EM_Event;\n?>\n<div class=\"em-input-field em-input-field-text em-location-data-url input\">\n\t<label for=\"event_location_url\"><?php esc_html_e( 'URL', 'events-manager')?></label>\n\t<input id=\"event_location_url\" type=\"text\" name=\"event_locat",
+    "file": "src/code/events-manager/templates/forms/event/event-locations/url.php"
+  }
+]

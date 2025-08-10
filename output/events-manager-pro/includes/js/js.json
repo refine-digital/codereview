@@ -1,0 +1,68 @@
+[
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1625,
+    "preview": "jQuery(document).ready(function($){$(\".em-location-map-static.em-map-static-relative\").each(function(){var e=$(this);var parent=e.closest(\".em-location-map-container\").css(\"background\",\"\");var url=e.data(\"gmap-url\").replace(\"SIZE\",parent.width()+\"x\"+",
+    "file": "src/code/events-manager-pro/includes/js/events-manager-pro.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [
+      "r",
+      "n",
+      "a",
+      "s",
+      "u",
+      "f",
+      "d",
+      "o",
+      "c"
+    ],
+    "classes": [],
+    "comments": [
+      "//get reg keys from booking template for use in type_keys",
+      "//slide the right divs in/out",
+      "//Fix for PHP max_ini_vars",
+      "//have already made switch, so let default submit take place",
+      "//create new form and add data to it",
+      "/** Added for PHP max_ini_let issues, see further up.\n * jQuery serializeObject\n * @copyright 2014, macek <paulmacek@gmail.com>\n * @link https://githu"
+    ],
+    "length": 7958,
+    "preview": "jQuery(document).ready( function($){\n\t$('.bct-options').hide();\n\t//Booking Form\n\t$('form.em-form-custom').each( function( i, form ){\n\t\tlet myform = $(form);\n\t\tlet booking_template = myform.find('#booking-custom-item-template').detach();\n\t\tmyform.on('",
+    "file": "src/code/events-manager-pro/includes/js/forms-editor.js"
+  },
+  {
+    "type": "js",
+    "functions": [
+      "r",
+      "n",
+      "a",
+      "s",
+      "u",
+      "f",
+      "d",
+      "o",
+      "c"
+    ],
+    "classes": [],
+    "comments": [],
+    "length": 6600,
+    "preview": "jQuery(document).ready(function($){$(\".bct-options\").hide();$(\"form.em-form-custom\").each(function(i,form){let myform=$(form);let booking_template=myform.find(\"#booking-custom-item-template\").detach();myform.on(\"click\",\".booking-form-custom-field-rem",
+    "file": "src/code/events-manager-pro/includes/js/forms-editor.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//offline approval link - listen on body to take precedence of default listener",
+      "//Approve/Reject Links"
+    ],
+    "length": 1957,
+    "preview": "jQuery(document).ready(function($){\n\t//google maps\n\t$('.em-location-map-static.em-map-static-relative').each(function(){\n\t\tvar e = $(this);\n\t\tvar parent = e.closest('.em-location-map-container').css('background','');\n\t\tvar url = e.data('gmap-url').re",
+    "file": "src/code/events-manager-pro/includes/js/events-manager-pro.js"
+  }
+]

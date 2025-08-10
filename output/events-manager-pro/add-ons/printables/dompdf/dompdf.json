@@ -1,0 +1,45 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "install_font_family"
+    ],
+    "classes": [],
+    "comments": [
+      "// 1. [Required] Point to the composer or dompdf autoloader",
+      "// 2. [Optional] Set the path to your font directory",
+      "//    By default dompdf loads fonts to dompdf/lib/fonts",
+      "//    If you have modified your font directory set this",
+      "//    variable appropriately.",
+      "//$fontDir = \"lib/fonts\";",
+      "// *** DO NOT MODIFY BELOW THIS POINT ***",
+      "/**\n * Installs a new font family\n * This function maps a font-family name to a font.  It tries to locate the\n * bold, italic, and bold italic version",
+      "// Check if the base filename is readable",
+      "// Try $file_Bold.$ext etc.",
+      "// Copy the files to the font directory.",
+      "// Verify that the fonts exist and are readable",
+      "// Store the fonts in the lookup table",
+      "// If installing system fonts (may take a long time)",
+      "/*.ttf\") +\n    glob(\"/usr/share/fonts/truetype/*/",
+      "/*/*/"
+    ],
+    "length": 5106,
+    "preview": "<?php\n// 1. [Required] Point to the composer or dompdf autoloader\ninclude('dompdf/autoload.inc.php');\n\n// 2. [Optional] Set the path to your font directory\n//    By default dompdf loads fonts to dompdf/lib/fonts\n//    If you have modified your font d",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/load_font.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 49,
+    "preview": "<?php require (__DIR__ . '/vendor/autoload.php');",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/autoload.inc.php"
+  },
+  {
+    "type": "md",
+    "length": 7590,
+    "preview": "Dompdf\n======\n\n[![Build Status](https://github.com/dompdf/dompdf/actions/workflows/test.yml/badge.sv",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/README.md"
+  }
+]

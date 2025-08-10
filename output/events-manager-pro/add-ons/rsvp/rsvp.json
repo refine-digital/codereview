@@ -1,0 +1,226 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "em_event_output_show_condition",
+      "em_event_output_placeholder",
+      "em_events_admin_bookings_footer",
+      "em_event_get_post_meta",
+      "em_event_load_postdata_other_attributes",
+      "em_event_save_meta"
+    ],
+    "classes": [
+      "Events"
+    ],
+    "comments": [
+      "/**\n\t * @param bool $show\n\t * @param string $condition\n\t * @param string $full_match\n\t * @param \\EM_Event $EM_Event\n\t * @return bool\n\t */",
+      "// event has waitlist enabled",
+      "// event has waitlist enabled",
+      "// event has waitlist enabled",
+      "// event has waitlist enabled",
+      "// event has waitlist enabled",
+      "// event has waitlist enabled",
+      "/**\n\t * @param string $replace\n\t * @param \\EM_Event $EM_Event\n\t * @param string $result\n\t * @return string\n\t */",
+      "/**\n\t * @param \\EM_Event $EM_Event\n\t * @return void\n\t */",
+      "/**\n\t * @param bool $result\n\t * @param \\EM_Event $EM_Event\n\t * @return bool\n\t */",
+      "// set specifics first, delete later if needed",
+      "/**\n\t * Get policy type meta loaded in the EM_Event->load_postdata() function\n\t * @param array $array\n\t * @return array\n\t */",
+      "/**\n\t * @param bool $result\n\t * @param EM_Event $EM_Event\n\t * @return bool\n\t */"
+    ],
+    "length": 8396,
+    "preview": "<?php\nnamespace EM\\Bookings\\RSVP\\Policies;\nuse EM\\Bookings\\RSVP\\Policies;\n\nclass Events {\n\t\n\tpublic static function init() {\n\t\t// placeholders\n\t\tadd_action('em_event_output_show_condition', array( static::class, 'em_event_output_show_condition'), 1, ",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/rsvp-policies-events.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 390,
+    "preview": "<?php\n\tif( !class_exists('\\EM\\Bookings\\RSVP') ){\n\t\tif( is_admin() ){\n\t\t\tinclude('rsvp-admin.php');\n\t\t}\n\t\tif( get_option('dbem_bookings_rsvp') ){\n\t\t\tinclude('rsvp.php');\n\t\t\tinclude( 'rsvp-api.php' );\n\t\t\tif( get_option('dbem_bookings_rsvp_endpoint') ) ",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/loader.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "add_endpoint",
+      "get_endpoint_url",
+      "template_include",
+      "em_booking_output_placeholder",
+      "get_rsvp_url",
+      "get_endpoint_id",
+      "generate_unique_id",
+      "em_rsvp_template_scripts"
+    ],
+    "classes": [
+      "Endpoint"
+    ],
+    "comments": [
+      "// rule flushes are handled by EM itself, we can just add our endpoints",
+      "//add booking placeholders",
+      "//define('EM_RSVP_ENDPOINT_ALIAS', array('em-bookings', 'em-admin')); // add an array of possible aliases, mainly useful/recommended if you change you",
+      "// if this is not a request for json or a singular object then bail",
+      "//echo '<pre>'.print_r($wp_query, true).'</pre>'; die();",
+      "// OK, we're here, let's get information about this booking or ticket",
+      "// get the booking by rsvp_id",
+      "// check user logged in",
+      "// proceed with booking",
+      "// Load template from either plugins directory or load our own core one",
+      "/**\n\t * Adds extra placeholders to the booking email. Called by em_booking_output_placeholder filter, added in this object init() function.\n\t *\n\t * @p",
+      "/**\n\t * Get a unique ID for this booking, based on event_id and booking ID to avoid collisions\n\t *\n\t * @param \\EM_Booking $EM_Booking\n\t *\n\t * @return ",
+      "// check if booking has an id already, if so return that already",
+      "// create a random id until unique and save it to the db",
+      "// omit the dash first time around",
+      "// get the localized script here, saved in the global below, WP's localization won't ever get hit"
+    ],
+    "length": 5405,
+    "preview": "<?php\nnamespace EM\\Bookings\\RSVP;\nuse EM_Booking;\n\nclass Endpoint {\n\t\n\tpublic static $data = array();\n\t\n\tpublic static function init() {\n\t\t// rule flushes are handled by EM itself, we can just add our endpoints\n\t\tadd_action( 'template_include', array",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/rsvp-endpoint.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "scan",
+      "event_other_attributes"
+    ],
+    "classes": [
+      "Manager"
+    ],
+    "comments": [
+      "//set up cron for clearing email queue",
+      "// get event ids that start x time from now",
+      "// check if event started, if so trigger what needs to be triggered",
+      "// get the policy type to decide how to proceed",
+      "// if policy is strict, cancel all applicable bookings, otherwise trigger a fake booking to initiate other notification/booking features",
+      "// load event for sure in this case",
+      "// go through each booking",
+      "// trigger a booking status cancellation so things like waitlists can come into force",
+      "/**\n\t * Get waitlist meta loaded in the EM_Event->load_postdata() function\n\t * @param array $array\n\t * @return array\n\t */"
+    ],
+    "length": 2845,
+    "preview": "<?php\nnamespace EM\\Bookings\\RSVP\\Policies;\nuse EM\\Bookings\\RSVP\\Policies;\nuse EM_Booking;\n\nclass Manager {\n\t\n\tpublic static function init() {\n\t\t//set up cron for clearing email queue\n\t\tif( !wp_next_scheduled('emp_cron_rsvp_policies') ){\n\t\t\twp_schedul",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/rsvp-policies-manager.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "register_handler",
+      "handler",
+      "em_wp_localize_script"
+    ],
+    "classes": [
+      "API"
+    ],
+    "comments": [
+      "/**\n\t * @param WP_REST_Request $data\n\t *\n\t * @return WP_REST_Response\n\t */",
+      "// check action is valid by mapping actions of all statuses to the status key",
+      "// get the ticket booking and check caps",
+      "// we'll set this back lower down",
+      "/**\n\t * Add extra localized JS options to the em_wp_localize_script filter.\n\t * @param array $vars\n\t * @return array\n\t */"
+    ],
+    "length": 2858,
+    "preview": "<?php\nnamespace EM\\Bookings\\RSVP;\nuse EM_Booking;\nuse WP_REST_Response, WP_REST_Request;\n\nclass API{\n\t\n\tpublic static function init(){\n\t\tadd_action('rest_api_init', array( static::class, 'register_handler' ) );\n\t\tadd_filter('em_wp_localize_script', a",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/rsvp-api.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "admin_notices",
+      "get_policy_notice",
+      "em_bookings_get_available_spaces",
+      "em_ticket_get_available_spaces",
+      "em_booking_status_changed",
+      "has_policy",
+      "get_policy",
+      "is_policy_active",
+      "get_policy_deadline",
+      "count_invalid_bookings",
+      "count_invalid_booking_tickets",
+      "get_invalid_booking_ids",
+      "get_invalid_bookings_sql_where"
+    ],
+    "classes": [
+      "Policies"
+    ],
+    "comments": [
+      "// add hooks to calculate 'real' available spaces",
+      "// when a booking is confirmed, cancel the latest unconfirmed booking(s) until enough space is available",
+      "// output info if event is in policy enforcement",
+      "/* @var \\EM_Notices $EM_Notices */",
+      "/**\n\t * @param \\EM_Event $EM_Event\n\t *\n\t * @return string|false\n\t */",
+      "// let functions deactivate this temporarily",
+      "// check if cut-off time is reached",
+      "/**\n\t * @param $available_spaces\n\t * @param \\EM_Ticket $EM_Ticket\n\t * @param array $vars;\n\t *\n\t * @return int|mixed\n\t */",
+      "// let functions deactivate this temporarily",
+      "// check if cut-off time is reached",
+      "/**\n\t * @param \\EM_Booking $EM_Booking\n\t * @param $args\n\t *\n\t * @return void\n\t */",
+      "// if booking is confirmed and policy in force, check if we're overbooked and if so start cancelling unconfirmed bookings",
+      "// cut-off time has passed, so any bookings unconfirmed become available",
+      "// get overbooked spaces we need (if needed)",
+      "/**\n\t * @param \\EM_Event $EM_Event\n\t *\n\t * @return bool\n\t */",
+      "// if not site default",
+      "/**\n\t * Returns the policy type this event applies to. A policy is returned even if policies are disabled for this event, careful!\n\t * @param \\EM_Even",
+      "// if not site default",
+      "/* @var \\EM_DateTime $EM_DateTime */",
+      "// if we don't have a valid policy, EM_DateTime is now but invalid",
+      "// cut-off time has passed, so any bookings unconfirmed become available"
+    ],
+    "length": 11819,
+    "preview": "<?php\nnamespace EM\\Bookings\\RSVP;\nuse EM_DateTime;\n\nclass Policies {\n\t\n\tpublic static $available_hook = true;\n\t\n\tpublic static $invalid_spaces_cache = array();\n\t\n\tpublic static function init(){\n\t\t// add hooks to calculate 'real' available spaces\n\t\tad",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/rsvp-policies.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "validate_options",
+      "validate_dateinterval",
+      "options"
+    ],
+    "classes": [
+      "Admin"
+    ],
+    "comments": [
+      "// save when updated",
+      "/**\n\t * Generates meta box for settings page\n\t */",
+      "//www.php.net/manual/en/dateinterval.construct.php\" target=\"_blank\">'.esc_html_x('PHP date intevals', 'Refer to PHP docs for translation.', 'events-ma"
+    ],
+    "length": 6232,
+    "preview": "<?php\nnamespace EM\\Bookings\\RSVP;\nclass Admin {\n\t\n\tpublic static function init(){\n\t\tadd_action('em_options_bookings_rsvp_footer', array(static::class, 'options'));\n\t\t// save when updated\n\t\tadd_action('update_option_dbem_bookings_rsvp_endpoint_url', f",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/rsvp-admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "handle_action"
+    ],
+    "classes": [
+      "RSVP"
+    ],
+    "comments": [
+      "/**\n\t * Handles a confirmation or cancellation and returns an array with result and message.\n\t * @param \\EM_Booking $EM_Booking\n\t * @param string $act",
+      "// we'll set this back lower down",
+      "// we'll assume we're checking in",
+      "// we'll set this back lower down"
+    ],
+    "length": 1837,
+    "preview": "<?php\nnamespace EM\\Bookings;\n\nclass RSVP {\n\t\n\t/**\n\t * Handles a confirmation or cancellation and returns an array with result and message.\n\t * @param \\EM_Booking $EM_Booking\n\t * @param string $action 'checkin' or 'checkout', defaults to 'checkin' if ",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/rsvp.php"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// handle check in/out buttons"
+    ],
+    "length": 1950,
+    "preview": "// handle check in/out buttons\ndocument.querySelectorAll('.rsvp-action').forEach( function(btn){\n\tbtn.addEventListener('click', function(e){\n\t\tlet button = e.currentTarget;\n\t\tif ( button.classList.contains('selected') ) {\n\t\t\treturn false;\n\t\t}\n\t\tdocum",
+    "file": "src/code/events-manager-pro/add-ons/rsvp/rsvp.js"
+  }
+]

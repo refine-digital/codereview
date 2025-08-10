@@ -1,0 +1,125 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n * Outputs a cancellation button, with an optional message on top that will be replaced by another notification if cancellation button is clicked."
+    ],
+    "length": 1192,
+    "preview": "<?php\n/**\n * Outputs a cancellation button, with an optional message on top that will be replaced by another notification if cancellation button is clicked.\n *\n * @var string $message\n */\n$EM_Booking = \\EM\\Waitlist\\Bookings::$booking\n?>\n<div class=\"<",
+    "file": "src/code/events-manager-pro/templates/waitlists/button-cancel.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n * Displays the booking form on a page where the waitlist booking object has been requested.\n */",
+      "// show information letting user know of waiting status",
+      "// add cancel button"
+    ],
+    "length": 614,
+    "preview": "<?php\nuse EM\\Waitlist\\Bookings;\n/**\n * Displays the booking form on a page where the waitlist booking object has been requested.\n */\n?>\n<div class=\"<?php em_template_classes('event-booking-form'); ?> input em-waitlist-booking-approved\">\n\t<?php\n\t// sh",
+    "file": "src/code/events-manager-pro/templates/waitlists/booking.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 193,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\necho '<div class=\"em-notice\">';\necho get_option('dbem_waitlists_login_text');\necho '</div>';\ninclude( em_locate_template('forms/bookingform/login.php') );\n?>",
+    "file": "src/code/events-manager-pro/templates/waitlists/login.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// since we're displaying only a message, we'll pass it to the cancel button template and let it display there."
+    ],
+    "length": 290,
+    "preview": "<?php\n// since we're displaying only a message, we'll pass it to the cancel button template and let it display there.\n$EM_Booking = \\EM\\Waitlist\\Bookings::$booking;\n$message = get_option('dbem_waitlists_text_already_waiting');\ninclude(emp_locate_temp",
+    "file": "src/code/events-manager-pro/templates/waitlists/already-waiting.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 279,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n?>\n<div class=\"<?php em_template_classes('event-booking-form'); ?> input\">\n\t<div class=\"em-notice\">\n\t\t<?php\n\t\t$format = get_option('dbem_waitlists_text_cancelled');\n\t\techo \\EM\\Waitlist\\Bookings::$booking->output( $",
+    "file": "src/code/events-manager-pro/templates/waitlists/cancelled.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// no valid booking found if we get here"
+    ],
+    "length": 184,
+    "preview": "<?php\n// no valid booking found if we get here\n?>\n<div class=\"em-booking-message em-booking-message-error\">\n\t<?php esc_html_e('Booking could not be found.', 'em-pro'); ?>\n</div>\n<?php\n",
+    "file": "src/code/events-manager-pro/templates/waitlists/not-found.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 1743,
+    "preview": "<?php\nuse EM\\Waitlist\\Booking;\n/* @var $EM_Event EM_Event */\n?>\n<div class=\"<?php em_template_classes('event-booking-form'); ?> input\">\n\t<div class=\"em-booking-message\">\n\t\t<?php\n\t\techo $EM_Event->output( get_option('dbem_waitlists_text_form') );\n\t\t?>",
+    "file": "src/code/events-manager-pro/templates/waitlists/form.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 378,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n?>\n<div class=\"<?php em_template_classes('event-booking-form'); ?> input\">\n\t<div class=\"em-notice em-notice-error\">\n\t\t<?php\n\t\t$format = get_option('dbem_waitlists_text_expired');\n\t\techo \\EM\\Waitlist\\Bookings::$book",
+    "file": "src/code/events-manager-pro/templates/waitlists/expired.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n * @var EM_Event $EM_Event\n */"
+    ],
+    "length": 951,
+    "preview": "<?php\n/**\n * @var EM_Event $EM_Event\n */\n?>\n<form class=\"em-ajax-form no-overlay-spinner no-inline-notice <?php em_template_classes('event-booking-form'); ?> input\" style=\"display: inline-block; width: auto;\" method='post' action=''>\n\t<input type='hi",
+    "file": "src/code/events-manager-pro/templates/waitlists/button.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 219,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n?>\n<div class=\"<?php em_template_classes('event-booking-form'); ?> input\">\n\t<div class=\"em-booking-message\">\n\t\t<?php\n\t\techo get_option('dbem_waitlists_text_full');\n\t\t?>\n\t</div>\n</div>",
+    "file": "src/code/events-manager-pro/templates/waitlists/full.php"
+  },
+  {
+    "type": "js",
+    "functions": [
+      "em_waitlist_success_cleanup"
+    ],
+    "classes": [],
+    "comments": [],
+    "length": 1090,
+    "preview": "document.querySelectorAll('form.em-waitlist-booking-cancel').forEach( function(form){\n    form.addEventListener('em_ajax_form_success_waitlist_cancel', function(e){\n\t    em_waitlist_success_cleanup( form );\n    });\n});\n\ndocument.addEventListener(\"em_",
+    "file": "src/code/events-manager-pro/templates/waitlists/waitlists.js"
+  }
+]

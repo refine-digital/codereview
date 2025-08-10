@@ -1,0 +1,121 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "em_bookings_table_cols_template",
+      "em_bookings_table_rows_col_status",
+      "em_bookings_table_rows_col_checkedin",
+      "em_bookings_table_rows_col_checkedout",
+      "em_bookings_table_rows_col_not_attended",
+      "checkin_button",
+      "em_bookings_manager_template_scripts"
+    ],
+    "classes": [
+      "Booking_Admin"
+    ],
+    "comments": [
+      "/**\n * Handles functionality within the admin areas of bookings, so admins can check in users directly in admin areas and view attendance history\n */",
+      "/**\n\t * Adds columns in the bookings tables\n\t * @param array $template\n\t * @return array\n\t */",
+      "// get a single query to sum up latest status for each ticket booking",
+      "/**\n\t * @param string $val\n\t * @param \\EM_Booking $EM_Booking\n\t */",
+      "/**\n\t * @param string $val\n\t * @param \\EM_Booking $EM_Booking\n\t */",
+      "/**\n\t * @param string $val\n\t * @param \\EM_Booking $EM_Booking\n\t */",
+      "// get the localized script here, saved in the global below, WP's localization won't ever get hit"
+    ],
+    "length": 6672,
+    "preview": "<?php\nnamespace EM_Pro\\Attendance;\n\n/**\n * Handles functionality within the admin areas of bookings, so admins can check in users directly in admin areas and view attendance history\n */\nclass Booking_Admin {\n\tpublic static function init(){\n\t\tadd_acti",
+    "file": "src/code/events-manager-pro/add-ons/attendance/attendance-booking-admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "options"
+    ],
+    "classes": [
+      "Admin"
+    ],
+    "comments": [
+      "/*\n\t * --------------------------------------------\n\t * Email Reminders\n\t * --------------------------------------------\n\t */",
+      "/**\n\t * Generates meta box for settings page\n\t */",
+      "//You can further customize all these templates, or parts of them by overriding our template files as per our %s."
+    ],
+    "length": 1659,
+    "preview": "<?php\nnamespace EM_Pro\\Attendance;\nclass Admin {\n\t\n\tpublic static function init(){\n\t\tadd_action('em_options_page_footer_bookings', '\\EM_Pro\\Attendance\\Admin::options');\n\t}\n\t\n\t/*\n\t * --------------------------------------------\n\t * Email Reminders\n\t *",
+    "file": "src/code/events-manager-pro/add-ons/attendance/attendance-admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "register_handler",
+      "handler",
+      "em_wp_localize_script"
+    ],
+    "classes": [
+      "API"
+    ],
+    "comments": [
+      "// get the ticket booking and check caps",
+      "/**\n\t * Add extra localized JS options to the em_wp_localize_script filter.\n\t * @param array $vars\n\t * @return array\n\t */"
+    ],
+    "length": 1977,
+    "preview": "<?php\nnamespace EM_Pro\\Attendance;\nuse WP_REST_Response, EM_Ticket_Booking;\n\nclass API{\n\t\n\tpublic static function init(){\n\t\tadd_action('rest_api_init', '\\EM_Pro\\Attendance\\API::register_handler');\n\t\tadd_filter('em_wp_localize_script', '\\EM_Pro\\Attend",
+    "file": "src/code/events-manager-pro/add-ons/attendance/attendance-api.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "handle_action",
+      "get_status_data",
+      "get_status",
+      "get_status_text",
+      "get_status_timestamp",
+      "checkin",
+      "checkout",
+      "get_history",
+      "get_booking_ticket_ids_with_status"
+    ],
+    "classes": [
+      "Attendance"
+    ],
+    "comments": [
+      "/**\n\t * Handles a checkin and returns an array with result and message.\n\t * @param EM_Ticket_Booking $EM_Ticket_Booking\n\t * @param string $action 'che",
+      "// we'll set this back lower down",
+      "// we'll assume we're checking in",
+      "// we'll set this back lower down",
+      "/**\n\t * @param EM_Ticket_Booking $EM_Ticket_Booking\n\t * @return array|null\n\t */",
+      "/**\n\t * @param EM_Ticket_Booking $EM_Ticket_Booking\n\t * @return int|null\n\t */",
+      "/**\n\t * Returns the timestamp in MySQL format for last action (i.e. check in/out) taken by supplied ticket booking. Returns null if no action previous",
+      "/**\n\t * Checks in ticket booking, returns true on success, null if already checked in.\n\t * @param EM_Ticket_Booking $EM_Ticket_Booking\n\t * @return boo",
+      "// rejected or cancelled",
+      "/**\n\t * Checks in ticket booking, returns true on success, null if already checked in.\n\t * @param EM_Ticket_Booking $EM_Ticket_Booking\n\t * @return boo",
+      "// tickets that didn't attend will not have a record in the checkin history"
+    ],
+    "length": 7432,
+    "preview": "<?php\nnamespace EM_Pro\\Attendance;\nuse EM_Ticket_Booking;\n\nclass Attendance {\n\t\n\tpublic static $status_cache = array();\n\t\n\t/**\n\t * Handles a checkin and returns an array with result and message.\n\t * @param EM_Ticket_Booking $EM_Ticket_Booking\n\t * @pa",
+    "file": "src/code/events-manager-pro/add-ons/attendance/attendance.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 209,
+    "preview": "<?php\nif( is_admin() ){\n\tinclude('attendance-admin.php');\n}\nif( get_option('dbem_bookings_attendance') ){\n\tinclude('attendance.php');\n\tinclude('attendance-api.php');\n\tinclude('attendance-booking-admin.php');\n}",
+    "file": "src/code/events-manager-pro/add-ons/attendance/attendance-loader.php"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// handle check in/out buttons",
+      "// deal with showing history in admin interface"
+    ],
+    "length": 2521,
+    "preview": "// handle check in/out buttons\ndocument.querySelectorAll('.attendance-action').forEach( function(btn){\n\tbtn.addEventListener('click', function(e){\n\t\tlet button = e.currentTarget;\n\t\tlet buttonData = {\n\t\t\taction : button.getAttribute('data-action'),\n\t\t",
+    "file": "src/code/events-manager-pro/add-ons/attendance/attendance.js"
+  }
+]

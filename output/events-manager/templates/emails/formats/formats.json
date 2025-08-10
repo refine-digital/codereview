@@ -1,0 +1,11 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 290,
+    "preview": "<?php echo sprintf(__(\"Dear %s\", 'events-manager'), '#_CONTACTNAME'); ?>\n\n\n<?php esc_html_e('Your event #_EVENTNAME on #_EVENTDATES has been approved.', 'events-manager'); ?>\n\n\n{not_recurring}<?php esc_html_e('You can view your event here:', 'events-",
+    "file": "src/code/events-manager/templates/emails/formats/event_approved_email_body.php"
+  }
+]

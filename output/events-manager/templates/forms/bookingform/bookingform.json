@@ -1,0 +1,112 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* \n * This file generates a tabular list of tickets for the event booking forms with input values for choosing ticket spaces.\n * If you want to add t",
+      "/* @var $EM_Event EM_Event */",
+      "//already instantiated, so should be a quick retrieval.",
+      "/*\n * This variable can be overridden, by hooking into the em_booking_form_tickets_cols filter and adding your collumns into this array.\n * Then, you ",
+      "//array of collumn type => title",
+      "/* @var $EM_Ticket EM_Ticket */",
+      "//output collumn by type, or call a custom action"
+    ],
+    "length": 2713,
+    "preview": "<?php \n/* \n * This file generates a tabular list of tickets for the event booking forms with input values for choosing ticket spaces.\n * If you want to add to this form this, you'd be better off hooking into the actions below.\n */\n/* @var $EM_Event E",
+    "file": "src/code/events-manager/templates/forms/bookingform/tickets-list.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* \n * This file generates the default login form within the booking form (if enabled in options).\n */",
+      "//' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']); ?>#em-event-booking-form\">"
+    ],
+    "length": 2535,
+    "preview": "<?php\n/* \n * This file generates the default login form within the booking form (if enabled in options).\n */\n?>\n<div class=\"em-login\">\n\t<div class=\"em-login-trigger\">\n\t\t<?php echo sprintf(esc_html__('Do you already have an account with us? %s','event",
+    "file": "src/code/events-manager/templates/forms/bookingform/login.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* \n * This file generates the default booking form fields. Events Manager Pro does not use this file.\n */",
+      "/* @var $EM_Event EM_Event */",
+      "//Here we have extra information required for the booking.",
+      "//User can book an event without registering, a username will be created for them based on their email and a random password will be created. ?>",
+      "//careful if making an add-on, this will only be used if you're not using custom booking forms ?>"
+    ],
+    "length": 1658,
+    "preview": "<?php\n/* \n * This file generates the default booking form fields. Events Manager Pro does not use this file.\n */\n/* @var $EM_Event EM_Event */ \n//Here we have extra information required for the booking. \n?>\n<?php if( !is_user_logged_in() && apply_fil",
+    "file": "src/code/events-manager/templates/forms/bookingform/booking-fields.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Booking $EM_Booking */",
+      "/* @var EM_Event $EM_Event */",
+      "// display tickets with prices and apply taxes to pre_ discount/surcharges manually here so it all adds up",
+      "//we should now have an array of information including base price, taxes and post/pre tax discounts, show subtotals section if there's more than one i",
+      "// if we have discounts pre-tax, it's very difficult to accurately show discounts and/or subsequent surcharges with tax adjustments as they affect the",
+      "/* @var $EM_Ticket_Booking EM_Ticket_Booking */",
+      "// Discounts Pre Tax",
+      "// Surcharges Pre Tax",
+      "// Discounts Post Tax",
+      "// Surcharges Post Tax"
+    ],
+    "length": 11869,
+    "preview": "<?php\n// set up init vars\n/* @var EM_Booking $EM_Booking */\n/* @var EM_Event $EM_Event */\nif( $EM_Booking->get_spaces() > 0 ){\n\t$show_subsections = get_option('dbem_bookings_summary_subsections');\n\t$itemize_taxes    = get_option('dbem_bookings_summar",
+    "file": "src/code/events-manager/templates/forms/bookingform/summary.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Booking $EM_Booking */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 1984,
+    "preview": "<?php\n// set up init vars\n/* @var EM_Booking $EM_Booking */\n/* @var EM_Event $EM_Event */\n$show_subsections = get_option('dbem_bookings_summary_subsections');\n$itemize_taxes    = get_option('dbem_bookings_summary_taxes_itemized') && get_option('dbem_",
+    "file": "src/code/events-manager/templates/forms/bookingform/summary-skeleton.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* \n * This file generates the input fields for an event with a single ticket and settings set to not show a table for single tickets (default setting",
+      "/* @var $EM_Ticket EM_Ticket */",
+      "/* @var $EM_Event EM_Event */",
+      "/*\n\t\t * This variable can be overridden, by hooking into the em_booking_form_tickets_cols filter and adding your collumns into this array.\n\t\t * Then, ",
+      "//array of collumn type => title",
+      "//output collumn by type, or call a custom action",
+      "//show description if there is one",
+      "//more than one space available ?>",
+      "//if only one space or ticket max spaces per booking is 1 ?>"
+    ],
+    "length": 2881,
+    "preview": "<?php \n/* \n * This file generates the input fields for an event with a single ticket and settings set to not show a table for single tickets (default setting)\n * If you want to add to this form this, you'd be better off hooking into the actions below",
+    "file": "src/code/events-manager/templates/forms/bookingform/ticket-single.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */",
+      "/* @var $EM_Booking EM_Booking */",
+      "//',get_option('dbem_bookings_submit_button')) ): //Settings have an image url (we assume). Use it here as the button.?>",
+      "//Display normal submit button ?>",
+      "// show free or paid button by default"
+    ],
+    "length": 1593,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n/* @var $EM_Booking EM_Booking */\n\ndo_action('em_booking_form_before_buttons', $EM_Event); //do not delete\n?>\n<div class=\"em-booking-section em-booking-form-buttons em-booking-buttons\">\n\t<?php do_action('em_booking",
+    "file": "src/code/events-manager/templates/forms/bookingform/button.php"
+  }
+]

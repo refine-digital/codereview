@@ -1,0 +1,95 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// The following are included in the scope of this event date range picker",
+      "/* @var int $id */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 2924,
+    "preview": "<?php\n// The following are included in the scope of this event date range picker\n/* @var int $id */\n/* @var EM_Event $EM_Event */\n$days_names = em_get_days_names();\n?>\n<div class=\"em-recurrence-pattern em-recurring-text\">\n\t<?php _e ( 'This event repe",
+    "file": "src/code/events-manager/templates/forms/event/when/recurrence-pattern.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// The following are included in the scope of this event date range picker",
+      "/* @var int $id */",
+      "/* @var bool $with_recurring Set if a recurring event or front-end to show both options. */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 1707,
+    "preview": "<?php\n// The following are included in the scope of this event date range picker\n/* @var int $id */\n/* @var bool $with_recurring Set if a recurring event or front-end to show both options. */\n/* @var EM_Event $EM_Event */\n?>\n<div class=\"em-datepicker",
+    "file": "src/code/events-manager/templates/forms/event/when/dates.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// The following are included in the scope of this event date range picker",
+      "/* @var int $id */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 532,
+    "preview": "<?php\n// The following are included in the scope of this event date range picker\n/* @var int $id */\n/* @var EM_Event $EM_Event */\n?>\n<div class=\"em-recurrence-duration em-recurring-text\">\n\t<?php ob_start(); ?>\n\t<input id=\"recurrence-days-<?php echo $",
+    "file": "src/code/events-manager/templates/forms/event/when/recurrence-duration.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// The following are included in the scope of this event date range picker",
+      "/* @var int $id */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 1502,
+    "preview": "<?php\n// The following are included in the scope of this event date range picker\n/* @var int $id */\n/* @var EM_Event $EM_Event */\n$hours_format = em_get_hour_format();\n?>\n<div class=\"em-time-range\">\n\t<fieldset class=\"inline\">\n\t\t<legend><?php _e('Even",
+    "file": "src/code/events-manager/templates/forms/event/when/times.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// The following are included in the scope of this event date range picker",
+      "/* @var int $id */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 875,
+    "preview": "<?php\n// The following are included in the scope of this event date range picker\n/* @var int $id */\n/* @var EM_Event $EM_Event */\n?>\n<?php do_action('em_event_form_active_status_before', $EM_Event, $id); ?>\n<div class=\"em-input-field em-input-field-s",
+    "file": "src/code/events-manager/templates/forms/event/when/active-status.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// The following are included in the scope of this event date range picker",
+      "/* @var int $id */",
+      "/* @var bool $with_recurring Set if a recurring event or front-end to show both options. */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 2022,
+    "preview": "<?php\n// The following are included in the scope of this event date range picker\n/* @var int $id */\n/* @var bool $with_recurring Set if a recurring event or front-end to show both options. */\n/* @var EM_Event $EM_Event */\n?>\n<div class=\"em-datepicker",
+    "file": "src/code/events-manager/templates/forms/event/when/dates-separate.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// The following are included in the scope of this event date range picker",
+      "/* @var int $id */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 541,
+    "preview": "<?php\n// The following are included in the scope of this event date range picker\n/* @var int $id */\n/* @var EM_Event $EM_Event */\n?>\n<?php if( get_option('dbem_timezone_enabled') ): ?>\n\t<p class=\"em-timezone\">\n\t\t<label for=\"event-timezone-<?php echo ",
+    "file": "src/code/events-manager/templates/forms/event/when/timezone.php"
+  }
+]

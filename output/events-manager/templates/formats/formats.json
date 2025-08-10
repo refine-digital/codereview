@@ -1,0 +1,397 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1783,
+    "preview": "{has_image}\n<div class=\"em-item-meta em-event-image\">\n\t#_EVENTIMAGE{300}\n</div>\n{/has_image}\n<div class=\"em-item-info\">\n\t<div class=\"em-item-title em-event-title\">#_EVENTLINK</div>\n\t<div class=\"em-event-meta em-item-meta\">\n\t\t<div class=\"em-item-meta-",
+    "file": "src/code/events-manager/templates/formats/calendar_preview_tooltip_event_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 25,
+    "preview": "<ul class=\"em-tags-list\">",
+    "file": "src/code/events-manager/templates/formats/tag_event_list_item_header_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 50,
+    "preview": "<li>#_EVENTLINK - #_EVENTDATES - #_EVENTTIMES</li>",
+    "file": "src/code/events-manager/templates/formats/category_event_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 846,
+    "preview": "<div class=\"em-item em-event\" style=\"--default-border:#_CATEGORYCOLOR;\">\n\t<div class=\"em-item-image {no_image}has-placeholder{/no_image}\" style=\"max-width:120px\">\n\t\t{has_image}\n\t\t#_EVENTIMAGE{120,120}\n\t\t{/has_image}\n\t\t{no_image}\n\t\t<div class=\"em-item",
+    "file": "src/code/events-manager/templates/formats/block_event_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1379,
+    "preview": "<section class=\"em-item-header\" style=\"--default-border:#_CATEGORYCOLOR;\">\n\t{has_image}\n\t<div class=\"em-item-image\">\n\t\t#_CATEGORYIMAGE{medium}\n\t</div>\n\t{/has_image}\n\t<div class=\"em-item-meta\">\n\t\t<section class=\"em-item-meta-column\">\n\t\t\t<section class",
+    "file": "src/code/events-manager/templates/formats/category_page_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1422,
+    "preview": "<div class=\"em-event em-item\" data-href=\"#_EVENTURL\" style=\"--default-border:#_CATEGORYCOLOR;\">\n\t<div class=\"em-item-image {no_image}has-placeholder{/no_image}\">\n\t\t<div class=\"em-item-image-wrapper\">\n\t\t\t{has_image}\n\t\t\t#_EVENTIMAGE{medium}\n\t\t\t{/has_im",
+    "file": "src/code/events-manager/templates/formats/event_grid_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 5,
+    "preview": "</ul>",
+    "file": "src/code/events-manager/templates/formats/location_event_list_item_footer_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 44,
+    "preview": "#_EVENTDATES @ #_EVENTTIMES - #_EVENTEXCERPT",
+    "file": "src/code/events-manager/templates/formats/event_excerpt_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1205,
+    "preview": "<div class=\"em-location em-item\" data-href=\"#_LOCATIONURL\">\n\t<div class=\"em-item-image {no_loc_image}has-placeholder{/no_loc_image}\">\n\t\t<div class=\"em-item-image-wrapper\">\n\t\t\t{has_loc_image}\n\t\t\t#_LOCATIONIMAGE{medium}\n\t\t\t{/has_loc_image}\n\t\t\t{no_loc_i",
+    "file": "src/code/events-manager/templates/formats/location_grid_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/event_grid_item_format_header.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/location_list_item_format_footer.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 5,
+    "preview": "</ul>",
+    "file": "src/code/events-manager/templates/formats/category_event_list_item_footer_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 846,
+    "preview": "<div class=\"em-item em-event\" style=\"--default-border:#_CATEGORYCOLOR;\">\n\t<div class=\"em-item-image {no_image}has-placeholder{/no_image}\" style=\"max-width:150px\">\n\t\t{has_image}\n\t\t#_EVENTIMAGE{150,150}\n\t\t{/has_image}\n\t\t{no_image}\n\t\t<div class=\"em-item",
+    "file": "src/code/events-manager/templates/formats/calendar_preview_modal_date_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 50,
+    "preview": "<li>#_EVENTLINK - #_EVENTDATES - #_EVENTTIMES</li>",
+    "file": "src/code/events-manager/templates/formats/tag_event_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 624,
+    "preview": "<div class=\"em-item em-location\">\n\t<div class=\"em-item-image {no_loc_image}has-placeholder{/no_loc_image}\" style=\"max-width:120px\">\n\t\t{has_loc_image}\n\t\t<a href=\"#_LOCATIONURL\">#_LOCATIONIMAGE{120,120}</a>\n\t\t{/has_loc_image}\n\t\t{no_loc_image}\n\t\t<a href",
+    "file": "src/code/events-manager/templates/formats/block_location_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1434,
+    "preview": "<section class=\"em-item-header\">\n\t{has_loc_image}\n\t<div class=\"em-item-image\">\n\t\t#_LOCATIONIMAGE{medium}\n\t</div>\n\t{/has_loc_image}\n\t<div class=\"em-item-meta\">\n\t\t<section class=\"em-item-meta-column\">\n\t\t\t<section class=\"em-location-where\">\n\t\t\t\t<h3><?ph",
+    "file": "src/code/events-manager/templates/formats/single_location_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 154,
+    "preview": "<strong>#_LOCATIONNAME</strong><br/>#_LOCATIONADDRESS - #_LOCATIONTOWN<br/><a href=\"#_LOCATIONPAGEURL\"><?php esc_html_e('Events', 'events-manager') ?></a>",
+    "file": "src/code/events-manager/templates/formats/location_baloon_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 17,
+    "preview": "#_LOCATIONEXCERPT",
+    "file": "src/code/events-manager/templates/formats/location_excerpt_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 74,
+    "preview": "<?php\nsprintf(__( 'No %s', 'events-manager'),__('Tags','events-manager'));",
+    "file": "src/code/events-manager/templates/formats/no_tags_message.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/location_list_item_format_header.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/event_grid_item_format_footer.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1282,
+    "preview": "<div class=\"em-item em-taxonomy em-category\" style=\"--default-border:#_CATEGORYCOLOR;\">\n\t<div class=\"em-item-image {no_image}has-placeholder{/no_image}\">\n\t\t{has_image}\n\t\t#_CATEGORYIMAGE{medium}\n\t\t{/has_image}\n\t\t{no_image}\n\t\t<div class=\"em-item-image-",
+    "file": "src/code/events-manager/templates/formats/categories_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/tags_list_item_format_footer.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1344,
+    "preview": "<section class=\"em-item-header\" style=\"--default-border:#_TAGCOLOR;\">\n\t{has_image}\n\t<div class=\"em-item-image\">\n\t\t#_TAGIMAGE{medium}\n\t</div>\n\t{/has_image}\n\t<div class=\"em-item-meta\">\n\t\t<section class=\"em-item-meta-column\">\n\t\t\t<section class=\"em-locat",
+    "file": "src/code/events-manager/templates/formats/tag_page_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 76,
+    "preview": "<strong>#_LOCATIONNAME</strong><p>#_LOCATIONADDRESS</p><p>#_LOCATIONTOWN</p>",
+    "file": "src/code/events-manager/templates/formats/map_text_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1236,
+    "preview": "<div class=\"em-item em-taxonomy em-tag\" style=\"--default-border:#_TAGCOLOR;\">\n\t<div class=\"em-item-image {no_image}has-placeholder{/no_image}\">\n\t\t{has_image}\n\t\t#_TAGIMAGE{medium}\n\t\t{/has_image}\n\t\t{no_image}\n\t\t<div class=\"em-item-image-placeholder\"></",
+    "file": "src/code/events-manager/templates/formats/tags_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 4,
+    "preview": "<ul>",
+    "file": "src/code/events-manager/templates/formats/category_event_list_item_header_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/tags_list_item_format_header.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 50,
+    "preview": "<li>#_EVENTLINK - #_EVENTDATES - #_EVENTTIMES</li>",
+    "file": "src/code/events-manager/templates/formats/location_event_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1397,
+    "preview": "<div class=\"em-location em-item\">\n\t<div class=\"em-item-image {no_loc_image}has-placeholder{/no_loc_image}\">\n\t\t{has_loc_image}\n\t\t<a href=\"#_LOCATIONURL\">#_LOCATIONIMAGE{medium}</a>\n\t\t{/has_loc_image}\n\t\t{no_loc_image}\n\t\t<a href=\"#_LOCATIONURL\" class=\"e",
+    "file": "src/code/events-manager/templates/formats/location_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 4,
+    "preview": "<ul>",
+    "file": "src/code/events-manager/templates/formats/location_event_list_item_header_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/location_grid_item_format_footer.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/categories_list_item_format_header.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 48,
+    "preview": "#_EVENTDATES @ #_EVENTTIMES - #_EVENTEXCERPT{55}",
+    "file": "src/code/events-manager/templates/formats/event_excerpt_alt_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* We're treating this as a single-item list so it looks good oa modal */"
+    ],
+    "length": 2389,
+    "preview": "<?php\n/* We're treating this as a single-item list so it looks good oa modal */\n?>\n<div class=\"<?php em_template_classes('calendar-preview', 'events-list'); ?>\">\n\t<div class=\"em-event em-item\" style=\"--default-border:#_CATEGORYCOLOR;\">\n\t\t<div class=\"",
+    "file": "src/code/events-manager/templates/formats/calendar_preview_modal_event_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2196,
+    "preview": "<div class=\"em-event em-item\" style=\"--default-border:#_CATEGORYCOLOR;\">\n\t<div class=\"em-item-image {no_image}has-placeholder{/no_image}\">\n\t\t{has_image}\n\t\t#_EVENTIMAGE{medium}\n\t\t{/has_image}\n\t\t{no_image}\n\t\t<div class=\"em-item-image-placeholder\">\n\t\t\t<",
+    "file": "src/code/events-manager/templates/formats/event_list_item_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/event_list_item_format_header.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/event_list_item_format_footer.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/categories_list_item_format_footer.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 21,
+    "preview": "#_LOCATIONEXCERPT{55}",
+    "file": "src/code/events-manager/templates/formats/location_excerpt_alt_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/templates/formats/location_grid_item_format_header.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 5,
+    "preview": "</ul>",
+    "file": "src/code/events-manager/templates/formats/tag_event_list_item_footer_format.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 3138,
+    "preview": "<section class=\"em-item-header\"  style=\"--default-border:#_CATEGORYCOLOR;\">\n\t{has_image}\n\t<div class=\"em-item-image {no_image}has-placeholder{/no_image}\">\n\t\t#_EVENTIMAGE{medium}\n\t</div>\n\t{/has_image}\n\t<div class=\"em-item-meta\">\n\t\t<section class=\"em-i",
+    "file": "src/code/events-manager/templates/formats/single_event_format.php"
+  },
+  {
+    "type": "txt",
+    "length": 1277,
+    "preview": "Files in this folder or in wp-content/themes/yourthemedir/plugins/events-manager/formats/ could be u",
+    "file": "src/code/events-manager/templates/formats/readme.txt"
+  }
+]

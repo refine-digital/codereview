@@ -1,0 +1,81 @@
+[
+  {
+    "type": "json",
+    "length": 12864,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"space\",\n        \"160\": \"space\",\n        \"33\": \"exclam\",\n       ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/Helvetica.afm.json"
+  },
+  {
+    "type": "json",
+    "length": 12862,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"space\",\n        \"160\": \"space\",\n        \"33\": \"exclam\",\n       ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/Times-Bold.afm.json"
+  },
+  {
+    "type": "json",
+    "length": 273582,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"space\",\n        \"33\": \"exclam\",\n        \"34\": \"quotedbl\",\n     ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/DejaVuSans.ufm.json"
+  },
+  {
+    "type": "json",
+    "length": 12873,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"space\",\n        \"160\": \"space\",\n        \"33\": \"exclam\",\n       ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/Helvetica-Bold.afm.json"
+  },
+  {
+    "type": "json",
+    "length": 890184,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"uni0020\",\n        \"33\": \"uni0021\",\n        \"34\": \"uni0022\",\n   ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/Meiryo.ufm.json"
+  },
+  {
+    "type": "json",
+    "length": 273671,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"space\",\n        \"33\": \"exclam\",\n        \"34\": \"quotedbl\",\n     ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/DejaVuSans-Bold.ufm.json"
+  },
+  {
+    "type": "json",
+    "length": 12864,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"space\",\n        \"160\": \"space\",\n        \"33\": \"exclam\",\n       ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/Times-Italic.afm.json"
+  },
+  {
+    "type": "json",
+    "length": 2224,
+    "preview": "{\n    \"sans-serif\": {\n        \"normal\": \"Helvetica\",\n        \"bold\": \"Helvetica-Bold\",\n        \"ital",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/installed-fonts.dist.json"
+  },
+  {
+    "type": "json",
+    "length": 12858,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"space\",\n        \"160\": \"space\",\n        \"33\": \"exclam\",\n       ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/Times-Roman.afm.json"
+  },
+  {
+    "type": "json",
+    "length": 1849,
+    "preview": "{\n    \"meiryo\": {\n        \"normal\": \"Meiryo\",\n        \"bold\": \"Meiryo\",\n        \"italic\": \"Meiryo\",\n",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/installed-fonts.json"
+  },
+  {
+    "type": "json",
+    "length": 12890,
+    "preview": "{\n    \"codeToName\": {\n        \"32\": \"space\",\n        \"160\": \"space\",\n        \"33\": \"exclam\",\n       ",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/Helvetica-BoldOblique.afm.json"
+  },
+  {
+    "type": "html",
+    "tags": [
+      "a"
+    ],
+    "links": [
+      "http://www.adobe.com/devnet/font/#pcfi"
+    ],
+    "scripts": [],
+    "length": 1040,
+    "preview": "<html>\n\t<head>\n\t\t<meta http-equiv=\"content-type\" content=\"text/html;charset=iso-8859-1\">\n\t\t<meta name=\"generator\" content=\"Adobe GoLive 4\">\n\t\t<title>Core 14 AFM Files - ReadMe</title>\n\t</head>\n\t<body bgcolor=\"white\">\n\t\t<font color=\"white\">or</font>\n\t",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/dompdf/dompdf/lib/fonts/mustRead.html"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "type": "html",
+    "tags": [
+      "h3",
+      "a"
+    ],
+    "links": [
+      "http://wp-events-plugin.com"
+    ],
+    "scripts": [],
+    "length": 497,
+    "preview": "<div style=\"float:right; margin:0px 0px 15px 15px;\">#_LOCATIONMAP</div>\n<p>\t\n\t<strong>Address</strong><br/>\n\t#_LOCATIONADDRESS<br/>\n\t#_LOCATIONTOWN<br/>\n\t#_LOCATIONSTATE<br/>\n\t#_LOCATIONREGION<br/>\n\t#_LOCATIONPOSTCODE<br/>\n\t#_LOCATIONCOUNTRY\n</p>\n<br",
+    "file": "src/code/events-manager/includes/sample-placeholders/location-single-default.html"
+  },
+  {
+    "type": "html",
+    "tags": [
+      "h3",
+      "a"
+    ],
+    "links": [
+      "http://wp-events-plugin.com"
+    ],
+    "scripts": [],
+    "length": 560,
+    "preview": "<div style=\"float:right; margin:0px 0px 15px 15px;\">#_LOCATIONMAP</div>\n<p>\t\n\t<strong>Date/Time</strong><br/>\n\tDate(s) - #j #M #Y #@_{ \\u\\n\\t\\i\\l j M Y}<br />\n\t<i>#_12HSTARTTIME - #_12HENDTIME</i>\n</p>\n<p>\t\n\t<strong>Location</strong><br/>\n\t#_LOCATION",
+    "file": "src/code/events-manager/includes/sample-placeholders/event-single-default.html"
+  },
+  {
+    "type": "html",
+    "tags": [],
+    "links": [],
+    "scripts": [],
+    "length": 502,
+    "preview": "<table cellpadding=\"5\" cellspacing=\"0\" width=\"95%\" id=\"current-events\" >\n    <thead>\n        <tr>\n\t\t\t<th id=\"event-time\" width=\"150\">Date/Time</th>\n\t\t\t<th id=\"event-description\" width=\"*\">Event</th>\n   \t</thead>\n    <tbody>\n\t\t<tr>\n\t\t\t<td>\n           ",
+    "file": "src/code/events-manager/includes/sample-placeholders/event-list-default.html"
+  },
+  {
+    "type": "html",
+    "tags": [
+      "h3",
+      "h3",
+      "h3",
+      "h3"
+    ],
+    "links": [],
+    "scripts": [],
+    "length": 1977,
+    "preview": "<table>\n\t<tr>\n\t\t<th style=\"width:150px;\">When? </th>\n\t\t<td>\n\t\t\tDate(s) - #j #M #Y #@_{ \\u\\n\\t\\i\\l j M Y}<br />\n\t\t\tTime (24h Format) - #_24HSTARTTIME - #_24HENDTIME<br />\n\t\t\tTime (12h Format) - #_12HSTARTTIME - #_12HENDTIME\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<th>",
+    "file": "src/code/events-manager/includes/sample-placeholders/event-single.html"
+  },
+  {
+    "type": "html",
+    "tags": [],
+    "links": [],
+    "scripts": [],
+    "length": 731,
+    "preview": "----------\nEvent Details:\n#_NAME at #_LOCATION on #j #M #Y #@_{ \\u\\n\\t\\i\\l j M Y}\n\n----------\nBooking Person Details:\n\n#__BOOKINGNAME : #_BOOKINGNAME\n#__BOOKINGEMAIL : #_BOOKINGEMAIL\n#__BOOKINGPHONE : #_BOOKINGPHONE\n#__BOOKINGSPACES : #_BOOKINGSPACES",
+    "file": "src/code/events-manager/includes/sample-placeholders/booking-email.html"
+  }
+]

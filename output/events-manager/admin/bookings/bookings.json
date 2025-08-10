@@ -1,0 +1,92 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "em_bookings_confirmed_table"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Generates a \"widget\" table of confirmed bookings for a specific event.\n * \n * @param int $event_id\n */",
+      "//wordpress.lan/wp-includes/images/blank.gif\" width=\"20\" height=\"20\" title=\"List View\" alt=\"List View\" name=\"view-switch-list\" /></a> <a href=\"/wp-adm"
+    ],
+    "length": 6556,
+    "preview": "<?php\n\n/**\n * Generates a \"widget\" table of confirmed bookings for a specific event.\n * \n * @param int $event_id\n */\nfunction em_bookings_confirmed_table(){\n\tglobal $EM_Event, $EM_Ticket, $wpdb, $current_user;\n\t\n\t$action_scope = ( !empty($_REQUEST['e",
+    "file": "src/code/events-manager/admin/bookings/em-confirmed.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "em_bookings_events_table"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Determines whether to show event page or events page, and saves any updates to the event or events\n * @return null\n */",
+      "//TODO Simplify panel for events, use form flags to detect certain actions (e.g. submitted, etc)",
+      "// No action, only showing the events list",
+      "//wordpress.lan/wp-includes/images/blank.gif\" width=\"20\" height=\"20\" title=\"List View\" alt=\"List View\" name=\"view-switch-list\" /></a> <a href=\"/wp-adm",
+      "/* @var $event EM_Event */"
+    ],
+    "length": 5600,
+    "preview": "<?php\n\n/**\n * Determines whether to show event page or events page, and saves any updates to the event or events\n * @return null\n */\nfunction em_bookings_events_table() {\n\t//TODO Simplify panel for events, use form flags to detect certain actions (e.",
+    "file": "src/code/events-manager/admin/bookings/em-events.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "em_bookings_person_table"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Generates a \"widget\" table of confirmed bookings for a specific event.\n * \n * @param int $event_id\n */",
+      "//Get events here in one query to speed things up",
+      "//wordpress.lan/wp-includes/images/blank.gif\" width=\"20\" height=\"20\" title=\"List View\" alt=\"List View\" name=\"view-switch-list\" /></a> <a href=\"/wp-adm"
+    ],
+    "length": 7173,
+    "preview": "<?php\n\n/**\n * Generates a \"widget\" table of confirmed bookings for a specific event.\n * \n * @param int $event_id\n */\nfunction em_bookings_person_table(){\n\tglobal $wpdb, $current_user,$EM_Person;\n\tif(!is_object($EM_Person)){\n\t\treturn false;\n\t}\n\t$actio",
+    "file": "src/code/events-manager/admin/bookings/em-person.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "em_bookings_pending_table"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Generates a \"widget\" table of pending bookings with some quick admin operation options. \n * If event id supplied then only pending bookings for",
+      "//To optimize performance, we can do one query here for all pending bookings to show.",
+      "//Now let's create events and bookings for this:",
+      "//wordpress.lan/wp-includes/images/blank.gif\" width=\"20\" height=\"20\" title=\"List View\" alt=\"List View\" name=\"view-switch-list\" /></a> <a href=\"/wp-adm"
+    ],
+    "length": 7413,
+    "preview": "<?php\n\n/**\n * Generates a \"widget\" table of pending bookings with some quick admin operation options. \n * If event id supplied then only pending bookings for that event will show.\n * \n * @param int $event_id\n */\nfunction em_bookings_pending_table($ev",
+    "file": "src/code/events-manager/admin/bookings/em-pending.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "em_bookings_rejected_table"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Generates a \"widget\" table of confirmed bookings for a specific event.\n * \n * @param int $event_id\n */",
+      "//wordpress.lan/wp-includes/images/blank.gif\" width=\"20\" height=\"20\" title=\"List View\" alt=\"List View\" name=\"view-switch-list\" /></a> <a href=\"/wp-adm"
+    ],
+    "length": 6136,
+    "preview": "<?php\n/**\n * Generates a \"widget\" table of confirmed bookings for a specific event.\n * \n * @param int $event_id\n */\nfunction em_bookings_rejected_table(){\n\tglobal $EM_Event, $EM_Ticket, $wpdb, $current_user;\n\t\n\t$action_scope = ( !empty($_REQUEST['em_",
+    "file": "src/code/events-manager/admin/bookings/em-rejected.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "em_bookings_cancelled_table"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Generates a \"widget\" table of confirmed bookings for a specific event.\n * \n * @param int $event_id\n */",
+      "//wordpress.lan/wp-includes/images/blank.gif\" width=\"20\" height=\"20\" title=\"List View\" alt=\"List View\" name=\"view-switch-list\" /></a> <a href=\"/wp-adm"
+    ],
+    "length": 6114,
+    "preview": "<?php\n/**\n * Generates a \"widget\" table of confirmed bookings for a specific event.\n * \n * @param int $event_id\n */\nfunction em_bookings_cancelled_table(){\n\tglobal $EM_Event, $EM_Ticket, $wpdb, $current_user;\n\t\n\t$action_scope = ( !empty($_REQUEST['em",
+    "file": "src/code/events-manager/admin/bookings/em-cancelled.php"
+  }
+]

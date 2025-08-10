@@ -1,0 +1,46 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2232,
+    "preview": "<?php\nglobal $EM_Location;\n$attributes = em_get_attributes(true); //get Lattributes\n$has_deprecated = false;\n?>\n<div id=\"location-attributes\">\n\t<?php if( !empty($attributes['names']) && count( $attributes['names'] ) > 0 ) : ?>\n\t\t<table class=\"form-ta",
+    "file": "src/code/events-manager/templates/forms/location/attributes.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This file is called by templates/forms/location-editor.php to display fields for uploading images on your location form on your website. This do",
+      "/* @var $EM_Location EM_Location */"
+    ],
+    "length": 1178,
+    "preview": "<?php\n/*\n * This file is called by templates/forms/location-editor.php to display fields for uploading images on your location form on your website. This does not affect the admin featured image section.\n* You can override this file by copying it to ",
+    "file": "src/code/events-manager/templates/forms/location/featured-image-public.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This file is called by templates/forms/location-editor.php to display attribute fields on your location form on your website.\n * You can overrid",
+      "/* @var $EM_Location EM_Location */"
+    ],
+    "length": 1561,
+    "preview": "<?php\n/*\n * This file is called by templates/forms/location-editor.php to display attribute fields on your location form on your website.\n * You can override this file by copying it to /wp-content/themes/yourtheme/plugins/events-manager/forms/locatio",
+    "file": "src/code/events-manager/templates/forms/location/attributes-public.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//maps.google.com'>try it on maps.google.com</a> by adding all the fields below separated by commas.\",'events-manager')?></p>"
+    ],
+    "length": 3532,
+    "preview": "<?php\nglobal $EM_Location, $post;\n$required = apply_filters('em_required_html','<i>*</i>');\n?>\n<div class=\"<?php em_template_classes('location-editor'); ?> em-location-where <?php if( get_option( 'dbem_gmap_is_active' ) ) echo 'has-map'; ?>\">\n\t<?php ",
+    "file": "src/code/events-manager/templates/forms/location/where.php"
+  }
+]

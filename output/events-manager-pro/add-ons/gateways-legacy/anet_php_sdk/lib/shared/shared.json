@@ -1,0 +1,140 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "__construct",
+      "__construct",
+      "getXml"
+    ],
+    "classes": [
+      "that",
+      "AuthorizeNetCustomer",
+      "that",
+      "AuthorizeNetAddress",
+      "that",
+      "AuthorizeNetPaymentProfile",
+      "that",
+      "AuthorizeNetPayment",
+      "that",
+      "AuthorizeNetTransaction",
+      "that",
+      "AuthorizeNetLineItem",
+      "that",
+      "AuthorizeNetCreditCard",
+      "that",
+      "AuthorizeNetBankAccount",
+      "that",
+      "AuthorizeNet_Subscription"
+    ],
+    "comments": [
+      "/**\n * Classes for the various AuthorizeNet data types.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for a CIM Customer Profile.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for a CIM Address.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for a CIM Payment Profile.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for a CIM Payment Type.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for a CIM Transaction.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for a CIM Transaction Line Item.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for a CIM Credit Card.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for a CIM Bank Account.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */",
+      "/**\n * A class that contains all fields for an AuthorizeNet ARB Subscription.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetARB\n */",
+      "// Remove any blank child elements",
+      "// Remove any blank parent elements",
+      "// Recursively repeat if a change is made",
+      "// Remove any blank lines",
+      "// $xml_clean = preg_replace('/\\r\\n[\\s]+\\r\\n/','',$xml_clean);"
+    ],
+    "length": 8622,
+    "preview": "<?php\n/**\n * Classes for the various AuthorizeNet data types.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetCIM\n */\n\n\n/**\n * A class that contains all fields for a CIM Customer Profile.\n *\n * @package    AuthorizeNet\n * @subpackage Author",
+    "file": "src/code/events-manager-pro/add-ons/gateways-legacy/anet_php_sdk/lib/shared/AuthorizeNetTypes.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "_setPostString",
+      "_handleResponse",
+      "_getPostUrl",
+      "__construct",
+      "setSandbox",
+      "setLogFile",
+      "getPostString",
+      "_sendRequest"
+    ],
+    "classes": [
+      "AuthorizeNetRequest"
+    ],
+    "comments": [
+      "/**\n * Sends requests to the Authorize.Net gateways.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetRequest\n */",
+      "// Set to false if getting connection errors.",
+      "/**\n     * Set the _post_string\n     */",
+      "/**\n     * Handle the response string\n     */",
+      "/**\n     * Get the post url. We need this because until 5.3 you\n     * you could not access child constants in a parent class.\n     */",
+      "/**\n     * Constructor.\n     *\n     * @param string $api_login_id       The Merchant's API Login ID.\n     * @param string $transaction_key The Merchan",
+      "/**\n     * Alter the gateway url.\n     *\n     * @param bool $bool Use the Sandbox.\n     */",
+      "/**\n     * Set a log file.\n     *\n     * @param string $filepath Path to log file.\n     */",
+      "/**\n     * Return the post string.\n     *\n     * @return string\n     */",
+      "/**\n     * Posts the request to AuthorizeNet & returns response.\n     *\n     * @return AuthorizeNetARB_Response The response.\n     */",
+      "// Do not log requests that could contain CC info.",
+      "// file_put_contents($this->_log_file, \"----Request----\\n{$this->_post_string}\\n\", FILE_APPEND);"
+    ],
+    "length": 3794,
+    "preview": "<?php\n/**\n * Sends requests to the Authorize.Net gateways.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetRequest\n */\nabstract class AuthorizeNetRequest\n{\n    \n    protected $_api_login;\n    protected $_transaction_key;\n    protected $_pos",
+    "file": "src/code/events-manager-pro/add-ons/gateways-legacy/anet_php_sdk/lib/shared/AuthorizeNetRequest.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "isOk",
+      "xpath",
+      "isError",
+      "getErrorMessage",
+      "getRefID",
+      "getResultCode",
+      "getMessageCode",
+      "getMessageText",
+      "_getElementContents"
+    ],
+    "classes": [
+      "for",
+      "for",
+      "AuthorizeNetXMLResponse"
+    ],
+    "comments": [
+      "/**\n * Base class for the AuthorizeNet ARB & CIM Responses.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetXML\n */",
+      "/**\n * Base class for the AuthorizeNet ARB & CIM Responses.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetXML\n */",
+      "// Holds a SimpleXML Element with response.",
+      "/**\n     * Constructor. Parses the AuthorizeNet response string.\n     *\n     * @param string $response The response from the AuthNet server.\n     */",
+      "// Remove namespaces for use with XPath.",
+      "/**\n     * Was the transaction successful?\n     *\n     * @return bool\n     */",
+      "/**\n     * Run an xpath query on the cleaned XML response\n     *\n     * @param  string $path\n     * @return array  Returns an array of SimpleXMLElemen",
+      "/**\n     * Was there an error?\n     *\n     * @return bool\n     */",
+      "/**\n     * @return string\n     */",
+      "/**\n     * @return string\n     */",
+      "/**\n     * @return string\n     */",
+      "/**\n     * @return string\n     */",
+      "/**\n     * @return string\n     */",
+      "/**\n     * Grabs the contents of a unique element.\n     *\n     * @param  string\n     * @return string\n     */"
+    ],
+    "length": 2943,
+    "preview": "<?php\n/**\n * Base class for the AuthorizeNet ARB & CIM Responses.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNetXML\n */\n\n/**\n * Base class for the AuthorizeNet ARB & CIM Responses.\n *\n * @package    AuthorizeNet\n * @subpackage AuthorizeNe",
+    "file": "src/code/events-manager-pro/add-ons/gateways-legacy/anet_php_sdk/lib/shared/AuthorizeNetXMLResponse.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [
+      "for",
+      "AuthorizeNetResponse"
+    ],
+    "comments": [
+      "/**\n * Base class for the AuthorizeNet AIM & SIM Responses.\n *\n * @package    AuthorizeNet\n * @subpackage    AuthorizeNetResponse\n */",
+      "/**\n * Parses an AuthorizeNet Response.\n *\n * @package AuthorizeNet\n * @subpackage    AuthorizeNetResponse\n */",
+      "// cardholder_authentication_verification_response",
+      "// The response string from AuthorizeNet."
+    ],
+    "length": 1735,
+    "preview": "<?php\n/**\n * Base class for the AuthorizeNet AIM & SIM Responses.\n *\n * @package    AuthorizeNet\n * @subpackage    AuthorizeNetResponse\n */\n\n\n/**\n * Parses an AuthorizeNet Response.\n *\n * @package AuthorizeNet\n * @subpackage    AuthorizeNetResponse\n ",
+    "file": "src/code/events-manager-pro/add-ons/gateways-legacy/anet_php_sdk/lib/shared/AuthorizeNetResponse.php"
+  }
+]

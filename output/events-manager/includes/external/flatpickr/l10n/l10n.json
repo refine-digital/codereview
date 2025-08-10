@@ -1,0 +1,1214 @@
+[
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1715,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/pt.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 966,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.sk={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sk.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 986,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.vn={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/vn.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1105,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ar={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ar.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1727,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/lv.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 900,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.pa={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/pa.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1063,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.tr={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/tr.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1888,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/pl.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1730,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/mn.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2142,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/cat.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 977,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.id={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/id.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1223,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.defaul",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/default.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1041,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ckb={}",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ckb.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 942,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.hr={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/hr.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1891,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/et.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1850,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/is.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1765,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sl.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1907,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/nn.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1636,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ko.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1085,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.kz={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/kz.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1686,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/hr.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1560,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ms.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1970,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/uz_latn.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1813,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/at.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1775,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/fi.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1839,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/th.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 955,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.my={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/my.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1936,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ru.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1735,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/mk.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1875,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/no.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1847,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sq.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 926,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.si={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/si.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1001,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.fi={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/fi.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1746,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sr-cyr.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1041,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.th={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/th.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1090,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.eo={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/eo.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 993,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.da={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/da.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1662,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/si.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1055,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.sq={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sq.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 954,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global[\"zh-tw",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/zh-tw.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 921,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.bn={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/bn.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1716,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ja.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1952,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ka.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1069,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.no={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/no.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1524,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/he.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1668,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/bg.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1147,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.uz_lat",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/uz_latn.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 994,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global[\"sr-cy",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sr-cyr.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1037,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.at={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/at.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1089,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.uz={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/uz.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2043,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/hy.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1033,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.de={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/de.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 978,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.es={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/es.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 964,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ro={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ro.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 942,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.fa={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/fa.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1094,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.az={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/az.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1113,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ru={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ru.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1729,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/my.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1912,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/uz.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1120,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.cat={}",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/cat.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [
+      "__assign"
+    ],
+    "classes": [],
+    "comments": [
+      "/*! *****************************************************************************\n    Copyright (c) Microsoft Corporation.\n\n    Permission to use, cop"
+    ],
+    "length": 95549,
+    "preview": "(function (global, factory) {\n    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n    typeof define === 'function' && define.amd ? define(['exports'], factory) :\n    (global = typeof globalThis !== 'undefined' ? glob",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/index.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 959,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ga={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ga.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1108,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.fo={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/fo.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 975,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.mk={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/mk.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1648,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/id.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1909,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/az.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1080,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.it={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/it.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 910,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ms={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ms.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1129,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ka={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ka.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1089,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.mn={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/mn.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1099,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.km={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/km.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2447,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/cy.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1128,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.lt={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/lt.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1082,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.pl={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/pl.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 966,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.sr={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sr.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1105,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.fr={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/fr.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1085,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.et={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/et.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1918,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ckb.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1961,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/be.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 971,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.pt={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/pt.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1714,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/zh-tw.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1900,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/kz.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1186,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.gr={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/gr.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1783,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/da.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 937,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.uk={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/uk.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1256,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.cy={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/cy.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 861,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ko={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ko.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 931,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.ja={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ja.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1052,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.is={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/is.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1708,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/fa.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1703,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ga.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1636,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/pa.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 975,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.lv={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/lv.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 891,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.he={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/he.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1809,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/de.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 881,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.hi={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/hi.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 897,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.zh={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/zh.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2025,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/gr.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1670,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/bs.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1786,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sv.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 926,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.bs={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/bs.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 983,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.sl={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sl.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1657,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/zh.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1609,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/hi.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1681,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/uk.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1754,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ar-dz.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1915,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/cs.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1913,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/km.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1941,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/fr.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1960,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/nl.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 924,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.bg={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/bg.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1726,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sr.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1875,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/hu.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1101,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.nn={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/nn.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2235,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/default.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1196,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.hy={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/hy.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1069,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.hu={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/hu.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1934,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/lt.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1922,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/fo.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1741,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ar.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1116,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.nl={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/nl.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [
+      "__assign"
+    ],
+    "classes": [],
+    "comments": [],
+    "length": 41468,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.index=",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/index.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1748,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sk.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1870,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/it.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1760,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/es.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1649,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/bn.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1896,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/eo.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1738,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ro.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1127,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global[\"ar-dz",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/ar-dz.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1092,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.cs={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/cs.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1138,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.be={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/be.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 996,
+    "preview": "(function(global,factory){typeof exports===\"object\"&&typeof module!==\"undefined\"?factory(exports):typeof define===\"function\"&&define.amd?define([\"exports\"],factory):(global=typeof globalThis!==\"undefined\"?globalThis:global||self,factory(global.sv={})",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/sv.min.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1878,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/tr.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1730,
+    "preview": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = typeof globalThis !== 'undefined' ? globalThis",
+    "file": "src/code/events-manager/includes/external/flatpickr/l10n/vn.js"
+  }
+]

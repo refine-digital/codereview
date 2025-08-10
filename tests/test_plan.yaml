@@ -1,0 +1,280 @@
+# File: tests/test_plan.yaml
+# Version: 1.0.6
+#
+# UNIT TEST RULES:
+# 1. All files tested must be inside the Unit Test directory using the same relative paths as the main project paths.
+# 2. All files must use versioning. Bump the patch number with 1 from 0-99 for any change we make.
+# 3. No assumptions. Ask clarifying questions.
+# 4. All code must be logically verified by you before handing off to me.
+# 5. Any variables must exist i the Test Unit directory as .env and as .config.yaml
+# 6. Do not create any new Unit Test directories without first consulting me
+# 7. All Unit Test are using 3 level directories. No Exceptions.
+#
+# CURRENT TEST: 
+#
+# # File: .enc
+# # Version: 1.0.0
+
+# # By default it's will use a system KEY but you can override it here
+# #GEMINI_API_KEY="your_key_here"
+# #OPENAI_API_KEY="your_key_here"
+
+# # Directory to scan for PHP, JS, CSS
+# SRC_DIR="src/code"
+
+# # Directory to scan for SQL files
+# SQL_DIR="src/db"
+
+# # Include SQL analysis in final docs
+# INCLUDE_SQL=true
+
+# # Local Ollama Location
+# OLLAMA_BASE_URL=http://localhost:11434
+
+# # File: config.yaml
+# # Version: 1.3.1
+# # Models: deepseek-coder-v2:lite (default)
+# # --- Core Configuration ---
+# src_dir: "./src/code"
+# output_dir: "./output"
+# file_types:
+#   - php
+#   - js
+#   - ts
+#   - tsx
+#   - html
+#   - css
+#   - scss
+#   - sql
+#   - py
+#   - yaml
+#   - yml
+#   - json
+#   - po
+#   - pot
+#   - md
+#   - txt
+#   - sh
+
+# # --- External API Providers ---
+# # Define connection details for external, API-based models.
+# # The 'api_key_env' should correspond to a variable in your .env file.
+# external_apis:
+#   openai:
+#     api_key_env: "OPENAI_API_KEY"
+#     # base_url is optional and defaults to the official OpenAI API.
+  
+#   google_gemini:
+#     api_key_env: "GEMINI_API_KEY"
+#     # Note: Gemini uses a different SDK. A custom adapter or proxy would be needed in analyze.py to make it compatible.
+
+# # --- System Capabilities ---
+# current_environment: "remote_gpu_worker" # Switched to remote to demonstrate external API usage
+
+# system_capabilities:
+#   local_mac:
+#     name: "Local macOS Machine"
+#     processor: "Apple M1"
+#     ram_gb: 32
+#     description: "A capable local machine for running medium-sized models efficiently."
+#     agent_model_assignments:
+#       project_lead: { provider: "google_gemini", model: "deepseek-coder-v2:lite" }
+#       php_reviewer: { provider: "ollama", model: "deepseek-coder-v2:lite" }
+#       mysql_reviewer: { provider: "ollama", model: "deepseek-coder-v2:lite" }
+#       knowledge_agent: { provider: "ollama", model: "deepseek-coder-v2:lite" }
+  
+#   remote_gpu_worker:
+#     name: "Remote GPU Worker"
+#     processor: "NVIDIA H100"
+#     ram_gb: 128
+#     description: "A powerful remote server for running the largest models at high speed."
+#     agent_model_assignments:
+#       project_lead: { provider: "openai", model: "gpt-5-pro" } # Using an external model
+#       php_reviewer: { provider: "ollama", model: "deepseek-coder-v2:16b-lite" }
+#       mysql_reviewer: { provider: "ollama", model: "gemma2:27b" }
+#       knowledge_agent: { provider: "ollama", model: "gemma2:9b" }
+
+# # --- Agent Personas ---
+# agents:
+#   project_lead:
+#     system_prompt: >
+#       You are the Project Lead Agent, a world-class software architect and AI strategist. 
+#       Your primary responsibility is to devise the most effective and efficient strategy for analyzing a codebase.
+#       You are aware of the capabilities of your target environment and the latest developments in open-source and proprietary LLMs.
+
+#   php_reviewer:
+#     system_prompt: >
+#       You are the PHP Review Agent, an expert PHP developer. Your task is to analyze the provided PHP file based on the instructions from the Project Lead. You must identify functions, classes, dependencies, and database queries with high accuracy.
+
+#   mysql_reviewer:
+#     system_prompt: >
+#       You are the MySQL8 Review Agent, an expert database engineer. You will be given a SQL file and instructions from the Project Lead. Your task is to analyze its structure, identifying tables, columns, indexes, and relationships.
+
+#   knowledge_agent:
+#     system_prompt: >
+#       You are the Knowledge Agent, an expert in information synthesis. Your role is to take the detailed analysis from other agents and create a final, clean, and well-structured markdown documentation as directed by the Project Lead.
+
+# # --- RAG Tasks for Code Review Agents ---
+# rag_tasks:
+#   - id: "detailed_analysis"
+#     prompt: "Analyze the provided code in detail. For each function, explain its purpose, parameters, and return value. For each class, describe its responsibility, properties, and key methods."
+#   - id: "dependency_identification"
+#     prompt: "Identify and list all explicit and implicit dependencies."
+#   - id: "database_interaction"
+#     prompt: "Analyze the code for database interactions. List all SQL queries and the tables they affect."
+
+# # --- Final Tasks for Project Lead ---
+# project_lead_tasks:
+#   - id: "model_strategy_review"
+#     prompt: >
+#       Given the current date and the rapid pace of AI development, review our current model selection strategy.
+#       My current target environment has the following capabilities: {system_capabilities}.
+#       The project's current agent model assignments for this environment are: {agent_assignments}.
+
+#       Based on this, answer the following:
+#       1. Are there any newer, more powerful, or more efficient models available (on Ollama or external APIs) that would be a better fit for our agents in this environment?
+#       2. Justify your recommendations based on model size, context window, specialization, and my system's RAM.
+#       3. For any new local model you recommend, provide the exact 'ollama pull' command.
+#       4. If the current selection is optimal for my hardware, state why.
+
+projectName: CodeReview
+test_suites:
+  - name: Connection Tests
+    tests:
+      - file: tests/test_connections/test_ollama_connection/test_ollama_connection.py
+        description: Verifies the basic connection to the local Ollama server.
+        status: PASSED
+      - file: tests/test_connections/test_openai_connection/test_openai_connection.py
+        description: Verifies the basic connection to the OpenAI API.
+        status: PASSED
+      - file: tests/test_connections/test_gemini_connection/test_gemini_connection.py
+        description: Verifies the basic connection to the Google Gemini API.
+        status: PASSED
+      - file: tests/test_connections/test_chat_ollama/test_chat_ollama.py
+        description: Performs a live chat completion test with the Ollama provider.
+        status: PASSED
+      - file: tests/test_connections/test_chat_openai/test_chat_openai.py
+        description: Performs a live chat completion test with the OpenAI provider.
+        status: PASSED
+      - file: tests/test_connections/test_chat_gemini/test_chat_gemini.py
+        description: Performs a live chat completion test with the Gemini provider.
+        status: PASSED
+  - name: Configuration Tests
+    tests:
+      - file: tests/test_configurations/test_config_integrity/test_config_integrity.py
+        description: Validates the structure and values of the main project config.yaml and .env files.
+        status: PASSED
+  - name: File Processing Tests
+    tests:
+      - file: tests/test_file_processing/test_create_src_dir/test_create_src_dir.py
+        description: Walk through the src_dir to find all files matching the file_types in the config.
+        status: PASSED
+      - file: tests/test_file_processing/test_caching/test_caching.py
+        description: For each file, it calculates a SHA256 hash. It compares this hash to a value stored in output/analysis_cache.json. If the hash is the same, the file is skipped, preventing re-analysis of unchanged files.
+        status: PASSED
+  - name: Parsing Tests
+    tests:
+      - file: tests/test_parsing/test_parsing_css/test_parsing_css.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_html/test_parsing_html.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_js/test_parsing_js.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_json/test_parsing_json.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_md/test_parsing_md.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_php/test_parsing_php.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_po/test_parsing_po.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_pot/test_parsing_pot.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_py/test_parsing_py.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_scss/test_parsing_scss.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_sh/test_parsing_sh.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_sql/test_parsing_sql.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_ts/test_parsing_ts.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_txt/test_parsing_txt.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_yaml/test_parsing_yaml.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+      - file: tests/test_parsing/test_parsing_yml/test_parsing_yml.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: PASSED
+  - name: Enrichment Tests
+    description: The enrichment tests take max 3 random files from each type if they exist and enruch them for future use by the final analysis.
+    tests:
+      - file: tests/test_enrichment/test_enrichment_css/test_enrichment_css.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_html/test_enrichment_html.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_js/test_enrichment_js.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_json/test_enrichment_json.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_md/test_enrichment_md.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_php/test_enrichment_php.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_po/test_enrichment_po.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_pot/test_enrichment_pot.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_py/test_enrichment_py.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_scss/test_enrichment_scss.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_sh/test_enrichment_sh.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_sql/test_enrichment_sql.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_ts/test_enrichment_ts.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_txt/test_enrichment_txt.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_yaml/test_enrichment_yaml.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+      - file: tests/test_enrichment/test_enrichment_yml/test_enrichment_yml.py
+        description: If the file is new or modified, it's passed to a basic parser (from the parsers/ directory) based on its extension. This extracts initial, structured data (like function and class names).
+        status: TO-DO
+  - name: Review Tests
+    tests:
+      - file: tests/test_review/test_review_summary/test_review_summary.py
+        description: The Project Lead Agent is providing you with a summary of the review
+        status: TO-DO

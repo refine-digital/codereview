@@ -1,0 +1,17 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n * Plugin Name: Events Manager for Thrive Automator\n * Plugin URI: https://wp-events-plugin.com\n * Description: Adds triggers, actions and filters",
+      "// Silence is golden!",
+      "// include everything, we'll be needing it down here anyway",
+      "/* \"Webhook\" action registration */",
+      "/* end \"Webhook\" action registration */"
+    ],
+    "length": 8979,
+    "preview": "<?php\n/**\n * Plugin Name: Events Manager for Thrive Automator\n * Plugin URI: https://wp-events-plugin.com\n * Description: Adds triggers, actions and filters to the Thrive Automator\n * Author URI: https://pixelite.com\n * Version: 1.0\n * Author: <a hre",
+    "file": "src/code/events-manager/integrations/thrive-automator/events-manager-thrive-automator.php"
+  }
+]

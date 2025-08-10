@@ -1,0 +1,80 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 27,
+    "preview": "<?php\nem_locations_admin();",
+    "file": "src/code/events-manager/templates/buddypress/my-locations.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* WARNING! This file may change in the near future as we intend to add features to BuddyPress - 2012-02-14 */"
+    ],
+    "length": 140,
+    "preview": "<?php\n/* WARNING! This file may change in the near future as we intend to add features to BuddyPress - 2012-02-14 */\nem_bookings_admin();\n?>",
+    "file": "src/code/events-manager/templates/buddypress/my-bookings.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* WARNING! This file may change in the near future as we intend to add features to BuddyPress - 2012-02-14 */",
+      "/* \n\t\t\t\t<th class='manage-column column-cb check-column' scope='col'>\n\t\t\t\t\t<input class='select-all' type=\"checkbox\" value='1' />\n\t\t\t\t</th>\n\t\t\t\t*/",
+      "/* @var $event EM_Event */",
+      "//Check pending approval events",
+      "/*\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<input type='checkbox' class='row-selector' value='<?php echo $event->event_id; ?>' name='events[]' />\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t*/"
+    ],
+    "length": 6080,
+    "preview": "<?php\n/* WARNING! This file may change in the near future as we intend to add features to BuddyPress - 2012-02-14 */\n\tglobal $bp, $EM_Notices;\n\t$url = $bp->events->link . 'my-events/'; //url to this page\n\t$order = ( !empty($_REQUEST ['order']) ) ? $_",
+    "file": "src/code/events-manager/templates/buddypress/group-events.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* WARNING! This file may change in the near future as we intend to add features to BuddyPress - 2012-02-14 */",
+      "/* \n\t\t\t\t<th class='manage-column column-cb check-column' scope='col'>\n\t\t\t\t\t<input class='select-all' type=\"checkbox\" value='1' />\n\t\t\t\t</th>\n\t\t\t\t*/",
+      "/* @var $EM_Event EM_Event */",
+      "//Check pending approval events",
+      "/*\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<input type='checkbox' class='row-selector' value='<?php echo $EM_Event->event_id; ?>' name='events[]' />\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t*/"
+    ],
+    "length": 6054,
+    "preview": "<?php\n/* WARNING! This file may change in the near future as we intend to add features to BuddyPress - 2012-02-14 */\n\tglobal $bp, $EM_Notices;\n\techo $EM_Notices;\n\t$url = $bp->events->link . 'my-events/'; //url to this page\n\t$order = ( !empty($_REQUES",
+    "file": "src/code/events-manager/templates/buddypress/my-group-events.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 24,
+    "preview": "<?php\nem_events_admin();",
+    "file": "src/code/events-manager/templates/buddypress/my-events.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* WARNING! This file may change in the near future as we intend to add features to BuddyPress - 2012-02-14 */",
+      "//no events output on last function",
+      "//Get events here in one query to speed things up"
+    ],
+    "length": 1681,
+    "preview": "<?php\n/* WARNING! This file may change in the near future as we intend to add features to BuddyPress - 2012-02-14 */\nglobal $bp, $EM_Notices;\necho $EM_Notices;\nif( user_can($bp->displayed_user->id,'edit_events') ){\n\t?>\n\t<h4><?php _e('My Events', 'eve",
+    "file": "src/code/events-manager/templates/buddypress/profile.php"
+  },
+  {
+    "type": "txt",
+    "length": 705,
+    "preview": "This folder contains email templates or parts of email templates that would be used in emails.\n\nAny ",
+    "file": "src/code/events-manager/templates/buddypress/readme.txt"
+  }
+]

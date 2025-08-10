@@ -1,0 +1,23 @@
+[
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* Selectize deselect function */",
+      "// add additional handler"
+    ],
+    "length": 591,
+    "preview": "/* Selectize deselect function */\nSelectize.define('click2deselect', function(options) {\n\tvar self = this;\n\tvar setup = self.setup;\n\tthis.setup = function() {\n\t\tsetup.apply(self, arguments);\n\t\t// add additional handler\n\t\tself.$dropdown.on('click', '[",
+    "file": "src/code/events-manager/includes/external/slectize.click2deselect.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 446,
+    "preview": "Selectize.define(\"click2deselect\",function(options){var self=this;var setup=self.setup;this.setup=function(){setup.apply(self,arguments);self.$dropdown.on(\"click\",\"[data-selectable]\",function(e){let value=this.getAttribute(\"data-value\");if(this.class",
+    "file": "src/code/events-manager/includes/external/slectize.click2deselect.min.js"
+  }
+]

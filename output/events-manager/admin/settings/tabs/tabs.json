@@ -1,0 +1,91 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//www.php.net/manual/en/dateinterval.construct.php\" target=\"_blank\">'.esc_html_x('PHP date intevals', 'Refer to PHP docs for translation.', 'em-pro').",
+      "//wp-events-plugin.com/features/\">'.esc_html__('Pro Add-On', 'events-manager') . '</a>');",
+      "/* Tax & Currency */",
+      "//</code>','<code>https://</code>') );"
+    ],
+    "length": 20250,
+    "preview": "<?php if( !function_exists('current_user_can') || !current_user_can('manage_options') ) return; ?>\n<!-- BOOKING OPTIONS -->\n<div class=\"em-menu-bookings em-menu-group\"  <?php if( !defined('EM_SETTINGS_TABS') || !EM_SETTINGS_TABS) : ?>style=\"display:n",
+    "file": "src/code/events-manager/admin/settings/tabs/bookings.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 13595,
+    "preview": "<?php if( !function_exists('current_user_can') || !current_user_can('manage_options') ) return; ?>\n<!-- EMAIL OPTIONS -->\n<div class=\"em-menu-emails em-menu-group\" <?php if( !defined('EM_SETTINGS_TABS') || !EM_SETTINGS_TABS) : ?>style=\"display:none;\"",
+    "file": "src/code/events-manager/admin/settings/tabs/emails.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*default category*/",
+      "/* @var EM_Event_Locations\\Event_Location $EM_Event_Location_Class */",
+      "//wp-events-plugin.com/documentation/location-types/\" target=\"_blank\">'.esc_html__('documentation', 'events-manager').'</a>'); ?></em></p>",
+      "/*default location*/",
+      "/*default location country*/",
+      "//wp-events-plugin.com/documentation/google-maps/api-usage/?utm_source=plugin&utm_medium=settings&utm_campaign=gmaps-general\">'.esc_html__('documentat",
+      "//wp-events-plugin.com/documentation/google-maps/api-key/?utm_source=plugin&utm_medium=settings&utm_campaign=gmaps-api-key\">'.esc_html__('documentatio",
+      "//wp-events-plugin.com/google-maps/static-maps/?utm_source=plugin&utm_medium=settings&utm_campaign=gmaps-types\">Events Manager Pro</a>').'</strong>' :",
+      "//wp-events-plugin.com/google-maps/map-types/?utm_source=plugin&utm_medium=settings&utm_campaign=gmaps-types\">'.__('documentation', 'events-manager').",
+      "//mapstyle.withgoogle.com/\" target=\"_blank\">'.esc_html__('Google Maps Styling Wizard', 'events-manager').'</a>', '<a href=\"https://snazzymaps.com/expl",
+      "/* \n\t<div  class=\"postbox\" id=\"em-opt-geo\" >\n\t<div class=\"handlediv\" title=\"<?php __('Click to toggle', 'events-manager'); ?>\"><br /></div><h3><span><",
+      "//wp-events-plugin.com/documentation/optimization-recommendations/'); ?></p>",
+      "//jetpack.me/support/photon/\">Photon</a>','<a href=\"https://wordpress.org/plugins/jetpack/\">JetPack</a>') );"
+    ],
+    "length": 32338,
+    "preview": "<?php if( !function_exists('current_user_can') || !current_user_can('manage_options') ) return; ?>\n<!-- GENERAL OPTIONS -->\n<div class=\"em-menu-general em-menu-group\">\n\t<div  class=\"postbox \" id=\"em-opt-general\"  >\n\t<div class=\"handlediv\" title=\"<?ph",
+    "file": "src/code/events-manager/admin/settings/tabs/general.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//www.php.net/manual/en/function.date.php\">PHP time format characters</a>  with a <code>#</code> symbol before them, i.e. <code>#m</code>, <code>#M</c",
+      "//codex.wordpress.org/Formatting_Date_and_Time'));",
+      "//codex.wordpress.org/Formatting_Date_and_Time'));",
+      "//flatpickr.js.org/formatting/#date-formatting-tokens') );",
+      "//codex.wordpress.org/Formatting_Date_and_Time');",
+      "//flatpickr.js.org/formatting/#date-formatting-tokens') );",
+      "// Legacy jQuery UI DatePicker setting, disabled to not confuse ppl",
+      "//em_options_input_text ( __( 'Date Picker Format (legacy)', 'events-manager'), 'dbem_date_format_js', sprintf(__( 'Same as <em>Date Format</em>, but ",
+      "//en.wikipedia.org/wiki/Web_colors\">hex</a>'));",
+      "//en.wikipedia.org/wiki/Web_colors\">hex</a>'));",
+      "//wp-events-plugin.com/documentation/google-maps/'); ?>",
+      "//wp-events-plugin.com/documentation/shortcodes/'); ?></p>",
+      "//wp-events-plugin.com/documentation/placeholders/'); ?></p>"
+    ],
+    "length": 70103,
+    "preview": "<?php if( !function_exists('current_user_can') || !current_user_can('manage_options') ) return; ?>\n<!-- FORMAT OPTIONS -->\n<div class=\"em-menu-formats em-menu-group\"  <?php if( !defined('EM_SETTINGS_TABS') || !EM_SETTINGS_TABS) : ?>style=\"display:non",
+    "file": "src/code/events-manager/admin/settings/tabs/formats.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [
+      "names"
+    ],
+    "comments": [
+      "//codex.wordpress.org/Post_Types#Template_Files',__(\"Be aware that some themes will not work with this option, if so (or you want to make your own cha",
+      "//em_options_radio_binary ( sprintf(__( 'Display %s as', 'events-manager'),__('events','events-manager')), 'dbem_cp_events_template_page', sprintf($te",
+      "//em_options_radio_binary ( sprintf(__( 'Display %s as', 'events-manager'),__('locations','events-manager')), 'dbem_cp_locations_template_page', sprin",
+      "//codex.wordpress.org/Taxonomies');?>",
+      "//not ready yet, but make translatable ?>",
+      "//disabled for now, will add tag stuff later ?>",
+      "//codex.wordpress.org/Taxonomies');?>",
+      "//not ready yet, but make translatable ?>"
+    ],
+    "length": 49837,
+    "preview": "<?php if( !function_exists('current_user_can') || !current_user_can('manage_options') ) return; ?>\n<!-- PAGE OPTIONS -->\n<div class=\"em-menu-pages em-menu-group\"  <?php if( !defined('EM_SETTINGS_TABS') || !EM_SETTINGS_TABS) : ?>style=\"display:none;\"<",
+    "file": "src/code/events-manager/admin/settings/tabs/pages.php"
+  }
+]

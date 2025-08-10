@@ -1,0 +1,105 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "__construct",
+      "__get",
+      "__set",
+      "__isset",
+      "load_postdata",
+      "get_post",
+      "validate",
+      "save",
+      "delete",
+      "reset_data",
+      "get_admin_column",
+      "is_enabled",
+      "load_admin_template",
+      "admin_delete_warning",
+      "get_label",
+      "output",
+      "get_ical_location",
+      "to_api"
+    ],
+    "classes": [
+      "is",
+      "is",
+      "Event_Location"
+    ],
+    "comments": [
+      "/**\n * Class EM_Event_Location\n * This class is to be extended by any event location type. The only time this class is not used when not extended is i",
+      "/**\n\t * @var \\EM_Event\n\t */",
+      "/**\n\t * The type name of this location type, used to store in the database. Use alphanmeric characters (a-z, A-Z, 0-9), dashes and underscores only.\n\t",
+      "/**\n\t * Represents shortcut property names for an event location child object that can be accessed safely which then refers to the EM_Event object.\n\t ",
+      "/**\n\t * Contains associative array of data of this event location. Data is accessed via getters and setters and keys must correspond to values in the ",
+      "/**\n\t * The admin template path, if there is one.\n\t * @var string\n\t * @see EM_Event_Location::load_admin_template()\n\t */",
+      "/**\n\t * EM_Event_Location constructor.\n\t * @param \\EM_Event $EM_Event\n\t */",
+      "// we check for the event_id property in case we're dealing with an extended class",
+      "/**\n\t * @param $name\n\t * @return string|null|array\n\t */",
+      "// we check for the event_id property in case we're dealing with an extended class",
+      "/**\n\t * @param array $event_meta     Array of event meta, if not supplied meta is obtained from linked event object.\n\t * @param bool $reload          ",
+      "// in case we have something like _event_location_url which is the actual URL of a Event_Location_URL object/type.",
+      "// event location data is placed directly into the event_location_data array and referenced via get_event_location()",
+      "/**\n\t * @param array $post\n\t * @return boolean\n\t */",
+      "/**\n\t * @return boolean\n\t */",
+      "/**\n\t * Deletes stored information about this location type in the database\n\t * @return int|false\n\t */",
+      "//refresh cache to prevent looking at old data",
+      "/**\n\t * Returns whether or not this event location is enabled for use.\n\t * @return bool\n\t */",
+      "/**\n\t * Loads admin template automatically if static $admin_template is set to a valid path in templates folder.\n\t * Classes with custom forms outside",
+      "/**\n\t * Outputs additional warning info to user if they're switching event location types, this may include additional information about what may happ",
+      "//override and return plural name.",
+      "//include default Event Locations"
+    ],
+    "length": 7502,
+    "preview": "<?php\nnamespace EM_Event_Locations;\n/**\n * Class EM_Event_Location\n * This class is to be extended by any event location type. The only time this class is not used when not extended is if\n * @property-read string $type\n * @property array $data\n * @pr",
+    "file": "src/code/events-manager/classes/event-locations/em-event-location.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "get_types",
+      "register",
+      "unregister",
+      "get",
+      "is_enabled"
+    ],
+    "classes": [
+      "Event_Locations",
+      "name"
+    ],
+    "comments": [
+      "/**\n * Handles registration and retrival of EM_Event_Location child classes for use with events.\n * Class EM_Event_Locations\n */",
+      "/**\n\t * Associative array with type key => class name.\n\t * @var array\n\t */",
+      "/**\n\t * @return array[EM_Event_Location::]\n\t */",
+      "/**\n\t * @param string $type\n\t * @param string $classname\n\t * @return bool\n\t */",
+      "/**\n\t * @param string $type\n\t * @return bool\n\t */",
+      "/**\n\t * @param string $type\n\t * @param \\EM_Event $EM_Event\n\t * @return bool\n\t */",
+      "/**\n\t * Returns whether or not the supplied event location $type is enabled for use.\n\t * @param string $type\n\t * @return bool\n\t */"
+    ],
+    "length": 1533,
+    "preview": "<?php\nnamespace EM_Event_Locations;\n/**\n * Handles registration and retrival of EM_Event_Location child classes for use with events.\n * Class EM_Event_Locations\n */\nclass Event_Locations {\n\t\n\t/**\n\t * Associative array with type key => class name.\n\t *",
+    "file": "src/code/events-manager/classes/event-locations/em-event-locations.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "get_post",
+      "validate",
+      "get_link",
+      "get_admin_column",
+      "get_label",
+      "output",
+      "get_ical_location"
+    ],
+    "classes": [
+      "URL"
+    ],
+    "comments": [
+      "/**\n * Adds a URL event location type by extending EM_Event_Location and registering itself with EM_Event_Locations\n *\n * @property string url     The"
+    ],
+    "length": 2466,
+    "preview": "<?php\nnamespace EM_Event_Locations;\n/**\n * Adds a URL event location type by extending EM_Event_Location and registering itself with EM_Event_Locations\n *\n * @property string url     The url of this event location.\n * @property string text    The tex",
+    "file": "src/code/events-manager/classes/event-locations/em-event-location-url.php"
+  }
+]

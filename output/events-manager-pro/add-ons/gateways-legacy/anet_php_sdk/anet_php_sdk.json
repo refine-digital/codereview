@@ -1,0 +1,18 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [
+      "for",
+      "AuthorizeNetException"
+    ],
+    "comments": [
+      "/**\n * The AuthorizeNet PHP SDK. Include this file in your project.\n *\n * @package AuthorizeNet\n */",
+      "/*\nrequire dirname(__FILE__) . '/lib/AuthorizeNetARB.php';\nrequire dirname(__FILE__) . '/lib/AuthorizeNetCIM.php';\nrequire dirname(__FILE__) . '/lib/A",
+      "/**\n * Exception class for AuthorizeNet PHP SDK.\n *\n * @package AuthorizeNet\n */"
+    ],
+    "length": 1001,
+    "preview": "<?php\n/**\n * The AuthorizeNet PHP SDK. Include this file in your project.\n *\n * @package AuthorizeNet\n */\nrequire dirname(__FILE__) . '/lib/shared/AuthorizeNetRequest.php';\nrequire dirname(__FILE__) . '/lib/shared/AuthorizeNetTypes.php';\nrequire dirn",
+    "file": "src/code/events-manager-pro/add-ons/gateways-legacy/anet_php_sdk/AuthorizeNet.php"
+  }
+]

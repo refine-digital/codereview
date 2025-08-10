@@ -1,0 +1,168 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "bp_em_record_activity",
+      "em_bp_register_activity_actions",
+      "em_bp_events_format_activity_action_bookings",
+      "em_bp_events_format_activity_action_events",
+      "bp_em_record_activity_event_save",
+      "bp_em_record_activity_booking_save"
+    ],
+    "classes": [],
+    "comments": [
+      "// This file handles hooks/filter requiring activity stream publications",
+      "/**\n * bp_em_record_activity()\n *\n * If the activity stream component is installed, this function will record activity items for your\n * component.\n *",
+      "// @todo - Figure out why adding a second bp_activity_set_action creates two 'Bookings' actions in backend and different booking status front-end e.g.",
+      "/*\n\tbp_activity_set_action(\n\t\t$bp->events->id,\n\t\t'booking_cancelled',\n\t\t__( 'Booking Cancelled', 'events-manager'),\n\t\t'em_bp_events_format_activity_ac",
+      "/**\n * Not yet used fully - formats booking-related actions\n * @param string $action\n * @param object $activity\n * @return string\n */",
+      "/**\n * Not yet used fully - formats event-related actions\n * @param string $action\n * @param object $activity\n * @return string\n */",
+      "/**\n * Records new events to the activity stream.\n * @param unknown_type $result\n * @param unknown_type $EM_Event\n * @return unknown\n */",
+      "/**\n * @param boolean $result\n * @param EM_Booking $EM_Booking\n * @return boolean\n */",
+      "/* @todo this isn't good at detecting status changes. */",
+      "//prevent duplicates",
+      "//these statuses apply to rejected/cancelled bookings",
+      "//$action_type = 'cancelled_booking';",
+      "//$action_type = 'cancelled_booking';"
+    ],
+    "length": 8538,
+    "preview": "<?php\n// This file handles hooks/filter requiring activity stream publications\n\n/**\n * bp_em_record_activity()\n *\n * If the activity stream component is installed, this function will record activity items for your\n * component.\n */\nfunction bp_em_rec",
+    "file": "src/code/events-manager/buddypress/bp-em-activity.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "bp_em_format_notifications",
+      "bp_em_remove_screen_notifications",
+      "bp_em_add_booking_notification"
+    ],
+    "classes": [],
+    "comments": [
+      "//This file handles hooks requiring notifications",
+      "/**\n * bp_em_format_notifications()\n *\n * The format notification function will take DB entries for notifications and format them\n * so that they can ",
+      "//Count pending bookings",
+      "//Count pending bookings",
+      "//Count pending bookings",
+      "/**\n * Remove a screen notification for a user.\n */",
+      "/**\n * Catch booking saves and add a BP notification.\n * @param boolean $result\n * @param EM_Booking $EM_Booking\n * @return boolean\n */",
+      "//no need if notifications are disabled"
+    ],
+    "length": 4384,
+    "preview": "<?php\n//This file handles hooks requiring notifications\n\n/**\n * bp_em_format_notifications()\n *\n * The format notification function will take DB entries for notifications and format them\n * so that they can be displayed and read on the screen.\n *\n * ",
+    "file": "src/code/events-manager/buddypress/bp-em-notifications.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "bp_em_group_event_save",
+      "bp_em_group_event_can_manage",
+      "bp_em_group_events_accepted_searches",
+      "bp_em_group_events_get_default_search",
+      "bp_em_group_events_build_sql_conditions",
+      "bp_em_private_event_check",
+      "bp_em_meta_boxes",
+      "bp_em_meta_box_group"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Turns an event private if the event belongs to a private BP Group\n * @param EM_Event $EM_Event\n */",
+      "//firstly, we check that the event has been published, otherwise users without publish rights can submit an event at a private group and event is mark",
+      "//we have been requested an event creation tied to a group, so does this group exist, and does this person have admin rights to it?",
+      "//if group is private, make it private",
+      "//Make sure event status is private and set post status to private",
+      "/**\n * Overrides the default capability of the user for another owner's event if the user is a group admin and the event belongs to a group. \n * User ",
+      "//only override if already false, incase it's true",
+      "//if the user is an admin of this group, and actually has the relevant permissions globally, they can manage this event",
+      "//create new object to prevent infinite loop should we call $EM_Event->can_manage();",
+      "//This user is an admin of the owner's group, so they can edit this event.",
+      "//add any applicable errors",
+      "//shows current group, if applicable",
+      "/*\n * Privacy Functions\n */",
+      "//deal with private groups and events",
+      "//find out what private groups they belong to, and don't show private group events not in their memberships",
+      "//find out what private groups they belong to, and don't show private group events not in their memberships",
+      "/**\n * Checks if the event is private and either belongs to a group or private group, as members of that group should be able to see the post even if ",
+      "//echo \"<pre>\"; print_r($EM_Event); echo \"</pre>\"; die();",
+      "//make sure user is a member of this group, whether private or not, private groups just aren't shown to non-members of a group",
+      "/*\n * Admin Meta Boxes\n */"
+    ],
+    "length": 6992,
+    "preview": "<?php\n/**\n * Turns an event private if the event belongs to a private BP Group\n * @param EM_Event $EM_Event\n */\nfunction bp_em_group_event_save($result, $EM_Event){\n\tif( is_object($EM_Event) && !empty($EM_Event->event_id) ){\n\t\tif( !empty($_REQUEST['g",
+    "file": "src/code/events-manager/buddypress/bp-em-groups.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "em_bp_slug",
+      "em_bp_get_slug"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Echo the Events Manager BuddyPresss component's slug\n * @since 5.0\n */",
+      "/**\n\t * Return the Events Manager BuddyPresss component's slug\n\t * \n\t * @since 5.0\n\t * @uses apply_filters() Filter 'em_bp_get_slug' to change the out",
+      "// Avoid PHP warnings, in case the value is not set for some reason"
+    ],
+    "length": 600,
+    "preview": "<?php\n/**\n * Echo the Events Manager BuddyPresss component's slug\n * @since 5.0\n */\nfunction em_bp_slug() {\n\techo em_bp_get_slug();\n}\n\t/**\n\t * Return the Events Manager BuddyPresss component's slug\n\t * \n\t * @since 5.0\n\t * @uses apply_filters() Filter",
+    "file": "src/code/events-manager/buddypress/bp-em-templatetags.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "includes",
+      "setup_globals",
+      "setup_nav",
+      "setup_admin_bar",
+      "setup_group_nav",
+      "bp_em_load_core_component",
+      "em_bp_rewrite_edit_url",
+      "em_bp_rewrite_events_admin_url",
+      "em_bp_rewrite_bookings_url",
+      "em_bp_rewrite_edit_location_url",
+      "bp_em_enqueue_scripts",
+      "bp_em_messages_js_compat",
+      "bp_em_remove_data"
+    ],
+    "classes": [
+      "BP_EM_Component"
+    ],
+    "comments": [
+      "//Main loader for buddypress",
+      "/**\n * Events Manager component for BuddyPress\n * @author marcus\n * @since 5.0\n */",
+      "//TODO make BP component optional",
+      "//TODO add admin pages for extra BP specific settings",
+      "/**\n\t * Sets up the global Events Manager BuddyPress Components\n\t */",
+      "// Define a slug constant that will be used to view this components pages",
+      "// Set up the $globals array to be passed along to parent::setup_globals()",
+      "//already done by EM",
+      "// Let BP_Component::setup_globals() do its work.",
+      "//quick link shortcut - may need to revisit this",
+      "//check multisite or normal mode for correct permission checking",
+      "//FIXME MS mode doesn't seem to recognize cross subsite caps, using the proper functions, for now we use switch_blog.",
+      "/* Add 'Events' to the main user profile navigation */",
+      "/* Create SubNav Items */",
+      "// Only if bookings enabled",
+      "// Only the logged in user can access this on his/her profile",
+      "// Only the logged in user can access this on his/her profile",
+      "// Only the logged in user can access this on his/her profile",
+      "// Only the logged in user can access this on his/her profile",
+      "/* Create Profile Group Sub-Nav */",
+      "// Only the logged in user can access this on his/her profile",
+      "// Prevent debug notices",
+      "// Menus for logged in user",
+      "//check multisite or normal mode for correct permission checking",
+      "//FIXME MS mode doesn't seem to recognize cross subsite caps, using the proper functions, for now we use switch_blog.",
+      "/* Add 'Events' to the main user profile navigation */",
+      "/* Create SubNav Items */",
+      "/* Create Profile Group Sub-Nav */",
+      "/* Add some group subnav items */",
+      "/*\n\t * Links and URL Rewriting\n\t */",
+      "//CSS and JS Loading",
+      "/**\n * Delete events when you delete a user.\n */"
+    ],
+    "length": 12372,
+    "preview": "<?php\n//Main loader for buddypress\n/**\n * Events Manager component for BuddyPress\n * @author marcus\n * @since 5.0\n */\nclass BP_EM_Component extends BP_Component {\n\t\n\tfunction __construct() {\n\t\tglobal $bp;\n\t\tparent::start('events',\t__('Events', 'event",
+    "file": "src/code/events-manager/buddypress/bp-em-core.php"
+  }
+]

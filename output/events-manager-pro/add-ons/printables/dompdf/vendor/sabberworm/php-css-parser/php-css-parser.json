@@ -1,0 +1,20 @@
+[
+  {
+    "type": "json",
+    "length": 2528,
+    "preview": "{\n    \"name\": \"sabberworm/php-css-parser\",\n    \"type\": \"library\",\n    \"description\": \"Parser for CSS",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/sabberworm/php-css-parser/composer.json"
+  },
+  {
+    "type": "md",
+    "length": 8648,
+    "preview": "# Revision History\n\n## 8.4.0\n\n### Features\n\n* Support for PHP 8.x\n* PHPDoc annotations\n* Allow usage",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/sabberworm/php-css-parser/CHANGELOG.md"
+  },
+  {
+    "type": "md",
+    "length": 20607,
+    "preview": "# PHP CSS Parser\n\n[![Build Status](https://github.com/sabberworm/PHP-CSS-Parser/workflows/CI/badge.s",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/sabberworm/php-css-parser/README.md"
+  }
+]

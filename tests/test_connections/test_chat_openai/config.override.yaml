@@ -1,0 +1,7 @@
+# File: tests/test_logic/test_end_to_end_openai/config.override.yaml
+# Version: 1.0.0
+current_environment: "remote_gpu_worker"
+system_capabilities:
+  remote_gpu_worker:
+    agent_model_assignments:
+      project_lead: { provider: "openai", model: "gpt-4o" }

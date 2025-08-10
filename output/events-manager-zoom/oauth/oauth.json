@@ -1,0 +1,78 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "get_client"
+    ],
+    "classes": [
+      "Zoom_API"
+    ],
+    "comments": [
+      "//marketplace.zoom.us/user/build';",
+      "/*\n\t* @param int $user_id The User ID in WordPress\n\t* @param int $api_user_id The ID of the account in Google (i.e. the email)\n\t* @return EMIO_Meetup_",
+      "/* @var Zoom_API_Client $client */"
+    ],
+    "length": 612,
+    "preview": "<?php\nnamespace EM_OAuth;\n\nclass Zoom_API extends OAuth_API {\n\n\tpublic static $option_name = 'zoom';\n\tpublic static $service_name = 'Zoom';\n\tpublic static $service_url = 'https://marketplace.zoom.us/user/build';\n\n\t/*\n\t* @param int $user_id The User I",
+    "file": "src/code/events-manager-zoom/oauth/em-zoom-api.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "create_zoom_attendee_form",
+      "em_settings_apps_header",
+      "em_settings_apps_footer"
+    ],
+    "classes": [
+      "Zoom_API_Admin_Settings"
+    ],
+    "comments": [
+      "/* @var \\EM_Notices $EM_Notices */",
+      "/* @var \\WP_Error $attendee_form_id */",
+      "//wp-events-plugin.com/documentation/locations/zoom\">'.__('documentation', 'events-manager-zoom').'</a>';",
+      "//eventsmanagerpro.com/gopro/\" class=\"button-primary\" target=\"_blank\">'. esc_html__('Upgrade Now!', 'events-manager-zoom').'</a> ';",
+      "//wp-events-plugin.com/integrations/zoom/#pro\" class=\"button-secondary\" target=\"_blank\">'. esc_html__('More Info', 'events-manager-zoom').'</a></p>';",
+      "//wp-events-plugin.com/documentation/location-types/zoom/\" class=\"button-secondary\" target=\"_blank\">'. esc_html__('More Info', 'events-manager-zoom')."
+    ],
+    "length": 21382,
+    "preview": "<?php\nnamespace EM_OAuth;\n\nclass Zoom_API_Admin_Settings extends OAuth_API_Admin_Settings {\n\tpublic static $icon_url;\n\n\tpublic static function init(){\n\t    parent::init();\n\t\tif( is_admin() && !empty($_REQUEST['create_zoom_attendee_form']) ){\n\t\t\tadd_a",
+    "file": "src/code/events-manager-zoom/oauth/em-zoom-admin-settings.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "verify_access_token",
+      "revoke_access_token",
+      "add_registrant",
+      "update_registrants_status",
+      "update_registrant_status"
+    ],
+    "classes": [
+      "Zoom_API_Client"
+    ],
+    "comments": [
+      "/**\n\t * We add the scope here so it doesn't produce issues with the parent constructor.\n\t * @var string\n\t */",
+      "//zoom.us/oauth/authorize?client_id=CLIENT_ID&response_type=code&redirect_uri=REDIRECT_URI';",
+      "//zoom.us/oauth/token';",
+      "//zoom.us/oauth/token';",
+      "//api.zoom.us/v2/users/me';",
+      "//zoom.us/oauth/revoke';",
+      "/**\n\t * Gets access token via parent and converts the returned profile data by Meetup into the expected associative array format.\n\t *\n\t * @throws EM_E",
+      "// this could call the parent, but essentially this is the end result, added here due to EM 6.3 pending update and an urgent bugfix on here",
+      "//got this far, so we're good, let's get profile info",
+      "/**\n\t * As of EM 6.4 release this could be removed.\n\t *\n\t * @return bool\n\t * @throws EM_Exception\n\t */",
+      "/**\n\t * @param array $zoom_registrant\n\t * @param int $meeting_id\n\t * @param string $api_basepoint 'meetings', 'webinars' or another type used in API e",
+      "// update registrant status, webinars seem to make their status pending by default if manual approval is required",
+      "// determine the Join URL, get it if necessary",
+      "// we'll need to get all registrants and loop until we find the right one... limitation",
+      "// breaks the do...while loop",
+      "// return array of values",
+      "/**\n\t * @param string $registrant_action\n\t * @param array $registrants_array\n\t * @param int $meeting_id\n\t * @param string $api_basepoint 'meetings', '",
+      "/**\n\t * @param string $registrant_action\n\t * @param string $registrant_id\n\t * @param string $registrant_email\n\t * @param int $meeting_id\n\t * @param st"
+    ],
+    "length": 6204,
+    "preview": "<?php\nnamespace EM_OAuth;\nuse EM_Exception, EM_Zoom;\n\nclass Zoom_API_Client extends OAuth_API_Client {\n\n\t/**\n\t * We add the scope here so it doesn't produce issues with the parent constructor.\n\t * @var string\n\t */\n\tpublic $scope = 'basic+ageless+even",
+    "file": "src/code/events-manager-zoom/oauth/em-zoom-api-client.php"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [
+      "is",
+      "Entities"
+    ],
+    "comments": [
+      "/**\n * Fetch the entities.json file and convert to PHP datastructure.\n */",
+      "// The URL to the official entities JSON file.",
+      "//www.w3.org/TR/2012/CR-html5-20121217/entities.json';",
+      "/** Entity lookup tables. This class is automatically generated. */",
+      "//print serialize($table);"
+    ],
+    "length": 638,
+    "preview": "<?php\n/**\n * Fetch the entities.json file and convert to PHP datastructure.\n */\n\n// The URL to the official entities JSON file.\n$ENTITIES_URL = 'http://www.w3.org/TR/2012/CR-html5-20121217/entities.json';\n\n$payload = file_get_contents($ENTITIES_URL);",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/masterminds/html5/bin/entities.php"
+  }
+]

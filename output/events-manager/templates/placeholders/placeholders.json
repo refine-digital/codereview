@@ -1,0 +1,138 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This file contains the HTML generated for a single location Google map. You can copy this file to yourthemefolder/plugins/events/templates and m",
+      "/* @var $EM_Location EM_Location */",
+      "//assign random number for element id reference",
+      "//get dimensions with px or % added in",
+      "//generate map depending on type",
+      "//www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"margin: auto; background: none; display: block; shape-rendering: auto;\" width"
+    ],
+    "length": 4509,
+    "preview": "<?php \n/*\n * This file contains the HTML generated for a single location Google map. You can copy this file to yourthemefolder/plugins/events/templates and modify it in an upgrade-safe manner.\n * \n * There is one argument passed to you, which is the ",
+    "file": "src/code/events-manager/templates/placeholders/locationmap.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */",
+      "/* @var $EM_Booking EM_Booking */"
+    ],
+    "length": 638,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n$people = array();\n$EM_Bookings = $EM_Event->get_bookings();\nif( count($EM_Bookings->bookings) > 0 ){\n\t?>\n\t<ul class=\"event-attendees\">\n\t<?php\n\tforeach( $EM_Bookings as $EM_Booking){ /* @var $EM_Booking EM_Booking ",
+    "file": "src/code/events-manager/templates/placeholders/attendees.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */",
+      "/* @var $EM_Booking EM_Booking */"
+    ],
+    "length": 610,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n$people = array();\n$EM_Bookings = $EM_Event->get_bookings();\nif( count($EM_Bookings->bookings) > 0 ){\n\t?>\n\t<ul class=\"event-attendees\">\n\t<?php\n\tforeach( $EM_Bookings as $EM_Booking){ /* @var $EM_Booking EM_Booking ",
+    "file": "src/code/events-manager/templates/placeholders/attendeespendinglist.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* \n * This is where the booking form is generated.\n * For non-advanced users, It's SERIOUSLY NOT recommended you edit this form directly if avoidable",
+      "/* @var $EM_Event EM_Event */",
+      "// first hook before anything is checked",
+      "//count tickets and available tickets",
+      "//decide whether user can book, event is open for bookings etc.",
+      "//whether there are any available tickets right now",
+      "//if user is logged out, check for member tickets that might be available, since we should ask them to log in instead of saying 'bookings closed'",
+      "// We are firstly checking if the user has already booked a ticket at this event, if so offer a link to view their bookings.",
+      "//Double bookings not allowed ?>",
+      "//bookings not enabled ?>",
+      "//event has started ?>",
+      "//User is not logged in, show login form (enabled on settings page)",
+      "//Tickets exist, so we show a booking form. ?>",
+      "//show if more than 1 ticket, or if in forced ticket list view mode",
+      "//Show multiple tickets form to user, or single ticket list if settings enable this",
+      "//If logged out, can be allowed to see this in settings witout the register form",
+      "//Pro Custom Booking Form. You can create your own custom form by hooking into this action and setting the option above to true",
+      "//If you just want to modify booking form fields, you could do so here",
+      "/* This action pre-theme makeover in v6 was used for any form actions such as payment selection, etc. and had to remain here for backwards compatibili",
+      "//',get_option('dbem_bookings_submit_button')) ): //Settings have an image url (we assume). Use it here as the button.?>",
+      "//Display normal submit button ?>"
+    ],
+    "length": 8068,
+    "preview": "<?php  \n/* \n * This is where the booking form is generated.\n * For non-advanced users, It's SERIOUSLY NOT recommended you edit this form directly if avoidable, as you can change booking form settings in various less obtrusive and upgrade-safe ways:\n ",
+    "file": "src/code/events-manager/templates/placeholders/bookingform.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 382,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n$tags = get_the_terms($EM_Event->post_id, EM_TAXONOMY_TAG);\nif( is_array($tags) && count($tags) > 0 ){\n\t$tags_list = array();\n\tforeach($tags as $tag){ \n\t\t$link = get_term_link($tag->slug, EM_TAXONOMY_TAG);\n\t\tif ( i",
+    "file": "src/code/events-manager/templates/placeholders/eventtags.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * You can override this by copying this file to wp-content/themesyourthemefolder/plugins/events-manager/placeholders/ and modifying it however you",
+      "/* @var $EM_Event EM_Event */",
+      "//only show this to logged in users"
+    ],
+    "length": 1873,
+    "preview": "<?php\n/*\n * You can override this by copying this file to wp-content/themesyourthemefolder/plugins/events-manager/placeholders/ and modifying it however you need.\n * There are a few variables made available to you:\n * \n * $EM_Event - EM_Event object ",
+    "file": "src/code/events-manager/templates/placeholders/bookingbutton.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */",
+      "/* @var $EM_Booking EM_Booking */"
+    ],
+    "length": 622,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n$people = array();\n$EM_Bookings = $EM_Event->get_bookings();\nif( count($EM_Bookings->bookings) > 0 ){\n\t?>\n\t<ul class=\"event-attendees\">\n\t<?php\n\tforeach( $EM_Bookings as $EM_Booking){ /* @var $EM_Booking EM_Booking ",
+    "file": "src/code/events-manager/templates/placeholders/attendeeslist.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 388,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n$count_cats = count($EM_Event->get_categories()->categories) > 0;\nif( $count_cats > 0 ){\n\t?>\n\t<ul class=\"event-categories\">\n\t\t<?php foreach($EM_Event->get_categories() as $EM_Category): ?>\n\t\t\t<li><?php echo $EM_Cat",
+    "file": "src/code/events-manager/templates/placeholders/categories.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $EM_Event EM_Event */",
+      "/* @var $EM_Category EM_Category */"
+    ],
+    "length": 714,
+    "preview": "<?php\n/* @var $EM_Event EM_Event */\n$count_cats = count($EM_Event->get_categories()->categories) > 0;\nif( $count_cats > 0 ){\n\t$one_image = false;\n\t?>\n\t<ul class=\"event-categories-images\">\n\t\t<?php foreach($EM_Event->get_categories() as $EM_Category): ",
+    "file": "src/code/events-manager/templates/placeholders/eventcategoriesimages.php"
+  },
+  {
+    "type": "txt",
+    "length": 860,
+    "preview": "This folder has files containing some of the more complex placeholders output information.\n\nFiles in",
+    "file": "src/code/events-manager/templates/placeholders/readme.txt"
+  }
+]

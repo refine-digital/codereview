@@ -1,0 +1,118 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "admin_init",
+      "options",
+      "load_font_family",
+      "regenerate_fonts_folder"
+    ],
+    "classes": [
+      "Admin"
+    ],
+    "comments": [
+      "/*\n\t * --------------------------------------------\n\t * Email Reminders\n\t * --------------------------------------------\n\t */",
+      "/**\n\t * Generates meta box for settings page\n\t */",
+      "//You can further customize all these templates, or parts of them by overriding our template files as per our %s.",
+      "// get available fonts",
+      "// Ticket and invoice options",
+      "// Check if the base filename is readable",
+      "// Try $file_Bold.$ext etc.",
+      "// Copy the files to the font directory.",
+      "//$entry[$var] = $dompdf->getOptions()->get('fontDir') . '/' . mb_substr(basename($normal), 0, -4);",
+      "// Verify that the fonts exist and are readable",
+      "/* skipping this, no need to copy\n\t\t\t$dest = $dompdf->getOptions()->get('fontDir') . '/' . basename($src);\n\t\t\t\n\t\t\tif ( !is_writeable(dirname($dest)) )",
+      "// doing this instead",
+      "// START extra - we don't need full path",
+      "// Store the fonts in the lookup table",
+      "// make use of WP polyfill",
+      "// glob all fonts and check if they exist in fonts json",
+      "// empty the JSON file"
+    ],
+    "length": 12124,
+    "preview": "<?php\nnamespace EM_Pro\\Printables;\n\nuse Dompdf\\Dompdf, Dompdf\\CanvasFactory, Dompdf\\Exception, Dompdf\\FontMetrics, Dompdf\\Options, FontLib\\Font;\n\nclass Admin {\n\t\n\tpublic static function init(){\n\t\tadd_action('em_options_page_footer_bookings', '\\EM_Pro",
+    "file": "src/code/events-manager-pro/add-ons/printables/printables-admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "wp_init",
+      "booking_email_attachments",
+      "get_invoice_number",
+      "prepare_tickets_email_attachment",
+      "get_pdf_content",
+      "booking_admin_download_buttons",
+      "booking_admin_download_buttons_mb",
+      "load_dompdf",
+      "download_booking_pdf",
+      "filter_filename"
+    ],
+    "classes": [
+      "PDFs"
+    ],
+    "comments": [
+      "//add booking email icals",
+      "// short-circuit pdf downloads",
+      "//add email ical attachment",
+      "//only email when confirmed",
+      "// attach a booking tickets PDF for each event booking",
+      "// attach an invoice",
+      "// (Optional) Setup the paper size and orientation",
+      "// Render the HTML as PDF",
+      "// Output the generated PDF",
+      "// only show invoice dl for mb booking or single boookings",
+      "// only show tickets button for single bookings",
+      "// get font based on font to be used",
+      "// (Optional) Setup the paper size and orientation",
+      "// Render the HTML as PDF",
+      "// Output the generated PDF to Browser",
+      "// sanitize filename",
+      "//en.wikipedia.org/wiki/Filename#Reserved_characters_and_words",
+      "//msdn.microsoft.com/en-us/library/windows/desktop/aa365247%28v=vs.85%29.aspx",
+      "//www.rfc-editor.org/rfc/rfc3986#section-2.2",
+      "//www.ietf.org/rfc/rfc1738.txt",
+      "// avoids \".\", \"..\" or \".hiddenFiles\"",
+      "// optional beautification",
+      "//if ($beautify) $filename = beautify_filename($filename);",
+      "// maximize filename length to 255 bytes http://serverfault.com/a/9548/44086"
+    ],
+    "length": 9563,
+    "preview": "<?php\nnamespace EM_Pro\\Printables;\nuse Dompdf\\Dompdf, EM_Mailer, EM_Multiple_Bookings;\n\nclass PDFs {\n\t\n\tpublic static function init(){\n\t\tadd_action('init', '\\EM_Pro\\Printables\\PDFs::wp_init');\n\t\t//add booking email icals\n\t\tadd_filter('em_booking_emai",
+    "file": "src/code/events-manager-pro/add-ons/printables/printables-pdfs.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 153,
+    "preview": "<?php\nuse Dompdf\\Dompdf;\n\nif( get_option('dbem_bookings_pdf') ){\n\tinclude('printables-pdfs.php');\n}\nif( is_admin() ){\n\tinclude('printables-admin.php');\n}",
+    "file": "src/code/events-manager-pro/add-ons/printables/printables.php"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//Event Taxonomy Image Picker",
+      "// If the media frame already exists, reopen it.",
+      "// Create a new media frame",
+      "// Set to true to allow multiple files to be selected",
+      "// When an image is selected in the media frame...",
+      "// Get media attachment details from the frame state",
+      "// Send the attachment URL to our custom image input field.",
+      "// Send the attachment id to our hidden input",
+      "// Unhide the remove image link",
+      "// Finally, open the modal on click",
+      "// DELETE IMAGE LINK",
+      "// Clear out the preview image",
+      "// Un-hide the add image link",
+      "// Delete the image id from the hidden input"
+    ],
+    "length": 1625,
+    "preview": "jQuery(document).ready(function($) {\n\n\t//Event Taxonomy Image Picker\n\tvar frame;\t\n\t// ADD IMAGE LINK\n\t$('.pdf-image-wrap .upload-img-button').on( 'click', function( event ){\n\t\tevent.preventDefault();\n\t\t// If the media frame already exists, reopen it.",
+    "file": "src/code/events-manager-pro/add-ons/printables/printables-pdf-admin.js"
+  }
+]

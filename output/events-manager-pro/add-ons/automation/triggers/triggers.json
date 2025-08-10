@@ -1,0 +1,157 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "run",
+      "get_name",
+      "get_description"
+    ],
+    "classes": [
+      "Booking_Status"
+    ],
+    "comments": [
+      "// status changes, 2 accepted args",
+      "// new bookings, 2 accepted args",
+      "// extract runtime data",
+      "/* @var \\EM_Booking $EM_Booking */",
+      "/* @var \\EM_Booking $EM_Booking */",
+      "// fired when a booking status has changed or saved first time, params passed ore that of the $listener hooks which are a $result and $EM_Booking obje",
+      "// if booking has status we are looking for, then it was either changed or saved to that status"
+    ],
+    "length": 1708,
+    "preview": "<?php\nnamespace EM\\Automation\\Triggers;\n\nclass Booking_Status extends Trigger {\n\t\n\tpublic static $type = 'booking-status';\n\tpublic static $context = 'bookings';\n\tpublic static $listener = array(\n\t\t'em_booking_status_changed' => 2, // status changes, ",
+    "file": "src/code/events-manager-pro/add-ons/automation/triggers/booking-status.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "run",
+      "get_name",
+      "get_description"
+    ],
+    "classes": [
+      "Event_Time"
+    ],
+    "comments": [
+      "/**\n\t * @var string Check per minute whether there's an event starting x minutes/hours/days before\n\t */",
+      "// 10-minute time window",
+      "// more precise since we're talking minutes",
+      "// less precise, give 1 hour window",
+      "// finds all evens happening within this time frame, fire each one and tag it, so it's not fired twice",
+      "// if global tables, we're only workin on blog-based automation (network-based could come after!)",
+      "// we do a search from the start time inwards, whichever side of the tense it is. We assume that the exact-ish time trigger is hit by checking the met",
+      "// find events that ended x time before for $window seconds",
+      "// get events that match timeframe and haven't already been triggered",
+      "// go through the events, run actions and mark triggered",
+      "// we'll mark this as triggered before running actions, because if something goes wrong we could end up with an endless loop of retriggering without c"
+    ],
+    "length": 3242,
+    "preview": "<?php\nnamespace EM\\Automation\\Triggers;\n\nclass Event_Time extends Trigger {\n\t\n\t/**\n\t * @var string Check per minute whether there's an event starting x minutes/hours/days before\n\t */\n\tpublic static $is_cron = true;\n\tpublic static $listener = 'em_auto",
+    "file": "src/code/events-manager-pro/add-ons/automation/triggers/event-time.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "run",
+      "get_name",
+      "get_description"
+    ],
+    "classes": [
+      "Booking_Time"
+    ],
+    "comments": [
+      "/**\n\t * @var string Check per minute whether there's an event starting x minutes/hours/days before\n\t */",
+      "// 10-minute time window",
+      "// more precise since we're talking minutes",
+      "// less precise, give 1 hour window",
+      "// finds all evens happening within this time frame, fire each one and tag it, so it's not fired twice",
+      "// if global tables, we're only workin on blog-based automation (network-based could come after!) so we need to fliter out bookings that aren't for th",
+      "// find events that ended x time before for $window seconds",
+      "// get events that match timeframe and haven't already been triggered",
+      "// go through the events, run actions and mark triggered",
+      "// we'll mark this as triggered before running actions, because if something goes wrong we could end up with an endless loop of retriggering without c"
+    ],
+    "length": 3392,
+    "preview": "<?php\nnamespace EM\\Automation\\Triggers;\n\nclass Booking_Time extends Trigger {\n\t\n\tpublic static $type = 'booking-time';\n\tpublic static $context = 'bookings';\n\t/**\n\t * @var string Check per minute whether there's an event starting x minutes/hours/days ",
+    "file": "src/code/events-manager-pro/add-ons/automation/triggers/booking-time.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "handle",
+      "log_error",
+      "run",
+      "filter",
+      "filter_event",
+      "fire",
+      "cron_underway",
+      "cron_complete",
+      "init",
+      "register",
+      "listen",
+      "get_triggers",
+      "get_trigger_data",
+      "get_name",
+      "get_description",
+      "load_admin"
+    ],
+    "classes": [
+      "Trigger",
+      "to",
+      "name"
+    ],
+    "comments": [
+      "/**\n\t * @var string Type of trigger, such as a trigger for a specific event time or when a certain booking action is performed\n\t */",
+      "/**\n\t * @var boolean Denotes that this is a cron dependent trigger. If set to true the static::$listener should be set to any cron action, preferably ",
+      "/**\n\t * Single action/filter name or alternatively an associative array of action/filter => callable sets allowing triggers to listen to multiple hook",
+      "/**\n\t * @var string The context this trigger can be fired under, which could be an event, a booking or anything else so that only actions that support",
+      "/**\n\t * @var int Unique identifier of the trigger in the automation table\n\t */",
+      "/**\n\t * @var string  Name of the trigger, reference for the trigger to admins.\n\t */",
+      "/**\n\t * @var int ID of object to be acted upon, depending on the trigger, such as an event time for a specific event then the object_id would be an ev",
+      "/**\n\t * @var int Unix timestamp for when to trigger this automation, relevant when specific to objects, such as a specific event a certain time before",
+      "/**\n\t * @var array[]   Array of associative arrays containing data about each action to be taken, sequentially.\n\t */",
+      "/**\n\t * @var array[]   Array of associative arrays containing data about each action to be taken, sequentially.\n\t */",
+      "/**\n\t * @var bool True if trigger is enabled, false if not.\n\t */",
+      "/**\n\t * @var bool Flag whether the trigger is currently underway during a cron job, in which case it should be ignored by following cron calls until c",
+      "/**\n\t * @var bool If set to true, trigger will apply for ALL events on the network when in MS Global mode, otherwise it'll only go for events triggere",
+      "/**\n\t * @var array Log data that would be added to the automation logging table under the 'data' serialized array. Extending classes can add extra run",
+      "/**\n\t * @var Trigger[]   Array of triggers currently active\n\t */",
+      "/**\n\t * Handles an event that set this trigger off, whether a cron action, or other hook.\n\t * @param array ...$runtime_data  Data supplied by action/f",
+      "// catch for logging",
+      "// log it (currently experimental)",
+      "// for now, we're just returning first arg if it exists, so that filters always pass. We won't modify filters at this time, maybe later for more advan",
+      "// we're currently focusing on automation rather than hook manipulation",
+      "// this was a WP Error, log if set to verbose since user will likely have gotten an admin email about the fatal error",
+      "/**\n\t * Checks the conditions the trigger requires run the fire() method on applicable objects, for example all events happening within x time will fi",
+      "// when overriding this function, each trigger cah check its conditions and whether to fire the trigger which in turn will",
+      "/* @var \\EM_Event $EM_Event */",
+      "// filter could request to get all bookings and then of a certain status or condition",
+      "// get all bookings as per the status filter",
+      "// get all bookings as per the status filter",
+      "// check if the event matches filters, if not return",
+      "/* @var \\EM_Booking $EM_Booking */",
+      "// filter could get the event of that booking and pass it onto actions",
+      "// filter here, return null if filter is set and doesn't match object, overriding classes could in theory unset the trigger_data['output'] filter opti",
+      "// only specific statuses",
+      "// get all bookings as per the status filter",
+      "// return some sort of contect for locations - TBD",
+      "/**\n\t * Fires or 'pulls' the trigger to perform the relevant actions and then returns whether all the actions were fired.\n\t * In this process, overrid",
+      "/* @var Automation\\Actions\\Action $action */",
+      "/**\n\t * Sets the doing_cron flag in the database for this trigger so that overlapping crons won't result in firing the same trigger twice for the same",
+      "/**\n\t * Sets the doing_cron flag in the database for this trigger so that overlapping crons won't result in firing the same trigger twice for the same",
+      "/**\n\t * Static functionality, handling all triggers of this type\n\t */",
+      "/**\n\t * Initializes trigger and hooks into the automation class to register itself.\n\t * @return void\n\t */",
+      "/**\n\t * Fired on Automation::init() after all triggers and actions have been registered. A trigger can listen to anything, be it a cron, or a specific",
+      "// hook or do what you need to do so that triggers will be triggered",
+      "// a simple trigger with only 1 argument passed in priority 10, send straight to Trigger->handle()",
+      "/**\n\t * @return Trigger[]\n\t */",
+      "// load the triggers created",
+      "// get class name of admin",
+      "// include native triggers already pre-loaded"
+    ],
+    "length": 17555,
+    "preview": "<?php\n\nnamespace EM\\Automation\\Triggers;\nuse EM\\Automation;\n\nclass Trigger {\n\t\n\t/**\n\t * @var string Type of trigger, such as a trigger for a specific event time or when a certain booking action is performed\n\t */\n\tpublic static $type = 'trigger';\n\t/**",
+    "file": "src/code/events-manager-pro/add-ons/automation/triggers/trigger.php"
+  }
+]

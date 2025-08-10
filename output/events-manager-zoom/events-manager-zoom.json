@@ -1,0 +1,62 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// add zoom options to EM settings"
+    ],
+    "length": 989,
+    "preview": "<?php\n// add zoom options to EM settings\nif( !get_option('dbem_zoom_version') ){\n\t$location_types = get_option('dbem_location_types');\n\tif( empty($location_types['zoom_webinar']) && empty($location_types['zoom_meeting']) && empty($location_types['zoo",
+    "file": "src/code/events-manager-zoom/em-zoom-install.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "callback",
+      "get_directory_url",
+      "dev_update_check"
+    ],
+    "classes": [
+      "EM_Zoom"
+    ],
+    "comments": [
+      "/*\nPlugin Name: Events Manager - Zoom Integration\nVersion: 1.6\nPlugin URI: http://wp-events-plugin.com\nDescription: Adds Zoom integration for Events M",
+      "/*\nCopyright (c) 2023, Pixelite SL\n\nThis program is free software; you can redistribute it and/or\nmodify it under the terms of the GNU General Public ",
+      "//an absolute path to this directory",
+      "//provisional link until we release an update, not worth making translatable as will be removed soon",
+      "// oauth stuff - this could be loaded proactively in the future",
+      "// add callback action here to avoid loading APIs unecessarily in the future",
+      "/**\n\t * Handles callbacks such as OAuth authorizations and disconnects\n\t */",
+      "/**\n\t * Checks to see if a dev version is available (when requested via EM settings)\n\t * @param $transient\n\t * @return mixed\n\t */",
+      "// Check if the transient contains the 'checked' information",
+      "//only bother if we're checking for dev versions",
+      "//check WP repo for trunk version",
+      "//plugins.svn.wordpress.org/events-manager-zoom/trunk/events-manager-zoom.php');",
+      "//we have a version number!",
+      "//wordpress.org/extend/plugins/events-manager-zoom/';",
+      "//downloads.wordpress.org/plugin/events-manager-zoom.zip';",
+      "// dev updates checker",
+      "// Add this plugin to EM's dev updates check (EM 5.9.9.2 and later)"
+    ],
+    "length": 5357,
+    "preview": "<?php\n/*\nPlugin Name: Events Manager - Zoom Integration\nVersion: 1.6\nPlugin URI: http://wp-events-plugin.com\nDescription: Adds Zoom integration for Events Manager\nAuthor: Pixelite\nAuthor URI: https://pixelite.com\n*/\n\n/*\nCopyright (c) 2023, Pixelite S",
+    "file": "src/code/events-manager-zoom/events-manager-zoom.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 1656,
+    "preview": "<?php\nadd_filter('em_documentation', function( $EM_Documentation ){\n    $EM_Documentation['placeholders']['event-locations']['Zoom Meetings & Webinars'] = array(\n        'placeholders' => array(\n            '#_EVENTLOCATION{id}' => array( 'desc' => '",
+    "file": "src/code/events-manager-zoom/em-zoom-docs.php"
+  },
+  {
+    "type": "txt",
+    "length": 7103,
+    "preview": "=== Events Manager - Zoom Integration ===\nContributors: pxlite, msykes\nDonate link: https://wp-event",
+    "file": "src/code/events-manager-zoom/readme.txt"
+  }
+]

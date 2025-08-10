@@ -1,0 +1,154 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Event    $EM_Event       The current EM_Event object being displayed.                 */",
+      "/* @var int         $id             A unique ID use to display this calendar instance            */",
+      "/* @var EM_DAteTime $EM_DateTime    The current date/time in an EM_DateTime object               */",
+      "/* @var array       $args           The $args passed onto the calendar template via EM_Calendar  */",
+      "/* @var array       $calendar       The $calendar array of data passed on by EM_Calendar         */",
+      "//www.w3.org/2000/svg\"><path d=\"M10 14L3 7.5L10 1\" stroke=\"#555\" stroke-linecap=\"square\"></path></svg>",
+      "//www.w3.org/2000/svg\"><path d=\"M5 14L12 7.5L5 1\" stroke=\"#555\" stroke-linecap=\"square\"></path></svg>"
+    ],
+    "length": 2242,
+    "preview": "<?php\n/* @var EM_Event    $EM_Event       The current EM_Event object being displayed.                 */\n/* @var int         $id             A unique ID use to display this calendar instance            */\n/* @var EM_DAteTime $EM_DateTime    The curr",
+    "file": "src/code/events-manager/templates/calendar/section-header-navigation.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Event    $EM_Event   The current EM_Event object being displayed.                 */",
+      "/* @var array       $events     Array of event\n/* @var array       $args       The $args passed onto the calendar template via EM_Calendar  */",
+      "/* @var array       $calendar   The $calendar array of data passed on by EM_Calendar         */"
+    ],
+    "length": 1584,
+    "preview": "<?php\n/* @var EM_Event    $EM_Event   The current EM_Event object being displayed.                 */\n/* @var array       $events     Array of event\n/* @var array       $args       The $args passed onto the calendar template via EM_Calendar  */\n/* @v",
+    "file": "src/code/events-manager/templates/calendar/section-preview-content.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Event $EM_Event */",
+      "/* @var $args */",
+      "/* @var $calendar */"
+    ],
+    "length": 157,
+    "preview": "<?php\n/* @var EM_Event $EM_Event */\n/* @var $args */\n/* @var $calendar */\necho $EM_Event->output( get_option('dbem_calendar_preview_tooltip_event_format') );",
+    "file": "src/code/events-manager/templates/calendar/preview-event-tooltip.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [
+      "names"
+    ],
+    "comments": [
+      "/* @var EM_DateTime  $EM_DateTime    An EM_DateTime object in the timezone of the blog, for current date being displayed.                            *",
+      "/* @var array        $cell_data      An EM_DateTime object in the timezone of the blog, for current date being displayed.                            *",
+      "/* @var int          $date           UTC Representation of current date being displayed. Time is 00:00:00 UTC, so beware with shifts in timezone!    *",
+      "/* @var array        $args           The $args passed onto the calendar template via EM_Calendar                                                     *",
+      "/* @var array        $calendar       The $calendar array of data passed on by EM_Calendar                                                            *",
+      "/* we're adding some subcomponent class names not generic 'em' and 'pixelbones' classes */",
+      "/* @var EM_Event $EM_Event */"
+    ],
+    "length": 2122,
+    "preview": "<?php\n/* @var EM_DateTime  $EM_DateTime    An EM_DateTime object in the timezone of the blog, for current date being displayed.                            */\n/* @var array        $cell_data      An EM_DateTime object in the timezone of the blog, for ",
+    "file": "src/code/events-manager/templates/calendar/preview-date-modal.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [
+      "names"
+    ],
+    "comments": [
+      "/*\n * This file contains the HTML generated for all calendars. You can copy this file to yourthemefolder/plugins/events-manager/templates and modify i",
+      "/* @var array       $args       The $args passed onto the calendar template via EM_Calendar  */",
+      "/* @var array       $calendar   The $calendar array of data passed on by EM_Calendar         */",
+      "// used in two templates",
+      "// display section for showing header navigation (datepicker, arrows, search toggle etc.) of the calendar",
+      "// display section for showing weekdays at top of calendar",
+      "// display main section",
+      "// display section for showing preview content of an event",
+      "/*\n\tThe following is a quick resize for calenadars that force an event aspect quickly avoiding as much jank as possible. This is still redone via resi"
+    ],
+    "length": 2492,
+    "preview": "<?php\n/*\n * This file contains the HTML generated for all calendars. You can copy this file to yourthemefolder/plugins/events-manager/templates and modify it in an upgrade-safe manner.\n *\n * Note that leaving the class names for the previous/next lin",
+    "file": "src/code/events-manager/templates/calendar/calendar.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Event    $EM_Event   The current EM_Event object being displayed.                 */",
+      "/* @var array       $args       The $args passed onto the calendar template via EM_Calendar  */",
+      "/* @var array       $calendar   The $calendar array of data passed on by EM_Calendar         */"
+    ],
+    "length": 907,
+    "preview": "<?php\n/* @var EM_Event    $EM_Event   The current EM_Event object being displayed.                 */\n/* @var array       $args       The $args passed onto the calendar template via EM_Calendar  */\n/* @var array       $calendar   The $calendar array ",
+    "file": "src/code/events-manager/templates/calendar/preview-event-modal.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Event    $EM_Event   The current EM_Event object being displayed.                 */",
+      "/* @var array       $args       The $args passed onto the calendar template via EM_Calendar  */",
+      "/* @var array       $calendar   The $calendar array of data passed on by EM_Calendar         */"
+    ],
+    "length": 836,
+    "preview": "<?php\n/* @var EM_Event    $EM_Event   The current EM_Event object being displayed.                 */\n/* @var array       $args       The $args passed onto the calendar template via EM_Calendar  */\n/* @var array       $calendar   The $calendar array ",
+    "file": "src/code/events-manager/templates/calendar/section-header-weekdays.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\nThis template is the main meat of the calendar, most of the heavy lifting is done here to show dates according to settings.\n\n2022-07 - It's recomme",
+      "/* @var array       $args       The $args passed onto the calendar template via EM_Calendar  */",
+      "/* @var array       $calendar   The $calendar array of data passed on by EM_Calendar         */",
+      "//to prevent an extra tr",
+      "//this counts collumns in the $calendar_array['cells'] array",
+      "//each time this collumn number is reached, we create a new collumn, the number of cells should divide evenly by the number of row_headers",
+      "// go through day cells",
+      "//In some cases (particularly when long events are set to show here) long events and all day events are not shown in the right order. In these cases,",
+      "//if you want to sort events cronologically on each day, including all day events at top and long events within the right times, add define('EM_CALEND",
+      "//if( defined('EM_CALENDAR_SORTTIME') && EM_CALENDAR_SORTTIME ) ksort($cell_data['events']); //indexes are timestamps",
+      "// ouptut event data",
+      "/* @var EM_Event $EM_Event */",
+      "// get primary color of event",
+      "// check multi-day events first",
+      "// multi-day event classes",
+      "//$days_left_in_event = floor(($EM_Event->end()->getTimestamp() - $cell_data['date']) / DAY_IN_SECONDS);",
+      "// first day of event",
+      "// is end date at and of this week?",
+      "// event continues onto following week, so decide when it ends or if it rolls over to next week",
+      "// spans a few more days and ends",
+      "// generate event multiday content",
+      "// take event content and slot it into cell array, whether into reserved spot or to an unreserved spot",
+      "// fill up the slots which will be empty on first column",
+      "// adding a large decimal to prevent large scale calendars",
+      "// check if reserved",
+      "// already reserved, so add to content slot",
+      "// regular single-day event",
+      "// considerations for start of week",
+      "// reorder slot lists built further up, and re-index them so they're numeric from 0",
+      "// this will be re-used for the rest of the week",
+      "// free up slots after content has been output",
+      "// remove empty slots at end of multiday",
+      "//create a new row once we reach the end of a table collumn"
+    ],
+    "length": 9555,
+    "preview": "<?php\n/*\nThis template is the main meat of the calendar, most of the heavy lifting is done here to show dates according to settings.\n\n2022-07 - It's recommended to avoid tweaking this file, as more work will inevitably be done in this part of the cal",
+    "file": "src/code/events-manager/templates/calendar/section-dates.php"
+  }
+]

@@ -20,3 +20,11 @@ package-lock.json
 .env.production.local
 # -------------------------
 
+# Exclude any code we are reviewing
+src/
+.zip
+tmp/
+
+# Exclude __pycache__
+__pycache__/
+.pytest_cache/

@@ -1,0 +1,19 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "wpfc_admin_options_post_type_event",
+      "wpfc_em_admin_notice",
+      "wpfc_em_admin_options",
+      "wpfc_em_install"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Adds a note to the event post type in the admin area, so it's obvious EM is interfering.\n */",
+      "//check for updates - try adding one option, if it works then it's a first time install so add more"
+    ],
+    "length": 3182,
+    "preview": "<?php\n/**\n * Adds a note to the event post type in the admin area, so it's obvious EM is interfering.\n */\nfunction wpfc_admin_options_post_type_event(){\n\techo \" - <i>powered by Events Manager</i>\";\n}\nadd_action('wpfc_admin_options_post_type_event','w",
+    "file": "src/code/events-manager/admin/settings/wpfc-admin.php"
+  }
+]

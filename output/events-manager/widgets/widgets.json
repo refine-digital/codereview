@@ -1,0 +1,91 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "__construct",
+      "widget",
+      "get_v6_instance_options",
+      "update",
+      "form",
+      "fix_scope"
+    ],
+    "classes": [
+      "EM_Widget"
+    ],
+    "comments": [
+      "/**\n * @author marcus\n * Standard events list widget\n */",
+      "/** constructor */",
+      "/** @see WP_Widget::widget */",
+      "//remove owner searches",
+      "//legacy stuff - deal with unsaved pre-v6 items, v6 saved and preview modes",
+      "//add li tags to old widgets that have no forced li wrappers",
+      "//orderby fix for previous versions with old orderby values",
+      "//replace old values",
+      "/** @see WP_Widget::update */",
+      "//balance tags and sanitize output formats",
+      "/** @see WP_Widget::form */",
+      "// still unmigrated, not saved either during v6",
+      "/**\n     * Backwards compatability for an old setting which is now just another scope.\n     * @param unknown_type $instance\n     * @return string\n    "
+    ],
+    "length": 11749,
+    "preview": "<?php\n/**\n * @author marcus\n * Standard events list widget\n */\nclass EM_Widget extends WP_Widget {\n\t\n\tvar $defaults;\n\t\n\tpublic static function init(){\n\t\treturn register_widget(\"EM_Widget\");\n\t}\n\t\n    /** constructor */\n    function __construct() {\n   ",
+    "file": "src/code/events-manager/widgets/em-events.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "__construct",
+      "widget",
+      "update",
+      "form"
+    ],
+    "classes": [
+      "EM_Widget_Calendar"
+    ],
+    "comments": [
+      "/**\n * @author marcus\n * Standard events calendar widget\n */",
+      "/** constructor */",
+      "/** @see WP_Widget::widget */",
+      "//Shall we show a specific month?",
+      "//Our Widget Content",
+      "/** @see WP_Widget::update */",
+      "//filter the new instance and replace blanks with defaults",
+      "/** @see WP_Widget::form */"
+    ],
+    "length": 3325,
+    "preview": "<?php\n/**\n * @author marcus\n * Standard events calendar widget\n */\nclass EM_Widget_Calendar extends WP_Widget {\n\t\n\tvar $defaults = array();\n\t\n\tpublic static function init(){\n\t\treturn register_widget(\"EM_Widget_Calendar\");\n\t}\n\t\n    /** constructor */\n",
+    "file": "src/code/events-manager/widgets/em-calendar.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "__construct",
+      "widget",
+      "get_v6_instance_options",
+      "update",
+      "form"
+    ],
+    "classes": [
+      "EM_Locations_Widget"
+    ],
+    "comments": [
+      "/**\n * @author marcus\n * Standard events list widget\n */",
+      "/** constructor */",
+      "/** @see WP_Widget::widget */",
+      "//make sure no owner searches are being run",
+      "//legacy stuff - deal with unsaved pre-v6 items, v6 saved and preview modes",
+      "//add li tags to old widgets that have no forced li wrappers",
+      "/** @see WP_Widget::update */",
+      "//filter the new instance and replace blanks with defaults",
+      "//balance tags and sanitize output formats",
+      "/** @see WP_Widget::form */",
+      "// still unmigrated, not saved either during v6"
+    ],
+    "length": 7985,
+    "preview": "<?php\n/**\n * @author marcus\n * Standard events list widget\n */\nclass EM_Locations_Widget extends WP_Widget {\n\t\n\tvar $defaults = array();\n\t\n\tpublic static function init(){\n\t\treturn register_widget(\"EM_Locations_Widget\");\n\t}\n\t\n    /** constructor */\n  ",
+    "file": "src/code/events-manager/widgets/em-locations.php"
+  }
+]

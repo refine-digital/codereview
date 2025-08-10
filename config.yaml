@@ -1,0 +1,105 @@
+# File: config.yaml
+# Version: 1.3.1
+# Models: deepseek-coder-v2:lite (default)
+# --- Core Configuration ---
+src_dir: "./src/code"
+output_dir: "./output"
+file_types:
+  - php
+  - js
+  - ts
+  - tsx
+  - html
+  - css
+  - scss
+  - sql
+  - py
+  - yaml
+  - yml
+  - json
+  - po
+  - pot
+  - md
+  - txt
+  - sh
+
+# --- External API Providers ---
+# Define connection details for external, API-based models.
+# The 'api_key_env' should correspond to a variable in your .env file.
+external_apis:
+  openai:
+    api_key_env: "OPENAI_API_KEY"
+    # base_url is optional and defaults to the official OpenAI API.
+  
+  gemini:
+    api_key_env: "GEMINI_API_KEY"
+    # Note: Gemini uses a different SDK. A custom adapter or proxy would be needed in analyze.py to make it compatible.
+
+# --- System Capabilities ---
+current_environment: "remote_gpu_worker" # Switched to remote to demonstrate external API usage
+
+system_capabilities:
+  local_mac:
+    name: "Local macOS Machine"
+    processor: "Apple M1"
+    ram_gb: 32
+    description: "A capable local machine for running medium-sized models efficiently."
+    agent_model_assignments:
+      project_lead: { provider: "gemini", model: "deepseek-coder-v2:lite" }
+      php_reviewer: { provider: "ollama", model: "deepseek-coder-v2:lite" }
+      mysql_reviewer: { provider: "ollama", model: "deepseek-coder-v2:lite" }
+      knowledge_agent: { provider: "ollama", model: "deepseek-coder-v2:lite" }
+  
+  remote_gpu_worker:
+    name: "Remote GPU Worker"
+    processor: "NVIDIA H100"
+    ram_gb: 128
+    description: "A powerful remote server for running the largest models at high speed."
+    agent_model_assignments:
+      project_lead: { provider: "openai", model: "gpt-5" }
+      php_reviewer: { provider: "ollama", model: "deepseek-coder-v2:lite" }
+      mysql_reviewer: { provider: "ollama", model: "gemma2:27b" }
+      knowledge_agent: { provider: "ollama", model: "gemma2:9b" }
+
+# --- Agent Personas ---
+agents:
+  project_lead:
+    system_prompt: >
+      You are the Project Lead Agent, a world-class software architect and AI strategist. 
+      Your primary responsibility is to devise the most effective and efficient strategy for analyzing a codebase.
+      You are aware of the capabilities of your target environment and the latest developments in open-source and proprietary LLMs.
+
+  php_reviewer:
+    system_prompt: >
+      You are the PHP Review Agent, an expert PHP developer. Your task is to analyze the provided PHP file based on the instructions from the Project Lead. You must identify functions, classes, dependencies, and database queries with high accuracy.
+
+  mysql_reviewer:
+    system_prompt: >
+      You are the MySQL8 Review Agent, an expert database engineer. You will be given a SQL file and instructions from the Project Lead. Your task is to analyze its structure, identifying tables, columns, indexes, and relationships.
+
+  knowledge_agent:
+    system_prompt: >
+      You are the Knowledge Agent, an expert in information synthesis. Your role is to take the detailed analysis from other agents and create a final, clean, and well-structured markdown documentation as directed by the Project Lead.
+
+# --- RAG Tasks for Code Review Agents ---
+rag_tasks:
+  - id: "detailed_analysis"
+    prompt: "Analyze the provided code in detail. For each function, explain its purpose, parameters, and return value. For each class, describe its responsibility, properties, and key methods."
+  - id: "dependency_identification"
+    prompt: "Identify and list all explicit and implicit dependencies."
+  - id: "database_interaction"
+    prompt: "Analyze the code for database interactions. List all SQL queries and the tables they affect."
+
+# --- Final Tasks for Project Lead ---
+project_lead_tasks:
+  - id: "model_strategy_review"
+    prompt: >
+      Given the current date and the rapid pace of AI development, review our current model selection strategy.
+      My current target environment has the following capabilities: {system_capabilities}.
+      The project's current agent model assignments for this environment are: {agent_assignments}.
+
+      Based on this, answer the following:
+      1. Are there any newer, more powerful, or more efficient models available (on Ollama or external APIs) that would be a better fit for our agents in this environment?
+      2. Justify your recommendations based on model size, context window, specialization, and my system's RAM.
+      3. For any new local model you recommend, provide the exact 'ollama pull' command.
+      4. If the current selection is optimal for my hardware, state why.

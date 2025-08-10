@@ -1,0 +1,59 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "options_extra",
+      "footer"
+    ],
+    "classes": [
+      "Email"
+    ],
+    "comments": [
+      "/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */"
+    ],
+    "length": 2696,
+    "preview": "<?php\nnamespace EM\\Automation\\Actions\\Admin;\n\n/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */\nclass Email extends Action {\n\t\n\tpublic static $type = 'email';\n\t\n\tpublic static",
+    "file": "src/code/events-manager-pro/add-ons/automation/actions/admin/email.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "options",
+      "options_extra",
+      "get_post",
+      "validate",
+      "footer"
+    ],
+    "classes": [
+      "Action"
+    ],
+    "comments": [
+      "/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */",
+      "/**\n\t * @return void\n\t */",
+      "// output any sort of html options relevant to this trigger, that'll be stored in action_data",
+      "// format any relevant post data, which is supplied in submitted format of action_data[]",
+      "// output things like JS"
+    ],
+    "length": 1195,
+    "preview": "<?php\nnamespace EM\\Automation\\Actions\\Admin;\nuse EM\\Automation;\n\n/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */\nclass Action {\n\t\n\tpublic static $type = 'action';\n\t\n\t/**\n\t *",
+    "file": "src/code/events-manager-pro/add-ons/automation/actions/admin/action.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "options_extra",
+      "validate",
+      "footer"
+    ],
+    "classes": [
+      "Webhook"
+    ],
+    "comments": [
+      "/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */",
+      "// alert user what will happen"
+    ],
+    "length": 2129,
+    "preview": "<?php\nnamespace EM\\Automation\\Actions\\Admin;\nuse EM\\Automation;\n\n/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */\nclass Webhook extends Action {\n\t\n\tpublic static $type = 'web",
+    "file": "src/code/events-manager-pro/add-ons/automation/actions/admin/webhook.php"
+  }
+]

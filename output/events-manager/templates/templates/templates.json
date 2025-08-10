@@ -1,0 +1,344 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * RSS Page\n * This page handles the even RSS feed.\n * You can override this file by and copying it to yourthemefolder/plugins/events-manager/templ",
+      "//www.w3.org/2005/Atom\">",
+      "//blogs.law.harvard.edu/tech/rss</docs>",
+      "//set a limit of 50 to output at a time, unless overall limit is lower",
+      "/* @var $args array */",
+      "/* @var $EM_Event EM_Event */",
+      "//Some RSS filtering",
+      "//we've reached our limit, or showing one event only",
+      "//get next page of results"
+    ],
+    "length": 2618,
+    "preview": "<?php\n/*\n * RSS Page\n * This page handles the even RSS feed.\n * You can override this file by and copying it to yourthemefolder/plugins/events-manager/templates/ and modifying as necessary.\n * \n */ \nheader ( \"Content-type: application/rss+xml; charse",
+    "file": "src/code/events-manager/templates/templates/rss.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* \n * Remember that this file is only used if you have chosen to override location pages with formats in your events manager settings!\n * You can als",
+      "/*\n * This page displays a single event, called during the em_content() if this is an event page.\n * You can override the default display settings pag",
+      "/* @var $EM_Location EM_Location */"
+    ],
+    "length": 1344,
+    "preview": "<?php\n/* \n * Remember that this file is only used if you have chosen to override location pages with formats in your events manager settings!\n * You can also override the single location page completely in any case (e.g. at a level where you can cont",
+    "file": "src/code/events-manager/templates/templates/location-single.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//Get events here in one query to speed things up",
+      "//don't html encode, so em_paginate does its thing",
+      "/* @var $EM_Booking EM_Booking */"
+    ],
+    "length": 3934,
+    "preview": "<?php do_action('em_template_my_bookings_header'); ?>\n<?php\n\tglobal $wpdb, $current_user, $EM_Notices, $EM_Person;\n\tif( is_user_logged_in() ):\n\t\t$EM_Person = new EM_Person( get_current_user_id() );\n\t\t$EM_Bookings = $EM_Person->get_bookings();\n\t\t$book",
+    "file": "src/code/events-manager/templates/templates/my-bookings.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Events List Template\n * This page displays a list of events, called during the em_content() if this is an events list page.\n * You can o",
+      "//note we're grabbing the content, not em_get_events_list_grouped function"
+    ],
+    "length": 1009,
+    "preview": "<?php\n/*\n * Default Events List Template\n * This page displays a list of events, called during the em_content() if this is an events list page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugins/eve",
+    "file": "src/code/events-manager/templates/templates/events-list-grouped.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Calendar day\n * This page displays a list of events or single event for a specific calendar day, called during the em_content() if this ",
+      "//Get events first, so we know how many there are in advance"
+    ],
+    "length": 1150,
+    "preview": "<?php\n/*\n * Default Calendar day\n * This page displays a list of events or single event for a specific calendar day, called during the em_content() if this is an calendar day page.\n * You can override the default display settings pages by copying thi",
+    "file": "src/code/events-manager/templates/templates/calendar-day.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This page displays a printable view of bookings for a single event.\n * You can override the default display settings pages by copying this file ",
+      "//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"
+    ],
+    "length": 2462,
+    "preview": "<?php \n/*\n * This page displays a printable view of bookings for a single event.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugins/events-manager/templates/ and modifying it however you need.\n * He",
+    "file": "src/code/events-manager/templates/templates/bookings-event-printable.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Events List Template\n * This page displays a list of events, called during the em_content() if this is an events list page.\n * You can o",
+      "/* @var array $args - the args passed onto EM_Events::output() */"
+    ],
+    "length": 1042,
+    "preview": "<?php\n/*\n * Default Events List Template\n * This page displays a list of events, called during the em_content() if this is an events list page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugins/eve",
+    "file": "src/code/events-manager/templates/templates/events-grid.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Events List Template\n * This page displays a list of events, called during the em_content() if this is an events list page.\n * You can o",
+      "/* @var array $args - the args passed onto EM_Events::output() */"
+    ],
+    "length": 929,
+    "preview": "<?php\n/*\n * Default Events List Template\n * This page displays a list of events, called during the em_content() if this is an events list page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugins/eve",
+    "file": "src/code/events-manager/templates/templates/events-list.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* WARNING!!! (2013-07-10) We intend to add a few more fields into this search form over the coming weeks/months.\n * Overriding shouldn't hinder funct",
+      "/*\n * By modifying this in your theme folder within plugins/events-manager/templates/events-search.php, you can change the way the search form will lo",
+      "/* @var $args array */",
+      "// id of form for unique selections",
+      "//em_template_classes('search', 'modal,search-advanced');",
+      "//show the 'main' search form ?>",
+      "//hook in here to add extra fields, text etc. ?>",
+      "//search text - tweak ID so it is unique when repeated in advanced further down",
+      "//show the advanced search toggle if advanced fields are collapsed ?>",
+      "//show the advanced search toggle if advanced fields are collapsed ?>",
+      "//show country in hidden field for geo searching ?>",
+      "//show country in hidden field for geo searching ?>",
+      "//show inline if requested ?>",
+      "//date range (scope)",
+      "//if( !empty($args['search_scope']) ) em_locate_template('templates/search/scope.php',true,array('args'=>$args));",
+      "//hook in here to add extra fields, text etc. ?>",
+      "//show button if it wasn't shown further up ?>",
+      "// Search Form Pop-Up Shown as separate form ?>",
+      "// main three searches on top",
+      "// if called by another shortcode e.g. events_list, then that shortcode should generate the search form and wrap itself in the below ?>"
+    ],
+    "length": 10015,
+    "preview": "<?php\n/* WARNING!!! (2013-07-10) We intend to add a few more fields into this search form over the coming weeks/months.\n * Overriding shouldn't hinder functionality at all but these new search options won't appear on your form!\n */\n/*\n * By modifying",
+    "file": "src/code/events-manager/templates/templates/search.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* WARNING!!! (2013-07-10) We intend to add a few more fields into this search form over the coming weeks/months. \n * Overriding shouldn't hinder func",
+      "/* \n * By modifying this in your theme folder within plugins/events-manager/templates/events-search.php, you can change the way the search form will l",
+      "/* @var $args array */"
+    ],
+    "length": 1007,
+    "preview": "<?php\n/* WARNING!!! (2013-07-10) We intend to add a few more fields into this search form over the coming weeks/months. \n * Overriding shouldn't hinder functionality at all but these new search options won't appear on your form! \n */ \n/* \n * By modif",
+    "file": "src/code/events-manager/templates/templates/locations-search.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Events List Template\n * This page displays a list of events, called during the em_content() if this is an events list page.\n * You can o"
+    ],
+    "length": 631,
+    "preview": "<?php\n/*\n * Default Events List Template\n * This page displays a list of events, called during the em_content() if this is an events list page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugins/eve",
+    "file": "src/code/events-manager/templates/templates/events-calendar.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This page displays a single event, called during the em_content() if this is an event page.\n * You can override the default display settings pag",
+      "/* @var $EM_Tag EM_Tag */"
+    ],
+    "length": 906,
+    "preview": "<?php\n/*\n * This page displays a single event, called during the em_content() if this is an event page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugins/events-manager/templates/ and modifying it ",
+    "file": "src/code/events-manager/templates/templates/tag-single.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* \n * Remember that this file is only used if you have chosen to override event pages with formats in your event settings!\n * You can also override t",
+      "/*\n * This page displays a single event, called during the the_content filter if this is an event page.\n * You can override the default display settin",
+      "/* @var $EM_Event EM_Event */"
+    ],
+    "length": 1304,
+    "preview": "<?php\n/* \n * Remember that this file is only used if you have chosen to override event pages with formats in your event settings!\n * You can also override the single event page completely in any case (e.g. at a level where you can control sidebars et",
+    "file": "src/code/events-manager/templates/templates/event-single.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This file contains the HTML generated for maps. You can copy this file to yourthemefolder/plugins/events/templates and modify it in an upgrade-s",
+      "/* @var array $args */",
+      "//www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"margin: auto; background: none; display: block; shape-rendering: auto;\" width"
+    ],
+    "length": 3219,
+    "preview": "<?php \n/*\n * This file contains the HTML generated for maps. You can copy this file to yourthemefolder/plugins/events/templates and modify it in an upgrade-safe manner.\n * \n * There is one argument passed to you, which is the $args variable. This con",
+    "file": "src/code/events-manager/templates/templates/map-global.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// as of version 6, this is not to be used further, see file below"
+    ],
+    "length": 128,
+    "preview": "<?php\n// as of version 6, this is not to be used further, see file below\ninclude( em_locate_template('calendar/calendar.php') );",
+    "file": "src/code/events-manager/templates/templates/calendar-full.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * This page displays a single event, called during the em_content() if this is an event page.\n * You can override the default display settings pag",
+      "/* @var $EM_Category EM_Category */"
+    ],
+    "length": 951,
+    "preview": "<?php\n/*\n * This page displays a single event, called during the em_content() if this is an event page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugins/events-manager/templates/ and modifying it ",
+    "file": "src/code/events-manager/templates/templates/category-single.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Location Grid Template\n * This page displays a grid of locations, called during the em_content() if this is an events list page.\n * You ",
+      "/* @var array $args - the args passed onto EM_Locations::output() */"
+    ],
+    "length": 1149,
+    "preview": "<?php\n/*\n * Default Location Grid Template\n * This page displays a grid of locations, called during the em_content() if this is an events list page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugin",
+    "file": "src/code/events-manager/templates/templates/locations-grid.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//define and clean up formats for display",
+      "//set a limit of 50 to output at a time, unless overall limit is lower",
+      "//get passed on $args and merge with defaults",
+      "/* @var $args array */",
+      "//get first round of events to show, we'll start adding more via the while loop",
+      "//wp-events-plugin.com//\".EM_VERSION.\"//EN\";",
+      "//if timezone is supported, we output the blog timezone here",
+      "//get default blog timezone and output only if we're not in UTC or with manual offsets",
+      "//loop through events",
+      "/* @var $EM_Event EM_Event */",
+      "//we've reached our maximum",
+      "//figure out the timezone of this event, or if it's an offset and add to list of timezones and date ranges to define in VTIMEZONE",
+      "//calculate the times along with timezone offsets",
+      "//we get local time since we're representing a date not a time",
+      "//get date output with timezone and local time if timezone output is enabled, or UTC time if not and/or if offset is manual",
+      "//show local time and define a timezone",
+      "//create a UTC equivalent time for all events irrespective of timezone",
+      "//google chucks a wobbly with these on this line",
+      "/* @var EM_Category $EM_Category */",
+      "//create a UID, make it unique and update independent",
+      "//Description if available",
+      "//add featured image if exists",
+      "//add categories if there are any",
+      "//Location if there is one",
+      "//geo coordinates if they exist",
+      "//create apple-compatible feature for locations",
+      "// add organizer if specifically requested via $args in locate_template",
+      "/*\n\t * Currently unused via settings, can be activated by adding this line of code somewhere e.g. your theme functions.php file\n\t * add_filter('em_loc",
+      "//clean up new lines, rinse and repeat",
+      "//we've reached our limit, or showing one event only",
+      "//get next page of results",
+      "//Now we sort out timezones and add it to the top of the output",
+      "//get the range of transitions, with a year's cushion so we can calculate the TZOFFSETFROM value",
+      "//format the offset to a UTC-OFFSET",
+      "//skip transitions before and after the event date range, assuming we have some in between",
+      "//remember previous offset",
+      "//modify the transition array directly and add it to vtimezones array",
+      "//remember previous offset"
+    ],
+    "length": 11075,
+    "preview": "<?php \n//define and clean up formats for display\n$summary_format = str_replace ( \">\", \"&gt;\", str_replace ( \"<\", \"&lt;\", get_option ( 'dbem_ical_description_format' ) ) );\n$description_format = str_replace ( \">\", \"&gt;\", str_replace ( \"<\", \"&lt;\", ge",
+    "file": "src/code/events-manager/templates/templates/ical.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var $args array */"
+    ],
+    "length": 362,
+    "preview": "<?php\n/* @var $args array */\n$args['search_action'] = 'search_events';\n$args['search_url'] = get_option('dbem_events_page') ? get_permalink(get_option('dbem_events_page')):EM_URI;\n$args['css_classes'][] = 'em-events-search';\n$args['css_classes_advanc",
+    "file": "src/code/events-manager/templates/templates/events-search.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// as of version 6, this is not to be used further, see file below"
+    ],
+    "length": 128,
+    "preview": "<?php\n// as of version 6, this is not to be used further, see file below\ninclude( em_locate_template('calendar/calendar.php') );",
+    "file": "src/code/events-manager/templates/templates/calendar-small.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Location List Template\n * This page displays a list of locations, called during the em_content() if this is an events list page.\n * You ",
+      "/* @var array $args - the args passed onto EM_Locations::output() */"
+    ],
+    "length": 1041,
+    "preview": "<?php\n/*\n * Default Location List Template\n * This page displays a list of locations, called during the em_content() if this is an events list page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugin",
+    "file": "src/code/events-manager/templates/templates/locations-list.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Tags List Template\n * This page displays a list of locations, called during the em_content() if this is an tags list page.\n * You can ov"
+    ],
+    "length": 930,
+    "preview": "<?php\n/*\n * Default Tags List Template\n * This page displays a list of locations, called during the em_content() if this is an tags list page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plugins/even",
+    "file": "src/code/events-manager/templates/templates/tags-list.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/*\n * Default Categories List Template\n * This page displays a list of locations, called during the em_content() if this is an events list page.\n * Yo"
+    ],
+    "length": 971,
+    "preview": "<?php\n/*\n * Default Categories List Template\n * This page displays a list of locations, called during the em_content() if this is an events list page.\n * You can override the default display settings pages by copying this file to yourthemefolder/plug",
+    "file": "src/code/events-manager/templates/templates/categories-list.php"
+  },
+  {
+    "type": "txt",
+    "length": 744,
+    "preview": "This folder has files containing various templates used by events manager. The file names are quite ",
+    "file": "src/code/events-manager/templates/templates/readme.txt"
+  }
+]

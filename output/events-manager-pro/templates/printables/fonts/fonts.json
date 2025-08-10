@@ -1,0 +1,14 @@
+[
+  {
+    "type": "json",
+    "length": 2,
+    "preview": "{}",
+    "file": "src/code/events-manager-pro/templates/printables/fonts/installed-fonts.json"
+  },
+  {
+    "type": "txt",
+    "length": 584,
+    "preview": "This is a temlate folder for custom fonts, which you should copy (this entire fonts folder, not just",
+    "file": "src/code/events-manager-pro/templates/printables/fonts/readme.txt"
+  }
+]

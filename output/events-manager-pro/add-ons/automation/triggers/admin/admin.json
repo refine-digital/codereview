@@ -1,0 +1,75 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "options"
+    ],
+    "classes": [
+      "Booking_Status"
+    ],
+    "comments": [
+      "/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */",
+      "/**\n\t * @return void\n\t */",
+      "// output any sort of html options relevant to this trigger, that'll be stored in trigger_data"
+    ],
+    "length": 1940,
+    "preview": "<?php\nnamespace EM\\Automation\\Triggers\\Admin;\nuse EM\\Automation;\n/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */\nclass Booking_Status extends Trigger {\n\t\n\t/**\n\t * @return vo",
+    "file": "src/code/events-manager-pro/add-ons/automation/triggers/admin/booking-status.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "options"
+    ],
+    "classes": [
+      "Event_Time"
+    ],
+    "comments": [
+      "/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */",
+      "/**\n\t * @return void\n\t */",
+      "// output any sort of html options relevant to this trigger, that'll be stored in trigger_data"
+    ],
+    "length": 2389,
+    "preview": "<?php\nnamespace EM\\Automation\\Triggers\\Admin;\n\n/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */\nclass Event_Time extends Trigger{\n\t\n\t/**\n\t * @return void\n\t */\n\tpublic static ",
+    "file": "src/code/events-manager-pro/add-ons/automation/triggers/admin/event-time.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "options"
+    ],
+    "classes": [
+      "Booking_Time"
+    ],
+    "comments": [
+      "/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */",
+      "/**\n\t * @return void\n\t */",
+      "// output any sort of html options relevant to this trigger, that'll be stored in trigger_data"
+    ],
+    "length": 2219,
+    "preview": "<?php\nnamespace EM\\Automation\\Triggers\\Admin;\n\n/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */\nclass Booking_Time extends Trigger{\n\t\n\t/**\n\t * @return void\n\t */\n\tpublic stati",
+    "file": "src/code/events-manager-pro/add-ons/automation/triggers/admin/booking-time.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "options",
+      "get_post",
+      "get_post_trigger_data",
+      "get_post_action_data",
+      "validate",
+      "save"
+    ],
+    "classes": [
+      "Trigger"
+    ],
+    "comments": [
+      "/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */",
+      "/**\n\t * @return void\n\t */",
+      "// output any sort of html options relevant to this trigger, that'll be stored in trigger_data"
+    ],
+    "length": 4555,
+    "preview": "<?php\nnamespace EM\\Automation\\Triggers\\Admin;\nuse EM\\Automation;\n\n/**\n * Container for Trigger-specific admin outputs and post retrieval so that it is loaded and invoked only when needed\n */\nclass Trigger {\n\t\n\t/**\n\t * @return void\n\t */\n\tpublic static",
+    "file": "src/code/events-manager-pro/add-ons/automation/triggers/admin/trigger.php"
+  }
+]

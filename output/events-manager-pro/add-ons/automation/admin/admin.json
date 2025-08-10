@@ -1,0 +1,206 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "prepare_items",
+      "get_hidden_columns",
+      "table_data",
+      "column_default"
+    ],
+    "classes": [
+      "that",
+      "List_Table"
+    ],
+    "comments": [
+      "// WP_List_Table is not loaded automatically so we need to load it in our application",
+      "/**\n * Create a new table class that will extend the WP_List_Table\n */",
+      "/**\n\t * Prepare the items for the table to process\n\t *\n\t * @return Void\n\t */",
+      "/**\n\t * Define which columns are hidden\n\t *\n\t * @return array\n\t */",
+      "/**\n\t * Should be overriden, obtains data for populating the table.\n\t * @return array\n\t */",
+      "/**\n\t * Define what data to show on each column of the table\n\t *\n\t * @param  array $item        Data\n\t * @param  String $column_name - Current column "
+    ],
+    "length": 1689,
+    "preview": "<?php\nnamespace EM\\Automation\\Admin;\nuse WP_List_Table;\n\n// WP_List_Table is not loaded automatically so we need to load it in our application\nif( ! class_exists( 'WP_List_Table' ) ) {\n\trequire_once( ABSPATH . 'wp-admin/includes/class-wp-list-table.p",
+    "file": "src/code/events-manager-pro/add-ons/automation/admin/list-table.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "build_sql_orderby",
+      "build_sql_conditions",
+      "get_default_search",
+      "count",
+      "rewind",
+      "current",
+      "key",
+      "next",
+      "valid"
+    ],
+    "classes": [
+      "Automations"
+    ],
+    "comments": [
+      "/**\n * Class used to search and retrieve imports and exports\n * @author marcus\n *\n */",
+      "/**\n\t * Number of found records\n\t * @var int\n\t */",
+      "/**\n\t * Items loaded in search\n\t * @var array\n\t */",
+      "/**\n\t * Array of registered format for this collection (imports or exports).\n\t * @var array\n\t */",
+      "/**\n\t * EMIO_Items constructor.\n\t * @param array $args\n\t */",
+      "//Get the default conditions",
+      "//Put it all together",
+      "/**\n\t * @param array $args\n\t * @param array $accepted_fields\n\t * @param string $default_order\n\t * @return array\n\t */",
+      "/**\n\t * Builds array of SQL search conditions. We don't need EM_Object conditions so we override that function entirely\n\t * @param array $args\n\t * @re",
+      "//other simple search flags",
+      "//overrides frequency_active",
+      "/**\n\t * @param array $array_or_defaults\n\t * @param array $array\n\t * @return array|mixed|void\n\t */",
+      "//sort out whether defaults were supplied or just the array of search values",
+      "//let EM_Object clean out these",
+      "//we only need args present in our $default, so clean out the rest",
+      "//Countable Implementation",
+      "//Iterator Implementation"
+    ],
+    "length": 4260,
+    "preview": "<?php\nnamespace EM\\Automation\\Admin;\nuse EM_Object, Iterator, Countable;\n\n/**\n * Class used to search and retrieve imports and exports\n * @author marcus\n *\n */\nclass Automations extends EM_Object implements Iterator, Countable {\n\t\n\t/**\n\t * Number of ",
+    "file": "src/code/events-manager-pro/add-ons/automation/admin/automations.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "admin_menu",
+      "scripts",
+      "options",
+      "actions",
+      "automation_page",
+      "editor",
+      "automation_edit"
+    ],
+    "classes": [
+      "Admin"
+    ],
+    "comments": [
+      "/**\n\t * @var \\EM\\Automation\\Triggers\\Trigger\n\t */",
+      "// $booking = em_get_booking(747)->to_api(); echo '<pre>' . var_export($booking, true) . '</pre>'; die();",
+      "//You can further customize all these templates, or parts of them by overriding our template files as per our %s.",
+      "// validate nonce or appropriate action",
+      "// sanitize bulk action items",
+      "// return confirmation if successful only",
+      "/* @var \\EM_Notices $EM_Notices */",
+      "// we're saving an automation",
+      "/* @var \\EM_Notices $EM_Notices */",
+      "// get the automation_id",
+      "// build a trigger based on the submtted info",
+      "// $Automations_List->views(); // not using views for now, handled in filters",
+      "// output any sort of html options relevant to this trigger, that'll be stored in trigger_data",
+      "// output any sort of html options relevant to this trigger, that'll be stored in trigger_data"
+    ],
+    "length": 29105,
+    "preview": "<?php\nnamespace EM\\Automation;\nuse EM\\Automation\\Admin\\Automation_List_Table, EM\\Automation;\n\nclass Admin {\n\t\n\t/**\n\t * @var \\EM\\Automation\\Triggers\\Trigger\n\t */\n\tpublic static $trigger;\n\t\n\tpublic static function init(){\n\t\tadd_action('em_options_page_",
+    "file": "src/code/events-manager-pro/add-ons/automation/admin/admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "table_data",
+      "get_views",
+      "get_views_template",
+      "extra_tablenav",
+      "get_columns",
+      "get_sortable_columns",
+      "column_name",
+      "column_cb",
+      "column_trigger",
+      "column_actions",
+      "column_status",
+      "get_bulk_actions"
+    ],
+    "classes": [
+      "that",
+      "Automation_List_Table"
+    ],
+    "comments": [
+      "/**\n * Create a new table class that will extend the WP_List_Table\n */",
+      "/**\n\t * Get the table data\n\t *\n\t * @return array\n\t */",
+      "//set pagination and ordering",
+      "//check search filters",
+      "//we set frequency_active not status since we're searchng by frequency",
+      "//check view selection",
+      "/**\n\t * Override the parent columns method. Defines the columns to use in your listing table\n\t *\n\t * @return array\n\t */",
+      "//$columns['ts'] = __('Last Run','em-pro');",
+      "/**\n\t * Define the sortable columns\n\t *\n\t * @return array\n\t */",
+      "/**\n\t * Bulk Edit Checkbox\n\t * @param array $item\n\t * @return string\n\t */",
+      "/**\n\t * Bulk Edit Checkbox\n\t * @param array $item\n\t * @return string\n\t */",
+      "/**\n\t * Bulk Edit Checkbox\n\t * @param array $item\n\t * @return string\n\t */",
+      "/**\n\t * Bulk Edit Checkbox\n\t * @param array $item\n\t * @return string\n\t */",
+      "/**\n\t * Returns an associative array of bulk actions\n\t * @return array\n\t */"
+    ],
+    "length": 8113,
+    "preview": "<?php\nnamespace EM\\Automation\\Admin;\nuse EM\\Automation;\n\n/**\n * Create a new table class that will extend the WP_List_Table\n */\nclass Automation_List_Table extends List_Table {\n\t\n\tpublic $item_type = 'item';\n\tpublic $per_page_var = 'emio_items_per_pa",
+    "file": "src/code/events-manager-pro/add-ons/automation/admin/automation-list-table.php"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "// we're working our way up the chain so actions are added",
+      "// change the ids in the option content",
+      "// append to options"
+    ],
+    "length": 3064,
+    "preview": "const EM_Automation = {}; // global\n\njQuery(document).ready( function($){\n\t// we're working our way up the chain so actions are added\n\n\t$('#actions-container').on('change', '.em-automation-action select.action-type', function(){\n\t\tlet el = $(this);\n\t",
+    "file": "src/code/events-manager-pro/add-ons/automation/admin/automation.js"
+  },
+  {
+    "type": "js",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 2633,
+    "preview": "const EM_Automation={};jQuery(document).ready(function($){$(\"#actions-container\").on(\"change\",\".em-automation-action select.action-type\",function(){let el=$(this);let action_container=el.closest(\".em-automation-action\");let container=action_container",
+    "file": "src/code/events-manager-pro/add-ons/automation/admin/automation.min.js"
+  },
+  {
+    "type": "css",
+    "selectors": [
+      ".em-automation-form .automation-notice",
+      ".em-automation-form .automation-notice.error",
+      ".em-automation-form .automation-notice.info",
+      ".em-automation-form .automation-notice.warning",
+      ".em-automation-form .automation-notice.success",
+      ".em-automation-form .automation-notice.has-action",
+      "h3",
+      "span",
+      ".em-automation-form h3.between",
+      ".em-automation-form h3.between span",
+      ".em-automation-form .trigger-context-desc span",
+      ".em-automation-form .trigger-context .em-automation-context-multi",
+      ".em-automation-form .trigger-context .em-automation-context-multi label"
+    ],
+    "rules": [
+      "background: #fff;\n  border: 1px solid #c3c4c7;\n  border-left-width: 4px;\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);\n  margin: 5px 0 15px;\n  padding: 1px 12px;",
+      "border-left-color: #d63638;",
+      "border-left-color: #72aee6;",
+      "border-left-color: #dba617;",
+      "border-left-color: #00a32a;",
+      "display: grid;\n  grid-template-columns: auto max-content;\n  align-items: center;",
+      "display: inline-block;",
+      "font-style: italic;\n  color: #777;",
+      "width: 100%;\n  text-align: center;\n  border-bottom: 1px solid #c8c8c8;\n  line-height: 0.1em;\n  margin: 30px 0 30px;\n  text-transform: uppercase;",
+      "background: #f0f0f1;\n  padding: 0 20px;",
+      "display: none;",
+      "margin-top: 30px;",
+      "font-weight: bold;"
+    ],
+    "length": 1456,
+    "preview": ".em-automation-form .automation-notice {\n  background: #fff;\n  border: 1px solid #c3c4c7;\n  border-left-width: 4px;\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);\n  margin: 5px 0 15px;\n  padding: 1px 12px;\n}\n.em-automation-form .automation-notice.error",
+    "file": "src/code/events-manager-pro/add-ons/automation/admin/automation.css"
+  },
+  {
+    "type": "scss",
+    "length": 1045,
+    "preview": ".em-automation-form {\n\n\t.automation-notice {\n\t\tbackground: #fff;\n\t\tborder: 1px solid #c3c4c7;\n\t\tbord",
+    "file": "src/code/events-manager-pro/add-ons/automation/admin/automation.scss"
+  }
+]

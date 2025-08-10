@@ -1,0 +1,70 @@
+[
+  {
+    "type": "css",
+    "selectors": [
+      ".ui-em_timepicker-wrapper",
+      ".ui-em_timepicker-wrapper.ui-em_timepicker-with-duration",
+      ".ui-em_timepicker-wrapper.ui-em_timepicker-with-duration.ui-em_timepicker-step-60",
+      ".ui-em_timepicker-list",
+      ".ui-em_timepicker-duration",
+      "hover .ui-em_timepicker-duration",
+      ".ui-em_timepicker-list li",
+      "hover .ui-em_timepicker-selected",
+      "hover",
+      "hover .ui-em_timepicker-duration",
+      ".ui-em_timepicker-list li.ui-em_timepicker-selected.ui-em_timepicker-disabled",
+      ".ui-em_timepicker-list li.ui-em_timepicker-selected.ui-em_timepicker-disabled"
+    ],
+    "rules": [
+      "overflow-y: auto;\n\tmax-height: 150px;\n\twidth: 6.5em;\n\tbackground: #fff;\n\tborder: 1px solid #ddd;\n\t-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);\n\t-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);\n\tbox-shadow:0 5px 10px rgba(0,0,0,0.2);\n\toutline: none;\n\tz-index: 10052;\n\tmargin: 0;",
+      "width: 13em;",
+      "width: 11em;",
+      "margin: 0;\n\tpadding: 0;\n\tlist-style: none;",
+      "margin-left: 5px; color: #888;",
+      "color: #888;",
+      "padding: 3px 0 3px 5px;\n\tcursor: pointer;\n\twhite-space: nowrap;\n\tcolor: #000;\n\tlist-style: none;\n\tmargin: 0;",
+      "background: #fff; color: #000;",
+      "background: #1980EC; color: #fff;",
+      "color: #ccc;",
+      "color: #888;\n\tcursor: default;",
+      "background: #f2f2f2;"
+    ],
+    "length": 1695,
+    "preview": ".ui-em_timepicker-wrapper {\n\toverflow-y: auto;\n\tmax-height: 150px;\n\twidth: 6.5em;\n\tbackground: #fff;\n\tborder: 1px solid #ddd;\n\t-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);\n\t-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);\n\tbox-shadow:0 5px 10px rgba(0,0",
+    "file": "src/code/events-manager/includes/external/timepicker/jquery.timepicker.css"
+  },
+  {
+    "type": "css",
+    "selectors": [
+      ".ui-em_timepicker-wrapper",
+      ".ui-em_timepicker-wrapper.ui-em_timepicker-with-duration",
+      ".ui-em_timepicker-wrapper.ui-em_timepicker-with-duration.ui-em_timepicker-step-60",
+      ".ui-em_timepicker-list",
+      ".ui-em_timepicker-duration",
+      "hover .ui-em_timepicker-duration",
+      ".ui-em_timepicker-list li",
+      "hover .ui-em_timepicker-selected",
+      "li.ui-em_timepicker-selected",
+      "li.ui-em_timepicker-selected .ui-em_timepicker-duration",
+      ".ui-em_timepicker-list li.ui-em_timepicker-selected.ui-em_timepicker-disabled",
+      ".ui-em_timepicker-list li.ui-em_timepicker-selected.ui-em_timepicker-disabled"
+    ],
+    "rules": [
+      "overflow-y:auto;max-height:150px;width:6.5em;background:#fff;border:1px solid #ddd;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);-moz-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);outline:0;z-index:10052;margin:0",
+      "width:13em",
+      "width:11em",
+      "margin:0;padding:0;list-style:none",
+      "margin-left:5px;color:#888",
+      "color:#888",
+      "padding:3px 0 3px 5px;cursor:pointer;white-space:nowrap;color:#000;list-style:none;margin:0",
+      "background:#fff;color:#000",
+      "background:#1980ec;color:#fff",
+      "color:#ccc",
+      "color:#888;cursor:default",
+      "background:#f2f2f2"
+    ],
+    "length": 1531,
+    "preview": ".ui-em_timepicker-wrapper{overflow-y:auto;max-height:150px;width:6.5em;background:#fff;border:1px solid #ddd;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);-moz-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);outline:0;z-index",
+    "file": "src/code/events-manager/includes/external/timepicker/jquery.timepicker.min.css"
+  }
+]

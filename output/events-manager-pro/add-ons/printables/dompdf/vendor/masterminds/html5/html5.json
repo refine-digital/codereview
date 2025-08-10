@@ -1,0 +1,32 @@
+[
+  {
+    "type": "json",
+    "length": 1074,
+    "preview": "{\n    \"name\": \"masterminds/html5\",\n    \"description\": \"An HTML5 parser and serializer.\",\n    \"type\":",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/masterminds/html5/composer.json"
+  },
+  {
+    "type": "md",
+    "length": 8849,
+    "preview": "# HTML5-PHP\n\nHTML5 is a standards-compliant HTML5 parser and writer written entirely in PHP.\nIt is s",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/masterminds/html5/README.md"
+  },
+  {
+    "type": "md",
+    "length": 5007,
+    "preview": "# Release Notes\n\n2.7.5  (2021-07-01)\n\n- #204: Travis: Enable tests on PHP 8.0 \n- #207: Fix PHP 8.1 d",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/masterminds/html5/RELEASE.md"
+  },
+  {
+    "type": "md",
+    "length": 496,
+    "preview": "From 1.x to 2.x\n=================\n\n- All classes uses `Masterminds` namespace.\n- All public static m",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/masterminds/html5/UPGRADING.md"
+  },
+  {
+    "type": "txt",
+    "length": 2973,
+    "preview": "## HTML5-PHP License\n\nCopyright (c) 2013 The Authors of HTML5-PHP\n\nMatt Butcher - mattbutcher@google",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/masterminds/html5/LICENSE.txt"
+  }
+]

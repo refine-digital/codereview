@@ -1,0 +1,86 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "add_endpoint",
+      "get_endpoint_url",
+      "template_include"
+    ],
+    "classes": [
+      "Bookings_Manager_Frontend"
+    ],
+    "comments": [
+      "// rule flushes are handled by EM itself, we can just add our endpoints",
+      "//define('EM_FE_ENDPOINT_ALIAS', array('em-bookings', 'em-admin')); // add an array of possible aliases, mainly useful/recommended if you change your ",
+      "// if this is not a request for json or a singular object then bail",
+      "//echo '<pre>'.print_r($wp_query, true).'</pre>'; die();",
+      "// check if we're on the endpoint, if not bail",
+      "// check user logged in",
+      "// OK, we're here, let's get information about this booking or ticket",
+      "// Load template from either plugins directory or load our own core one"
+    ],
+    "length": 3245,
+    "preview": "<?php\nnamespace EM_Pro;\nuse EM_Ticket_Booking, EM_Booking;\n\nclass Bookings_Manager_Frontend {\n\t\n\tpublic static $data = array();\n\t\n\tpublic static function init() {\n\t\t// rule flushes are handled by EM itself, we can just add our endpoints\n\t\tadd_action(",
+    "file": "src/code/events-manager-pro/add-ons/bookings-manager/bookings-manager-frontend.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "get_endpoint",
+      "get_qr_url",
+      "deliver_qr",
+      "get_fallback_url",
+      "base64",
+      "em_ticket_booking_output_placeholder"
+    ],
+    "classes": [
+      "QR"
+    ],
+    "comments": [
+      "// rule flushes are handled by EM itself, we can just add our endpoints",
+      "// we can output the QR and just die",
+      "// outputs image directly into browser, as PNG stream",
+      "/**\n\t * Outputs a base64 encoded QR png ready to include in an img src attribute.\n\t * If fallback URL is supplied, that'll be used instead.\n\t * IMPORT",
+      "// outputs image directly into browser, as PNG stream",
+      "// get previous sent header (if any)",
+      "// output PNG and catch output encoded",
+      "// reset to previous header if already set",
+      "// reset to html header",
+      "//www.w3.org/2000/svg\" xml:space=\"preserve\" viewBox=\"0 0 59.001 59.001\"><path d=\"M58.693 55.636 46.848 35.33c-.405-.695-1.128-1.11-1.933-1.11-.805 0-1"
+    ],
+    "length": 5895,
+    "preview": "<?php\nnamespace EM_Pro;\nuse QRCode, EM\\Feature;\n\nclass QR {\n\t\n\tpublic static function init() {\n\t\tFeature::register('qr');\n\t\tadd_filter('em_ticket_booking_output_placeholder', '\\EM_Pro\\QR::em_ticket_booking_output_placeholder', 10, 3);\n\t\t// rule flush",
+    "file": "src/code/events-manager-pro/add-ons/bookings-manager/qr.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 217,
+    "preview": "<?php\nif( is_admin() ){\n\tinclude('bookings-manager-admin.php');\n}\nif( get_option('dbem_bookings_manager') ){\n\tinclude('bookings-manager-frontend.php');\n\tif( get_option('dbem_bookings_qr') ) {\n\t\tinclude('qr.php');\n\t}\n}",
+    "file": "src/code/events-manager-pro/add-ons/bookings-manager/bookings-manager.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "options"
+    ],
+    "classes": [
+      "Bookings_Manager_Admin"
+    ],
+    "comments": [
+      "// save when updated",
+      "/*\n\t * --------------------------------------------\n\t * Email Reminders\n\t * --------------------------------------------\n\t */",
+      "/**\n\t * Generates meta box for settings page\n\t */",
+      "// check for GD or Imagick for generating QR codes",
+      "//chart.googleapis.com/chart?cht=qr&chl=%s&chs=100x100\" target=\"_blank\"><code>https://chart.googleapis.com/chart?cht=qr&chl=%s&chs=100x100</code></a><"
+    ],
+    "length": 4255,
+    "preview": "<?php\nnamespace EM_Pro;\nclass Bookings_Manager_Admin {\n\t\n\tpublic static function init(){\n\t\tadd_action('em_options_page_footer_bookings', '\\EM_PRo\\Bookings_Manager_Admin::options');\n\t\t// save when updated\n\t\tadd_action('update_option_dbem_bookings_mana",
+    "file": "src/code/events-manager-pro/add-ons/bookings-manager/bookings-manager-admin.php"
+  }
+]

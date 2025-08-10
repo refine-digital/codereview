@@ -1,0 +1,92 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "handle",
+      "get_name",
+      "get_description"
+    ],
+    "classes": [
+      "Email"
+    ],
+    "comments": [
+      "// these may be null if there isn't a specific person to email and triggered to email a dynamic 'thing' such as booking, or those booked to an event",
+      "/**\n\t * @var string Who to send emails to. This could be 'emails' which denotes a list of emails stored in the 'emails' property, or a relative refere",
+      "/**\n\t * @var array Array of emails that would receive this action email. Leave empty for relative values such as sending to an event owner, attendees ",
+      "// these must always be present",
+      "// additional options to an email",
+      "// this will be either an array of emails (1 or more), or a string represnting a relative email or set of emails to send to (e.g. owners of an event, ",
+      "// convert to array, split if necessary",
+      "// clean the emails up, remove invalid emails",
+      "// check if we're dealing with one or more emails, or instructions on who to relatively send to",
+      "/* @var \\EM_Event $EM_Event */",
+      "// We're directly emailing one or more people",
+      "// same as how EM_Booking->email() determines admin emails, so we need to make a fake booking with the right event attached so that we can allow the f",
+      "//supply emails as array",
+      "// email event owner",
+      "// We're directly emailing one or more people",
+      "// same as how EM_Booking->email() determines admin emails",
+      "//supply emails as array",
+      "// the person who booked",
+      "// email event owner",
+      "// send the email, at this point we should have a subject, message and email(s) to send to, plus extra options for the general action",
+      "// make not null so to avoid any null errors, in case dbdelta didn't change the previous not null field desc"
+    ],
+    "length": 5168,
+    "preview": "<?php\nnamespace EM\\Automation\\Actions;\nuse EM_Mailer;\n\nclass Email extends Action {\n\t\n\tpublic static $type = 'email';\n\tpublic static $supported_contexts = array('event','booking');\n\t\n\t// these may be null if there isn't a specific person to email and",
+    "file": "src/code/events-manager-pro/add-ons/automation/actions/email.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "init",
+      "register",
+      "handle",
+      "get_name",
+      "get_description",
+      "load_admin"
+    ],
+    "classes": [
+      "Action",
+      "to",
+      "name"
+    ],
+    "comments": [
+      "// overriding classes should save data accoringly",
+      "/**\n\t * Initializes action and hooks into the automation class to register itself.\n\t * @return void\n\t */",
+      "/**\n\t * @param mixed $object         The object being actioned upon, such as an event, location, booking etc.\n\t * @param array $action_data    Trigger",
+      "// get class name of admin",
+      "// include natively-included triggers"
+    ],
+    "length": 2400,
+    "preview": "<?php\nnamespace EM\\Automation\\Actions;\n\nclass Action {\n\t\n\tpublic static $type = 'action';\n\tpublic static $supported_contexts = array();\n\t\n\tpublic function __construct($action = array() ){\n\t\t// overriding classes should save data accoringly\n\t\treturn !",
+    "file": "src/code/events-manager-pro/add-ons/automation/actions/action.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "__construct",
+      "init",
+      "test",
+      "handle",
+      "get_name",
+      "get_description"
+    ],
+    "classes": [
+      "Webhook"
+    ],
+    "comments": [
+      "/**\n * Sends a webhook with event or booking payload\n */",
+      "/**\n\t * @var string URL to send webhook to\n\t */",
+      "/**\n\t * @var array Array of headers to be sent\n\t */",
+      "// add ajax listener to test a specific webhook",
+      "//We would send a booking",
+      "/* @var \\EM_Event $EM_Event */"
+    ],
+    "length": 3434,
+    "preview": "<?php\nnamespace EM\\Automation\\Actions;\n\n/**\n * Sends a webhook with event or booking payload\n */\nclass Webhook extends Action {\n\t\n\tpublic static $type = 'webhook';\n\tpublic static $supported_contexts = array('event','booking');\n\t\n\t/**\n\t * @var string ",
+    "file": "src/code/events-manager-pro/add-ons/automation/actions/webhook.php"
+  }
+]

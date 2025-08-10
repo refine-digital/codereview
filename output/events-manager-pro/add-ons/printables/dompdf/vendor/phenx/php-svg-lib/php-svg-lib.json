@@ -1,0 +1,14 @@
+[
+  {
+    "type": "json",
+    "length": 667,
+    "preview": "{\n  \"name\": \"phenx/php-svg-lib\",\n  \"type\": \"library\",\n  \"description\": \"A library to read, parse and",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/phenx/php-svg-lib/composer.json"
+  },
+  {
+    "type": "md",
+    "length": 1058,
+    "preview": "# SVG file parsing / rendering library\n\n[![Build Status](https://travis-ci.org/PhenX/php-svg-lib.svg",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/phenx/php-svg-lib/README.md"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "em_admin_update_timezone_backcompat_site",
+      "em_admin_update_timezone_backcompat",
+      "em_admin_update_settings_timezone_backcompat",
+      "em_admin_update_settings_confirm_timezone_backcompat",
+      "em_admin_update_ms_settings_timezone_backcompat",
+      "em_admin_update_ms_timezone_backcompat"
+    ],
+    "classes": [],
+    "comments": [
+      "//This file will handle upgradeing from EM < 5.9 for timezones, removing the unecessary postmeta fields."
+    ],
+    "length": 7201,
+    "preview": "<?php\n//This file will handle upgradeing from EM < 5.9 for timezones, removing the unecessary postmeta fields.\nfunction em_admin_update_timezone_backcompat_site( $site_id = false ){\n\tglobal $wpdb;\n\tif( is_multisite() && $site_id != false ){ switch_to",
+    "file": "src/code/events-manager/admin/settings/updates/timezone-backcompat.php"
+  }
+]

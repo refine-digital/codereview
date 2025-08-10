@@ -1,0 +1,62 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Booking $EM_Booking */",
+      "/* @var $EM_Ticket_Booking EM_Ticket_Booking */",
+      "//we should now have an array of information including base price, taxes and post/pre tax discounts"
+    ],
+    "length": 3807,
+    "preview": "<?php\n/* @var EM_Booking $EM_Booking */\n$bookings = $EM_Booking instanceof EM_Multiple_Booking ? $EM_Booking->bookings : array( $EM_Booking );\n?>\n<div class=\"invoice\">\n\t\n\t<table class=\"items\" cellpadding=\"0\" cellspacing=\"0\">\n\t\t<tr class=\"heading\">\n\t\t",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-invoice/part-invoice.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Booking $EM_Booking */"
+    ],
+    "length": 900,
+    "preview": "<?php\n/* @var EM_Booking $EM_Booking */\n?>\n<table class=\"event-info\" cellpadding=\"0\" cellspacing=\"0\">\n\t<tr class=\"heading\">\n\t\t<td colspan=\"3\"><?php esc_html_e('Event Details', 'events-manager') ?></td>\n\t</tr>\n\t<tr>\n\t\t<td colspan=\"2\">\n\t\t\t<?php\n\t\t\tif( ",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-invoice/part-event.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n * @var EM_Booking $EM_Booking\n */"
+    ],
+    "length": 931,
+    "preview": "<?php\n/**\n * @var EM_Booking $EM_Booking\n */\n$EM_Event = $EM_Booking->get_event();\n?>\n<!DOCTYPE html>\n<html>\n<head>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n\t<title><?php esc_html_e('Event Booking', 'events-manager-pro');",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-invoice/pdf-invoice.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* @var EM_Booking $EM_Booking */"
+    ],
+    "length": 654,
+    "preview": "<?php\n/* @var EM_Booking $EM_Booking */\n?>\n<div class=\"header\">\n\t<table class=\"top\" cellpadding=\"0\" cellspacing=\"0\">\n\t\t<tr>\n\t\t\t<?php\n\t\t\tinclude( emp_locate_template('printables/pdf-part-logo.php') );\n\t\t\t?>\n\t\t\t\n\t\t\t<td>\n\t\t\t\t<p class=\"title\"><?php esc_h",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-invoice/part-header.php"
+  },
+  {
+    "type": "css",
+    "selectors": [],
+    "rules": [],
+    "length": 46,
+    "preview": "\n\n/*# sourceMappingURL=pdf-invoice.css.map */\n",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-invoice/pdf-invoice.css"
+  },
+  {
+    "type": "scss",
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager-pro/templates/printables/pdf-invoice/pdf-invoice.scss"
+  }
+]

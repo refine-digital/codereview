@@ -1,0 +1,104 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/**\n * This add-on adds powerful features to EM, such as extending cancellation options.\n */",
+      "// Event Submission Limits"
+    ],
+    "length": 289,
+    "preview": "<?php\n/**\n * This add-on adds powerful features to EM, such as extending cancellation options.\n */\ninclude('cancellation.php');\n\n// Event Submission Limits\nif( get_option('dbem_event_submission_limits_enabled') ){\n\tinclude('limits.php');\n}\nif( is_adm",
+    "file": "src/code/events-manager-pro/add-ons/toolbox/toolbox.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "em_event_validate_meta"
+    ],
+    "classes": [
+      "Limits"
+    ],
+    "comments": [
+      "/**\n\t * @param bool $result\n\t * @param \\EM_Event $EM_Event\n\t * @return bool\n\t */",
+      "// first we get the limits the user is subject to, so we know what to count",
+      "// TODO make default all 0",
+      "// get role-based limits",
+      "// 0 = lower, 1 = highest",
+      "// 0 = no limit, blank = default",
+      "// no limit, so does higher get precedence or not?",
+      "// higher and highest takes precedence",
+      "// lower but lowest takes precedence",
+      "// check how many events user has submitted in the past month, week and day",
+      "// Join and find email user used. Not reliable as a security measure, site owner must be made aware on settings page.",
+      "// get the vars to build search dates",
+      "// anything positive is an integer > 0 or not blank",
+      "// anything positive is an integer > 0 or not blank",
+      "// anything positive is an integer > 0 or not blank",
+      "// account for recurring events, how many events are we creating?",
+      "//Get days where events recur",
+      "// finally we merge it all together and make sure the user is within the limits",
+      "// let user know how many they're creating",
+      "// let user know how many they're creating",
+      "// let user know how many they're creating",
+      "// also, validate recurrences throttle",
+      "// in case we did it earlier",
+      "//Get days where events recur"
+    ],
+    "length": 7818,
+    "preview": "<?php\nnamespace EM\\Toolbox;\nuse EM_DateTime;\n\nclass Limits {\n\tpublic static function init(){\n\t\tadd_filter('em_event_validate_meta', '\\EM\\Toolbox\\Limits::em_event_validate_meta', 100, 2);\n\t}\n\t\n\t/**\n\t * @param bool $result\n\t * @param \\EM_Event $EM_Even",
+    "file": "src/code/events-manager-pro/add-ons/toolbox/limits.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "em_booking_can_cancel",
+      "em_events_admin_bookings_footer",
+      "event_other_attributes",
+      "em_event_get_post_meta",
+      "em_event_save_meta",
+      "em_options_page_bookings_cancellations_after"
+    ],
+    "classes": [
+      "Bookings_Cancellation"
+    ],
+    "comments": [
+      "// cancellation decision filter",
+      "// admin area option",
+      "/**\n\t * @param bool $can_cancel\n\t * @param \\EM_Booking $EM_Booking\n\t * @return bool\n\t */",
+      "// check event-specific settings",
+      "// 0 = default settings",
+      "// previously default was rsvp end",
+      "// 2 = cannot cancel at all",
+      "// add support for negatives",
+      "/**\n\t * @param \\EM_Event $EM_Event\n\t * @return void\n\t */",
+      "//www.php.net/manual/en/dateinterval.construct.php\" target=\"_blank\">'.esc_html__emp('PHP date intevals').'</a>', '<code>P1MT12H</code>');",
+      "/**\n\t * Get waitlist meta loaded in the EM_Event->load_postdata() function\n\t * @param array $array\n\t * @return array\n\t */",
+      "/**\n\t * @param bool $result\n\t * @param \\EM_Event $EM_Event\n\t * @return bool\n\t */",
+      "// set specifics first, delete later if needed",
+      "// check whether to enable/disable or use default",
+      "/**\n\t * @param bool $result\n\t * @param \\EM_Event $EM_Event\n\t * @return bool\n\t */"
+    ],
+    "length": 9533,
+    "preview": "<?php\nnamespace EM\\Toolbox;\nuse EM_DateTime, EM_Booking;\n\nclass Bookings_Cancellation {\n\t\n\tpublic static function init(){\n\t\t// cancellation decision filter\n\t\tadd_filter('em_booking_can_cancel', '\\EM\\Toolbox\\Bookings_Cancellation::em_booking_can_cance",
+    "file": "src/code/events-manager-pro/add-ons/toolbox/cancellation.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "options_box"
+    ],
+    "classes": [
+      "Limits_Admin"
+    ],
+    "comments": [
+      "//echo em_options_radio_binary(__('Apply global capabilities?','em-pro'), 'dbem_ms_global_caps', __('If set to yes the capabilities will be applied al"
+    ],
+    "length": 5008,
+    "preview": "<?php\nnamespace EM\\Toolbox;\n\nclass Limits_Admin {\n\tpublic static function init(){\n\t\tadd_action('em_options_page_event_submission_after', '\\EM\\Toolbox\\Limits_Admin::options_box', 1);\n\t}\n\t\n\tpublic static function options_box(){\n\t\tglobal $save_button, $",
+    "file": "src/code/events-manager-pro/add-ons/toolbox/limits-admin.php"
+  }
+]

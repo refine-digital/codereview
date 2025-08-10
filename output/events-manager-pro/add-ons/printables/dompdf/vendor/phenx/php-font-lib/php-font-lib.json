@@ -1,0 +1,29 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 34,
+    "preview": "<?php header(\"Location: www/\"); ?>",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/phenx/php-font-lib/index.php"
+  },
+  {
+    "type": "json",
+    "length": 525,
+    "preview": "{\n  \"name\": \"php-font-lib\",\n  \"version\": \"0.3.1\",\n  \"license\": \"LGPL-3.0\",  \n  \"keywords\": [\n    \"fo",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/phenx/php-font-lib/bower.json"
+  },
+  {
+    "type": "json",
+    "length": 759,
+    "preview": "{\n    \"name\": \"phenx/php-font-lib\",\n    \"type\": \"library\",\n    \"description\": \"A library to read, pa",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/phenx/php-font-lib/composer.json"
+  },
+  {
+    "type": "md",
+    "length": 1099,
+    "preview": "[![PHPUnit tests](https://github.com/dompdf/php-font-lib/actions/workflows/phpunit.yml/badge.svg)](h",
+    "file": "src/code/events-manager-pro/add-ons/printables/dompdf/vendor/phenx/php-font-lib/README.md"
+  }
+]

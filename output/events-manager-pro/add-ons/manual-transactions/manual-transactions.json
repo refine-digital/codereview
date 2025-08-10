@@ -1,0 +1,128 @@
+[
+  {
+    "type": "php",
+    "functions": [
+      "emp_is_manual_booking"
+    ],
+    "classes": [],
+    "comments": [
+      "/**\n * Shortcut that double-checks manual bookings are enabled as well and passes it onto the class.\n *\n * @param $new_registration\n * @see EM\\Manual_"
+    ],
+    "length": 635,
+    "preview": "<?php\nif( is_admin() ){\n\tinclude('manual-bookings-admin.php');\n}\nif( get_option('dbem_bookings_manual', true) ){\n\tinclude('manual-bookings.php');\n}\n\n/**\n * Shortcut that double-checks manual bookings are enabled as well and passes it onto the class.\n",
+    "file": "src/code/events-manager-pro/add-ons/manual-transactions/loader.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "options"
+    ],
+    "classes": [
+      "Bookings_Admin"
+    ],
+    "comments": [
+      "/*\n\t * --------------------------------------------\n\t * Email Reminders\n\t * --------------------------------------------\n\t */",
+      "/**\n\t * Generates meta box for settings page\n\t */"
+    ],
+    "length": 1357,
+    "preview": "<?php\nnamespace EM\\Manual_Transactions;\nclass Bookings_Admin {\n\t\n\tpublic static function init(){\n\t\tadd_action('em_options_page_footer_bookings', array(get_called_class(), 'options'));\n\t}\n\t\n\t/*\n\t * --------------------------------------------\n\t * Emai",
+    "file": "src/code/events-manager-pro/add-ons/manual-transactions/manual-bookings-admin.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "activate_offline_gateway",
+      "booking_form_confirmation_header",
+      "get_manual_booking_url",
+      "get_booking_confirmation_url",
+      "em_booking_admin",
+      "event_booking_options_buttons",
+      "event_booking_options",
+      "add_booking_form",
+      "em_before_booking_action_booking_add",
+      "em_booking_save",
+      "em_booking_status_changed",
+      "em_action_booking_add",
+      "em_booking_validate",
+      "em_booking_get_post",
+      "em_booking_form_custom",
+      "em_booking_form_confirm_footer",
+      "em_booking_form_footer",
+      "is_manual_booking"
+    ],
+    "classes": [
+      "Bookings"
+    ],
+    "comments": [
+      "/**\n\t * @var \\EM_Booking\n\t */",
+      "// buttons and links to add manual booking",
+      "// add a manual booking admin page support",
+      "// interecept status sets in manual bookings",
+      "// check request and add actions to circumvent a regular booking",
+      "// legacy is only offline, new allows offline and any supported gateway for manual bookings, i.e. anything with direct card input or redirection to pa",
+      "/**\n\t * @param EM_Booking $EM_Booking\n\t *\n\t * @return void\n\t */",
+      "// check if this is returning from a payment or page reload to summarize booking",
+      "// fire hook to possibly process a payment already",
+      "// add a notice to confirm booking was processed successfully",
+      "// gateway-specific hook",
+      "/**\n\t * Adds an add manual booking button to admin pages\n\t */",
+      "/**\n\t * Adds a link to add a new manual booking in admin pages\n\t */",
+      "/**\n\t * Generates a booking form where an event admin can add a booking for another user. $EM_Event is assumed to be global at this point.\n\t */",
+      "/* @var $EM_Event \\EM_Event */",
+      "// enable the offline gateway",
+      "// short-circuit header valuese so free/paid is the same",
+      "//force all user fields to be loaded",
+      "//make all tickets available",
+      "//make all tickets available",
+      "//remove unecessary footer payment stuff and add our own",
+      "// add manual booking sections",
+      "// backwards compatibility - add manual booking sections",
+      "// continue with other settings",
+      "//so we don't get a you're already booked here message",
+      "//Data privacy consent - not added in admin by default, so we add it here",
+      "// backwards compatible - supply 0 args since arg is $EM_Event and callback will think it's an event submission form",
+      "//supply 0 args since arg is $EM_Event and callback will think it's an event submission form",
+      "// add check to see if matches need action",
+      "// something changed, trigger intent update",
+      "// add listener to trigger update the booking_intent object if fully paid checkbox is clicked",
+      "//add js that calculates final price, and also user auto-completer",
+      "//if user is chosen, we use normal registration and change person_id after the fact",
+      "//make sure payment amounts are resporcted",
+      "/**\n\t * Modifies the booking status if the event isn't free and also adds a filter to modify user feedback returned.\n\t * Triggered by the em_booking_a",
+      "//so we don't get a you're already booked here message",
+      "// disable other restrictions",
+      "//add filters to add extra manual booking stuff",
+      "//before EM_Bookings_Form hooks in",
+      "//set flag that we're manually booking here, and set gateway to offline",
+      "/**\n\t * Hooks into the em_booking_save filter and checks whether a partial or full payment has been submitted\n\t * @param boolean $result\n\t * @param \\E",
+      "// check whether to reset status to null, otherwise we'll run into email issues should the booking be pre-approved",
+      "// legacy mode workaround",
+      "// legacy mode workaround",
+      "// we can process the booking status if paid offline, otherwise we let the gateway used to handle the status",
+      "// set status back to null if it was previously, due to this status set during initial phase of booking",
+      "// circumvent return and cancel urls for gateways if they exist",
+      "// check if we're switching from previous pending gateway status to 0 and if so set it to 1",
+      "//@todo allow users to update user info during manual booking",
+      "//impose double bookings here, because earlier we had to disable it due to the fact that the logged in admin is checked for double booking rather than",
+      "//so we don't get a you're already booked here message",
+      "/**\n\t * @param boolean $result\n\t * @param \\EM_Booking $EM_Booking\n\t */",
+      "// additional check for concurrent booking manipulation - remove in future",
+      "//for no-user bookings mode we circumvent",
+      "// back-compat error fix",
+      "/**\n\t * Called before EM_Forms fields are added, when a manual booking is being made\n\t */",
+      "//get consent info for each user, for use later on",
+      "//output list of users",
+      "//wp_dropdown_users ( array ('name' => 'person_id', 'show_option_none' => __ ( \"Select a user, or enter a new one below.\", 'em-pro' ), 'selected' => $",
+      "/**\n\t * Outputs the relevant footer fields before payment confirmation button\n\t * @param \\EM_Event $EM_Event\n\t *\n\t * @return void\n\t */",
+      "//Admin is adding a booking here, so let's show a different form here.",
+      "/**\n\t * Supports legacy em_booking_form_footer hook when templates are overriden but outdated without the em_booking_form_confirm_footer hook.\n\t * @pa",
+      "// if firing hook via the back-compat mode then don't proceed, since we'll also likely have the new hook above",
+      "/**\n\t * Verification of whether current page load is for a manual booking or not. If $new_registration is true, it will also check whether a new user "
+    ],
+    "length": 26353,
+    "preview": "<?php\nnamespace EM\\Manual_Transactions;\nuse EM_Bookings, EM_Booking, EM_Person, EM\\Payments\\Offline\\Gateway;\nuse \\EM\\Payments\\Gateways;\nuse EM_Gateways;\n\nclass Bookings {\n\t\n\t/**\n\t * @var \\EM_Booking\n\t */\n\tpublic static $current_booking = null;\n\t\n\tpub",
+    "file": "src/code/events-manager-pro/add-ons/manual-transactions/manual-bookings.php"
+  }
+]

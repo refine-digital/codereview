@@ -1,0 +1,63 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [],
+    "length": 160,
+    "preview": "<?php\nif( get_option('dbem_bookings_dependent_events') ) {\n\tinclude( 'dependent-bookings.php' );\n}\nif( is_admin() ){\n\tinclude('dependent-bookings-admin.php');\n}",
+    "file": "src/code/events-manager-pro/add-ons/dependent-bookings/loader.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "em_event_load_postdata_other_attributes",
+      "em_booking_validate",
+      "em_multiple_booking_validate",
+      "em_bookings_is_open",
+      "em_booking_form_status_closed",
+      "has_booked",
+      "get_error_message",
+      "em_event_save_meta_pre",
+      "event_bookings_meta_box"
+    ],
+    "classes": [
+      "Dependent_Bookings"
+    ],
+    "comments": [
+      "/**\n\t * @param boolean $result\n\t * @param \\EM_Booking $EM_Booking\n\t */",
+      "//check if the event has a designated parent event",
+      "//get the parent event and make sure it exists",
+      "//if parent booking not found, provide error message and fail validation",
+      "/* @var \\EM_Booking $EM_Booking */",
+      "//get the parent event and make sure it exists",
+      "//get the parent event and make sure it exists",
+      "//if user isn't logged in, we fail validation as they must log in so we can verify their booking of the parent event. If MB is enabled, we skip since ",
+      "//check if user has previously boooked this parent event",
+      "//make sure we search all events 'owner'=>false and only booked or pending offline payment events 'status'=>'1,5'",
+      "//check if this is booking mod and the event is already in the cart",
+      "/* @var \\EM_Booking $em_booking */",
+      "/**\n\t * Saves the custom booking form as post meta. This is done on em_event_save_meta_pre since at that point we know the post id and this will get p",
+      "//if just duplicated, we ignore this and let EM carry over duplicate event data",
+      "//Get available coupons for user"
+    ],
+    "length": 6841,
+    "preview": "<?php\nnamespace EM;\n\nclass Dependent_Bookings {\n\t\n\tpublic static function init(){\n\t\tadd_filter( 'em_event_load_postdata_other_attributes', '\\EM\\Dependent_Bookings::em_event_load_postdata_other_attributes', 10, 2 );\n\t\tadd_filter( 'em_booking_validate'",
+    "file": "src/code/events-manager-pro/add-ons/dependent-bookings/dependent-bookings.php"
+  },
+  {
+    "type": "php",
+    "functions": [
+      "init",
+      "options_box"
+    ],
+    "classes": [
+      "Dependent_Bookings_Admin"
+    ],
+    "comments": [],
+    "length": 1781,
+    "preview": "<?php\nnamespace EM;\nclass Dependent_Bookings_Admin {\n\tpublic static function init(){\n\t\tadd_action('em_options_page_footer_bookings', '\\EM\\Dependent_Bookings_Admin::options_box', 1);\n\t}\n\t\n\tpublic static function options_box(){\n\t\tglobal $save_button, $",
+    "file": "src/code/events-manager-pro/add-ons/dependent-bookings/dependent-bookings-admin.php"
+  }
+]

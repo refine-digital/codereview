@@ -1,0 +1,70 @@
+[
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//DEPRECATED, MODIFY THE INCLUDED TEMPLATE INSTEAD"
+    ],
+    "length": 123,
+    "preview": "<?php \n//DEPRECATED, MODIFY THE INCLUDED TEMPLATE INSTEAD\nem_locate_template('forms/event/bookings-ticket-form.php', true);",
+    "file": "src/code/events-manager/templates/forms/ticket-form.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* WARNING! This file may change in the near future as we intend to add features to the event editor. If at all possible, try making customizations us",
+      "/* \n * To ensure compatability, it is recommended you maintain class, id and form name attributes, unless you now what you're doing. \n * You also must",
+      "//check that user can access this page",
+      "// not related to searches, so we'll just add an ID for good practice",
+      "// close the div and exit if we're not showing the form again"
+    ],
+    "length": 7141,
+    "preview": "<?php\n/* WARNING! This file may change in the near future as we intend to add features to the event editor. If at all possible, try making customizations using CSS, jQuery, or using our hooks and filters. - 2012-02-14 */\n/* \n * To ensure compatabilit",
+    "file": "src/code/events-manager/templates/forms/event-editor.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "/* WARNING! This file may change in the near future as we intend to add features to the location editor. If at all possible, try making customizations",
+      "/* \n * To ensure compatability, it is recommended you maintain class, id and form name attributes, unless you now what you're doing. \n * You also must",
+      "//check that user can access this page",
+      "// not related to searches, so we'll just add an ID for good practice"
+    ],
+    "length": 4427,
+    "preview": "<?php\n/* WARNING! This file may change in the near future as we intend to add features to the location editor. If at all possible, try making customizations using CSS, jQuery, or using our hooks and filters. - 2012-02-14 */\n/* \n * To ensure compatabi",
+    "file": "src/code/events-manager/templates/forms/location-editor.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//DEPRECATED, now only using event/bookings-ticket-form.php"
+    ],
+    "length": 66,
+    "preview": "<?php\n//DEPRECATED, now only using event/bookings-ticket-form.php ",
+    "file": "src/code/events-manager/templates/forms/tickets-form.php"
+  },
+  {
+    "type": "php",
+    "functions": [],
+    "classes": [],
+    "comments": [
+      "//www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" style=\"margin: auto; background: none; display: block; shape-rendering: auto;\" width"
+    ],
+    "length": 2065,
+    "preview": "<div class=\"em-location-map-container\">\n\t<div id='em-map-404' class=\"em-location-map-404\">\n\t\t<p><?php esc_html_e('Location not found', 'events-manager'); ?></p>\n\t\t<p><?php esc_html_e('Update your address information above to generate a preciese map l",
+    "file": "src/code/events-manager/templates/forms/map-container.php"
+  },
+  {
+    "type": "txt",
+    "length": 843,
+    "preview": "This folder contains specific forms used throughout EM.\n\nCAREFUL!! If you do override these files, m",
+    "file": "src/code/events-manager/templates/forms/readme.txt"
+  }
+]

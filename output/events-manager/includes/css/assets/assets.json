@@ -1,0 +1,42 @@
+[
+  {
+    "type": "css",
+    "selectors": [],
+    "rules": [],
+    "length": 48,
+    "preview": "\n\n/*# sourceMappingURL=include-media.css.map */\n",
+    "file": "src/code/events-manager/includes/css/assets/include-media.css"
+  },
+  {
+    "type": "css",
+    "selectors": [],
+    "rules": [],
+    "length": 0,
+    "preview": "",
+    "file": "src/code/events-manager/includes/css/assets/include-media.min.css"
+  },
+  {
+    "type": "scss",
+    "length": 1666,
+    "preview": "& {\n    /* CSS Variables\n    \u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013 */\n\n\t/* default them",
+    "file": "src/code/events-manager/includes/css/assets/_pixelbones.vars.scss"
+  },
+  {
+    "type": "scss",
+    "length": 15897,
+    "preview": "@charset \"UTF-8\";\n\n//     _            _           _                           _ _\n//    (_)        ",
+    "file": "src/code/events-manager/includes/css/assets/include-media.scss"
+  },
+  {
+    "type": "scss",
+    "length": 17767,
+    "preview": "/*\n* PXL Bones v1\n* Based off barebones v3, pixelated and localized for better theme compatibility i",
+    "file": "src/code/events-manager/includes/css/assets/_pixelbones.scss"
+  },
+  {
+    "type": "scss",
+    "length": 6316,
+    "preview": "/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */\n\n/* Document\n   =======",
+    "file": "src/code/events-manager/includes/css/assets/_normalize.scss"
+  }
+]
