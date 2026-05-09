@@ -55,8 +55,9 @@ def parse_and_enrich_file(filepath):
         
         print(f"  Enriching {filepath.name} using agent '{agent_name}'...")
         
-        # Step 1: Initial Analysis
-        initial_prompt = provider.construct_prompt(AGENTS_CONFIG[agent_name]['system_prompt'], "Provide a detailed analysis of the following code:", content)
+        # Step 1: Initial Analysis (with a preview to avoid rate limits)
+        content_preview = content[:4000] # Use a 4000-character preview
+        initial_prompt = provider.construct_prompt(AGENTS_CONFIG[agent_name]['system_prompt'], "Provide a detailed analysis of the following code preview:", content_preview)
         initial_analysis = provider.execute_prompt(initial_prompt)
 
         # Step 2: Detailed RAG Tasks
